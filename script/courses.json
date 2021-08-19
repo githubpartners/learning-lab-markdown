@@ -1,0 +1,225 @@
+[
+  {
+    "owner": "githubtraining",
+    "repo": "introduction-to-github",
+    "template": "caption-this-template",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "github-pages",
+    "template": "github-pages-with-jekyll-template",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "security",
+    "template": "security-template",
+    "description": "This course uses **Security Alerts**, available only when configured with GitHub Connect on GitHub Enterprise versions 2.17 and beyond, and **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "communicating-using-markdown",
+    "template": "communicating-using-md-template",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "introduction-to-github-apps",
+    "template": "games",
+    "description": "This course requires the [**WIP** Probot app](https://probot.github.io/apps/wip/) and the [**Request Info** Probot app](https://probot.github.io/apps/request-info/) to be installed on your instance, and access to [**smee.io**](https://smee.io/) from GitHub Enterprise.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "reviewing-a-pull-request",
+    "template": "reviewing-a-pull-request-template",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "intro-to-html",
+    "template": "intro-to-html-template",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "managing-merge-conflicts",
+    "template": "merge-conflict-template-repo",
+    "description": "This course uses **GitHub Pages**.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "community-starter-kit",
+    "template": "community-starter-kit-template",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "release-workflow",
+    "template": "AlienInvasion",
+    "description": "This course uses **GitHub Pages** and requires the [**Release Drafter** Probot app](https://probot.github.io/apps/release-drafter/) to be installed on your GitHub Enterprise instance.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "ci-travis",
+    "template": "ci-travis-template",
+    "description": "This course uses **GitHub Pages** and requires **Travis CI** for GitHub Enterprise.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "ci-circle",
+    "template": "ci-circle-template",
+    "description": "This course uses **GitHub Pages** and requires **Circle CI** for GitHub Enterprise.",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "write-a-ll-course",
+    "template": "write-a-ll-course-template",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "innersource",
+    "template": "innersource-template",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "oss-enterprise",
+    "template": "open-source-kit",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "connect-the-dots-in-a-github-repository",
+    "template": "connect-the-dots-in-a-github-repository-template",
+    "type": "repo"
+  }, {
+    "owner": "githubtraining",
+    "repo": "security-strategy-essentials",
+    "template": "security-strategy-essentials-template",
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "uploading-your-local-project",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "write-javascript-actions",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "write-github-script",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "react-course",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "write-docker-actions",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "continuous-delivery-aws",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "hello-github-actions",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "using-github-actions-for-ci",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "github-actions-publish-to-github-packages",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "design-thinking-intro",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "migrating-your-repository",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "continuous-delivery-azure",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "prepare-for-the-github-certification-path",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "ramp-up-on-git-and-github",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "codeql-javascript-unsafe-jquery-plugin",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "first-day-on-github",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "first-week-on-github",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "devops-with-github-actions",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "codeql-uboot",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "githubtraining",
+    "repo": "innersource-theory-to-practice",
+    "template": false,
+    "type": "repo"
+  },
+  {
+    "owner": "gitmusical",
+    "repo": "notating-with-lilypond",
+    "template": false,
+    "type": "repo"
+  }
+]

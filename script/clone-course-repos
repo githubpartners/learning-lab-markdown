@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+set -e
+
+GREEN='\033[0;32m'
+GREEN_BG='\033[0;45m'
+SET='\033[0m'
+
+if [ -z ${GITHUB_TOKEN} ];then
+  echo "https://github.com/settings/tokens"
+  echo -n "Please provide a Personal Access Token"; read -s GITHUB_TOKEN
+  if [ -z ${GITHUB_TOKEN} ];then
+    exit 1
+  else
+    export GITHUB_TOKEN
+    echo ""
+  fi
+fi
+
+mkdir ./courses
+
+PREFIX="x-access-token:${GITHUB_TOKEN}"
+
+jq -c '.[]' ./script/courses.json | while read i; do
+  OWNER=$(echo ${i} | jq -r '.owner')
+  REPO=$(echo ${i} | jq -r '.repo')
+  TEMPLATE=$(echo ${i} | jq -r '.template')
+  mkdir ./courses/${REPO}
+
+  (git clone --depth 1 "https://${PREFIX}@github.com/${OWNER}/${REPO}.git" ./courses/${REPO}/${REPO} && echo -e "Cloned ${OWNER}/${REPO}") &
+  (git clone --depth 1 "https://${PREFIX}@github.com/${OWNER}/${TEMPLATE}.git" ./courses/${REPO}/${TEMPLATE} && echo -e "Cloned ${OWNER}/${TEMPLATE}") &
+
+  # Course images
+  gh api graphql -F owner='githubtraining' -F name=${REPO} -F query='query ($owner: String!, $name: String!) {
+    repository(owner: $owner, name: $name) {
+      openGraphImageUrl
+      usesCustomOpenGraphImage
+    }
+  }' > ./courses/${REPO}/image.json
+done
+
+while [ $(pgrep git) ];do sleep 1;done
+sleep 2
+
+
