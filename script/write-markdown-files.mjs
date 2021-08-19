@@ -35,17 +35,11 @@ _${config.description}_
 `
 
   if (config.before) {
-    for (const block of config.before) {
-      if (block.body) {
-        file += await fs.readFile(`${repoDir}/responses/${block.body}`, 'utf8')
+    const actions = listMdValuesRecursive(config.before)
+    if (actions) {
+      for (const response of actions) {
+        file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
         file += '\n\n'
-      }
-
-      if (block.comments) {
-        for (const commentName of block.comments) {
-          file += await fs.readFile(`${repoDir}/responses/${commentName}`, 'utf8')
-          file += '\n\n'
-        }
       }
     }
   }
