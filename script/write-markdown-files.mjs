@@ -26,7 +26,7 @@ async function main () {
     }
 
     const courseImagePath = await getCourseImage(courseDirName)
-    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}) <br> [${courseDirName.split('-').join(' ')}](/${courseDirName}) |`
+    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName.split('-').join(' ')}](/${courseDirName}.md) |`
 
     if (courseIndex % 4 === 3) {
       indexFile += '\n| '
