@@ -16,7 +16,7 @@ _Week 0 (Prepreqs): This doc on GitHub Guides provides a top-view of Git and use
 
 ## (2) GitHub Learning Lab
 
-_Week 0 (Prepreqs): A YouTube video that gives you an overview of Learning Lab and how to use it. _
+_Week 0 (Prepreqs): A YouTube video that gives you an overview of Learning Lab and how to use it._
 
 [Link](https://www.youtube.com/watch?v=9S0p8YMQzsM&feature=youtu.be)
 
@@ -46,7 +46,7 @@ Organize and identify workflow files,
 Add executable scripts, 
 Create workflow and action blocks, 
 Trigger workflows, 
-Discover workflow logs, _
+Discover workflow logs,_
 
 [Link](github-actions:-hello-world)
 
@@ -125,7 +125,7 @@ _Week 3: After completing this course, you'll be able to:contrast user versus or
 make recommendations about the number of GitHub orgs you should have,
 create discoverable repositories,
 create robust repository READMEs
-use _
+use_
 
 [Link](innersource-fundamentals)
 

@@ -6,23 +6,32 @@ import yaml from 'js-yaml'
 async function main() {
   const courseDirs = await fs.readdir('courses')
 
-  for (const courseDirName of courseDirs) {
-    await writeCourseMarkdown(courseDirName)
+  const courses = await Promise.all(
+    courseDirs.map(async (courseDirName) => {
+      const repoDir = `./courses/${courseDirName}/${courseDirName}`
+      const configFile = await fs.readFile(`${repoDir}/config.yml`, 'utf8')
+      return {
+        courseDirName,
+        repoDir,
+        config: yaml.load(configFile),
+        courseImagePath: await getCourseImage(courseDirName),
+      }
+    })
+  )
+
+  for (const course of courses) {
+    await writeCourseMarkdown(course)
   }
 
-  await writeIndexFile(courseDirs)
+  await writeIndexFile(courses)
 }
 
-async function writeCourseMarkdown(courseDirName) {
+async function writeCourseMarkdown({ courseDirName, repoDir, config, courseImagePath }) {
   console.log(`### Writing markdown file for ${courseDirName}`)
-
-  const repoDir = `./courses/${courseDirName}/${courseDirName}`
-  const config = await yaml.load(await fs.readFile(`${repoDir}/config.yml`, 'utf8'))
-  const courseImagePath = await getCourseImage(courseDirName)
 
   let file = `# ${config.title}
 
-_${config.description}_
+_${config.description.trim()}_
 
 ![](${courseImagePath})
 
@@ -52,7 +61,7 @@ _${config.description}_
     } else {
       file += `## (${stepIndex + 1}) ${step.title || step.course}
 
-_${step.description}_
+_${step.description.trim()}_
 
 [Link](${step.link || step.course})
 
@@ -67,8 +76,9 @@ _${step.description}_
 }
 
 async function getCourseImage(courseDirName) {
-  return JSON.parse(await fs.readFile(`./courses/${courseDirName}/image.json`, 'utf8'))?.data
-    ?.repository?.openGraphImageUrl
+  const courseImageMetaFile = await fs.readFile(`./courses/${courseDirName}/image.json`, 'utf8')
+  const courseImageMeta = JSON.parse(courseImageMetaFile)
+  return courseImageMeta?.data?.repository?.openGraphImageUrl
 }
 
 function listMdValuesRecursive(xvalue) {
@@ -96,7 +106,7 @@ function listMdValuesRecursive(xvalue) {
   }
 }
 
-async function writeIndexFile(courseDirs) {
+async function writeIndexFile(courses) {
   console.log(`### Writing index.md`)
 
   let indexFile = `# Learning Lab Courses as Markdown
@@ -105,15 +115,17 @@ async function writeIndexFile(courseDirs) {
 | -- | -- | -- | -- |
 `
 
-  for (const [courseIndex, courseDirName] of courseDirs.entries()) {
+  for (const [courseIndex, { courseDirName, config, courseImagePath }] of courses.entries()) {
     if (courseIndex === 0) {
       indexFile += '| '
     }
 
-    const courseImagePath = await getCourseImage(courseDirName)
-    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName
-      .split('-')
-      .join(' ')}](/${courseDirName}.md) |`
+    indexFile += [
+      `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md)`,
+      '<br>',
+      `[${config.title}](/${courseDirName}.md)`,
+      '|',
+    ].join(' ')
 
     if (courseIndex % 4 === 3) {
       indexFile += '\n| '

@@ -1,6 +1,6 @@
 # Prepare to use GitHub
 
-_Prepare to use GitHub with this learning path. _
+_Prepare to use GitHub with this learning path._
 
 ![](https://avatars.githubusercontent.com/u/2036237?s=400&v=4)
 
@@ -94,7 +94,7 @@ _This article will explore best practices to help you maintain a healthy codebas
 
 ## (15) githubtraining/github-pages
 
-_If you're new to GitHub Pages, or you want to learn how to build and host a GitHub Pages site, you're in the right place. _
+_If you're new to GitHub Pages, or you want to learn how to build and host a GitHub Pages site, you're in the right place._
 
 [Link](githubtraining/github-pages)
 
@@ -136,7 +136,7 @@ _You can group organization members into teams that reflect your company or grou
 
 ## (22) GitHub Docs: Fork Definition
 
-_A fork is a personal copy of another user's repository that lives on your account. _
+_A fork is a personal copy of another user's repository that lives on your account._
 
 [Link](https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork)
 
