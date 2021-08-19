@@ -124,11 +124,13 @@ Let's help our friends resolve this conflict.
 <h3 align="center">Watch below for my response.</h3>
 
 
+
 ## Conflicting change
 
 This pull request adds changes to the `_data/education.yml` file. It's the same file that you just changed in your pull request.
 
 After this pull request is merged, your pull request will have a merge conflict. That's because there will have been changes on two different branches to the same part of the same file.
+
 
 ## Step 3: Resolve more complex conflicts
 
@@ -200,6 +202,7 @@ This time, however, I've made it a bit more complicated.
 <h3 align="center">Watch below for my response.</h3>
 
 
+
 ## Step 5: Create your own conflict
 
 So far, this pull request doesn't have any conflicts. I have added some new branch protections to prevent you from merging before you're ready.
@@ -253,11 +256,13 @@ In the last activity, you solved a merge conflict that someone else created. Thi
 
 [octicon-kebab-horizontal]: https://unpkg.com/octicons/build/svg/kebab-horizontal.svg
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 You did it, @{{ user.username }}! Nice job resolving the conflict. Most conflicts in your day to day experience should be pretty simple, as in that activity. You may need to discuss the resolution with your peers. If your team is working together and reviewing pull requests, resolving conflicts is easy.
@@ -314,11 +319,13 @@ You can also merge locally:
 <h3 align="center">Watch below for my response.</h3>
 
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 Good job! You've solved your first merge conflict.
@@ -326,11 +333,13 @@ Good job! You've solved your first merge conflict.
 <hr>
 <h3 align="center">Go to <a href="{{ url }}">the next pull request</a> now.</h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 ## Step 4: Merge pull request
@@ -376,11 +385,13 @@ You can also merge locally:
 <hr>
 <h3 align="center">Watch below for my response.</h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 Good job! You've solved more merge conflicts.
@@ -388,18 +399,21 @@ Good job! You've solved more merge conflicts.
 <hr>
 <h3 align="center">Go to <a href="{{ url }}">the next pull request</a> now.</h3>
 
-Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
-
-If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
-
-If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
-
 
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
+
+
+Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
+
+If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
+
+If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 ## Where do conflicts come from?
@@ -427,18 +441,21 @@ Because you created the conflict, feel free to resolve this conflict as you wish
 <hr>
 <h3 align="center">Return to this pull request for next steps.</h3>
 
-Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
-
-If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
-
-If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
-
 
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
+
+
+Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
+
+If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
+
+If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 ## Step 7: Merge the  pull request
@@ -484,11 +501,13 @@ You can also merge locally:
 <h3 align="center">Watch below for my response.</h3>
 
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 
 ## Nice work
@@ -570,8 +589,10 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished!</h3>
 
 
+
 Yay! You've done it! You've resolved all of the conflicts. I have a few pointers for completing your resume, so I've opened one last issue for that information.
 
 <hr>
 <h3 align="center">Check out the final issue <a href="{{ url }}">here</a>!</h3>
+
 

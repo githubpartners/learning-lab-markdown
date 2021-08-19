@@ -3,8 +3,6 @@
 import fs from 'fs/promises'
 import yaml from 'js-yaml'
 
-// TODO add the remaining githubtraining courses
-
 async function main () {
   const courseDirs = await fs.readdir('courses')
 
@@ -12,30 +10,7 @@ async function main () {
     await writeCourseMarkdown(courseDirName)
   }
 
-  console.log(`### Writing index.md`)
-
-  let indexFile = `# Learning Lab Courses as Markdown
-
-| | | | |
-| -- | -- | -- | -- |
-`
-
-  for (const [courseIndex, courseDirName] of courseDirs.entries()) {
-    if (courseIndex === 0) {
-      indexFile += '| '
-    }
-
-    const courseImagePath = await getCourseImage(courseDirName)
-    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName.split('-').join(' ')}](/${courseDirName}.md) |`
-
-    if (courseIndex % 4 === 3) {
-      indexFile += '\n| '
-    }
-  }
-
-  await fs.writeFile('./index.md', indexFile)
-
-  console.log(`### Finished writing index.md`)
+  await writeIndexFile(courseDirs)
 }
 
 async function writeCourseMarkdown (courseDirName) {
@@ -63,13 +38,13 @@ _${config.description}_
     for (const block of config.before) {
       if (block.body) {
         file += await fs.readFile(`${repoDir}/responses/${block.body}`, 'utf8')
-        file += '\n'
+        file += '\n\n'
       }
 
       if (block.comments) {
         for (const commentName of block.comments) {
           file += await fs.readFile(`${repoDir}/responses/${commentName}`, 'utf8')
-          file += '\n'
+          file += '\n\n'
         }
       }
     }
@@ -80,7 +55,7 @@ _${config.description}_
     if (actions) {
       for (const response of actions) {
         file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
-        file += '\n'
+        file += '\n\n'
       }
     } else {
       file += `## (${stepIndex + 1}) ${step.title || step.course}
@@ -113,6 +88,33 @@ function listMdValuesRecursive (xvalue) {
   } else if (typeof xvalue === 'object') {
     return Object.values(xvalue).map(listMdValuesRecursive).flat().filter(Boolean)
   }
+}
+
+async function writeIndexFile(courseDirs) {
+  console.log(`### Writing index.md`)
+
+  let indexFile = `# Learning Lab Courses as Markdown
+
+| | | | |
+| -- | -- | -- | -- |
+`
+
+  for (const [courseIndex, courseDirName] of courseDirs.entries()) {
+    if (courseIndex === 0) {
+      indexFile += '| '
+    }
+
+    const courseImagePath = await getCourseImage(courseDirName)
+    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName.split('-').join(' ')}](/${courseDirName}.md) |`
+
+    if (courseIndex % 4 === 3) {
+      indexFile += '\n| '
+    }
+  }
+
+  await fs.writeFile('./index.md', indexFile)
+
+  console.log(`### Finished writing index.md`)
 }
 
 await main()

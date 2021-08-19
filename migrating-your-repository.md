@@ -138,6 +138,7 @@ If you don't have a repository to use for this activity, you are welcome to use 
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 ## Step 2: Prepare the project
 
 ### Working with Binary files
@@ -170,10 +171,12 @@ Since the files to be ignored are dependent on the language you are using, the o
 
 > :robot: I'm waiting for you to close this issue before moving on.
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 
 ## Step 3: Private or Public?
 
@@ -198,10 +201,12 @@ It's important to note that **public does not equal open source**! The license a
 
 > :robot: I'm waiting for you to close this issue before moving on.
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 
 ## Step 4: Complete the Import
 
@@ -222,6 +227,7 @@ It's time for the big move! Since your source code is in Subversion, Mercurial, 
 
 > :robot: Once I see you have pushed your project to GitHub, I'll close this issue
 
+
 ## Welcome to GitHub @{{ user.username }}
 
 As soon as I see code in this repository, I will close this issue and stop responding in this repository. So, before I say good-bye, I want to recap all the tasks you've accomplished. You:
@@ -240,8 +246,10 @@ Hosting a project on GitHub enables you to share your work with millions of othe
 
 There's so much more you can do with GitHub, and you have a solid start. Now...[what will you learn next]({{ host }}/courses)?
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 

@@ -38,6 +38,7 @@ Design Thinking focuses on using the newest technologies to solve problems.
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 Our first pull request introduces Design Thinking in more detail.
 
 ### Challenge question
@@ -50,6 +51,7 @@ Design Thinking emphasizes delivering a good tool to users faster, rather than w
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 ### Answer :crystal_ball:
 
 **Design Thinking** does not focus on technology.  It is _human_-centric. It puts people first, before thinking about technology, to enable them to achieve more.  
@@ -58,6 +60,7 @@ This approach leads to more meaningful and innovative solutions, regardless of i
 
 <hr>
 <h3 align="center">You can find your next steps in the <a href="{{ url }}">first pull request</a>.</h3>
+
 
 
 ### Answer :crystal_ball:
@@ -81,6 +84,7 @@ In Design Thinking, human-centered design begins with Desirability.  The converg
 <hr>
 <h3 align="center">I'll respond after you merge this pull request.</h3>
 
+
 This pull request is about the five phases of Design Thinking.  These phases are based on three core principles.  
 
 So far we've learned that Design Thinking is, at it's heart, User-Centric.  We've also talked about the concept of putting a Minimum Viable Product in the hands of users quickly in order to gain insight for solutioning.  Despite Dilbert's example, the designer must always remain focused on the needs of the user.
@@ -97,7 +101,9 @@ Based on the information we've covered so far, what principles do you think migh
 
 <hr>
 <h3 align="center">I'll respond when I detect your new comment on this pull request.</h3>
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 ### Answer :crystal_ball:
 There are many important ideas and principles when utilizing Design Thinking.  At its core though, it's User-Centric. Therefore the most important characteristic of a solution is that it meets the needs of the User.  To ensure solutions achieve this objective, the three fundamental principles of Design Thinking guide teams through the process of defining the MVP, and then iteratively improving and enhancing it to achieve the final product.
 
@@ -133,6 +139,7 @@ You'll read more detail about these principles when reviewing this pull request.
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
 
+
 This pull request is about the first phase of Design Thinking: **Empathy**.  
 
 ### Challenge question
@@ -149,7 +156,9 @@ Which of the following methods should a designer use to derive insights into use
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 ### Answer :crystal_ball:
 All of those methods are important to gaining an empathic understanding of the problem at hand, so all of the answers are right.  
 
@@ -173,6 +182,7 @@ You'll read more detail about how to use empathy to design meaningful solutions 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
 
+
 This pull request is about the **Define & Ideate** phases of Design Thinking.  
 
 ### Challenge question
@@ -185,7 +195,9 @@ We've learned that Design Thinking is all about users.  With that in mind, which
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 ### Answer :crystal_ball:
 That's right! The second statement is much more likely to result in an innovative and valuable solution for the citizens. 
 
@@ -208,6 +220,7 @@ Read more detail about how to define and ideate in this pull request.
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 This pull request is about the **Prototype & Test** phases of Design Thinking. Let's kick this topic off with a challenge question! 
 
 
@@ -219,7 +232,9 @@ Only high-fidelity prototypes are of value in Design Thinking.
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 ### Answer :crystal_ball:
 It's false! One of the main reasons for prototyping is to _fail fast_.  Even a simple pencil & paper prototype can help teams to discover that they're on the wrong track.  As prototypes evolve user testing becomes more involved, but their feedback should be incorporated right from the beginning.  Prototyping allows for this kind of continuous feedback loop with users and other stakeholders from the start.
 
@@ -244,6 +259,7 @@ Read more detail about how to use prototype and test as part of Design Thinking 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
 
+
 ### Almost done!
 
 It's time to publish the Design Thinking toolkit you've been working on.
@@ -259,7 +275,9 @@ That's all! GitHub Pages will then deploy your site and report its status back t
 <hr>
 <h3 align="center">I'll respond when I detect that GitHub Pages has finished deploying your site.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 # :tada: Congratulations
 
 You finished this course. You can see a deployed version of our work together at [your new GitHub Pages site]({{ deploymentURL }}). Feel free to share this link directly with others, or you can save the resources in one of the following ways.
@@ -277,3 +295,4 @@ You finished this course. You can see a deployed version of our work together at
 I won't track any further events in this repository.
 
 Your next steps will be in the Design Thinking Learning Path, which is coming soon!
+

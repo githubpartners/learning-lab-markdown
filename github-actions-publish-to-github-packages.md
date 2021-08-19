@@ -42,6 +42,7 @@ But, this is **NOT** a course on CI. We will not being going into detail on what
 
 Wait! There's good news 👍! If you need a CI refresher you can take the [Using GitHub Actions for CI Learning Lab course](https://lab.github.com/githubtraining/github-actions:-continuous-integration) to get up to speed.
 
+
 # Moving the workflow file to `.github/workflows/ci-workflow.yml`
 
 There is a file on this branch called `ci-workflow.yml`. But, now I need your help!
@@ -64,6 +65,7 @@ When you're done renaming, you will have created a new directory and moved the f
 1. [Edit the file location]({{ repoUrl }}/edit/ci-workflow/.github/ci-workflow.yml) by changing its name from `ci-workflow.yml` to `workflows/ci-workflow.yml`.
 2. Commit the file to the `ci-workflow` branch once you have changed the path:
 ![screenshot highlighting the commit changes button](https://i.imgur.com/fJPdNqj.png)
+
 # Oops!
 
 It looks like you didn't name the workflow file properly.  
@@ -71,6 +73,7 @@ It looks like you didn't name the workflow file properly.
 Be sure the path is `.github/workflows` and the filename is `ci-workflow.yml`. **I'll be waiting for a new commit on this branch.**
 
 ![screenshot of updated title to .github/workflows/ci-workflow.yml](https://i.imgur.com/m1MM9Zo.png)
+
 
 # Docker 🐳
 
@@ -121,6 +124,7 @@ As you learned above, we need to turn that _Dockerfile_ into a _Docker image_ if
 ---
 
 📖[Read More](https://www.docker.com/why-docker) about Docker.
+
 
 # Edit the workflow file
 
@@ -236,11 +240,13 @@ jobs:
 
 </details>
 
+
 ### Great Job 👍
 
 I have merged this pull request for you, and opened a new one for you to start working on the CD segment of our workflow.
 
 Navigate [to the next pull request]({{ pullURL }}) to continue this course.
+
 
 # Oops!
 
@@ -250,11 +256,13 @@ Be sure the path is `.github/workflows` and the filename is `cd-workflow.yml`. *
 
 ![screenshot showing path as .github/workflows/cd-workflow.yml](https://user-images.githubusercontent.com/16547949/67888662-ea9b8a80-fb23-11e9-8cb2-d751a0e483cc.png)
 
+
 # Creating a Dockerfile 🐳
 
 You may have noticed that your workflow didn't run as expected. That's because we don't have a `Dockerfile` in our repository yet!
 
 We will add a `Dockerfile` in this pull request. I'll leave a comment with instructions to help you. 😄
+
 # Dockerfile 🐳
 
 The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`.
@@ -275,11 +283,13 @@ COPY . /usr/share/nginx/html
 
 3. Commit your changes to the `add-dockerfile` branch
 
+
 ### Great Job 👍
 
 I have merged this pull request for you, and opened a new one for you to start working on the CD segment of our workflow.
 
 Navigate [to the next pull request]({{ pullURL }}) to continue this course.
+
 
 # Now things are running!
 
@@ -291,11 +301,13 @@ This might take a tiny amount of time, so grab your popcorn 🍿 and wait. I'll 
 
 _You can click the `Actions` tab to view your workflow in progress. Make sure you come back to this pull request._
 
+
 # Oh oh...
 
 Something went wrong in your workflow.
 
 Navigate to the [Actions tab]({{ repoUrl }}/actions) to troubleshoot. Recommit the necessary fixes to this repository.
+
 # Using your new Docker Image package
 
 The easiest way to use your Docker Image package is to click the package name from the [package tab]({{ repoUrl }}/packages).
@@ -314,6 +326,7 @@ That will bring you to a screen like containing instructions.
 ![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://i.imgur.com/Ue9BJoV.png)
 
 We will use this token to log in to Docker, and authenticate with the package.
+
 ## Step 4: Log in to Docker
 
 ### :keyboard: Activity: Log in to Docker
@@ -329,6 +342,7 @@ We will use this token to log in to Docker, and authenticate with the package.
 
 If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 
+
 ## Step 5: Pull your image
 
 ### :keyboard: Pull the image from GitHub Packages to your local environment
@@ -341,6 +355,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 You should see output indicating that the pull was successful, like `Status: Downloaded newer image for docker.`
 
 ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)
+
 ## Step 6: Run your Docker Image
 
 ### :keyboard: Activity: Run your image locally
@@ -357,6 +372,7 @@ You should see output indicating that the pull was successful, like `Status: Dow
 5. Press **Enter**
 
 If everything went well, you will see hash value as output on your screen.
+
 # Congratulations! 🎉
 
 Congratulations @{{ user.username }}, you did it!  You wrote a workflow that sends a code through a CI/CD pipeline and leaves you will a fully tested, fully deployable artifact.
@@ -378,6 +394,7 @@ To find projects to contribute to through trending topics and curated collection
 ### Keep learning
 
 [What will you learn next]({{ host }}/courses)?
+
 # You did it!
 
 It looks like your workflow run was successful. Awesome!
@@ -395,6 +412,7 @@ You should now see a package named `tic-tac-toe`. 🎉
 ---
 
 I'll go ahead and merge this pull request. [I'll give you the next steps in the next issue]({{ nextUrl }}).
+
 # Using your new Docker Image package
 
 The easiest way to use your Docker Image package is to click the package name from the [package tab]({{ repoUrl }}/packages).
@@ -413,6 +431,7 @@ That will bring you to a screen like containing instructions.
 ![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://i.imgur.com/Ue9BJoV.png)
 
 We will use this token to log in to Docker, and authenticate with the package.
+
 ## Step 4: Log in to Docker
 
 ### :keyboard: Activity: Log in to Docker
@@ -428,6 +447,7 @@ We will use this token to log in to Docker, and authenticate with the package.
 
 If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 
+
 ## Step 5: Pull your image
 
 ### :keyboard: Pull the image from GitHub Packages to your local environment
@@ -440,6 +460,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 You should see output indicating that the pull was successful, like `Status: Downloaded newer image for docker.`
 
 ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)
+
 ## Step 6: Run your Docker Image
 
 ### :keyboard: Activity: Run your image locally
@@ -456,6 +477,7 @@ You should see output indicating that the pull was successful, like `Status: Dow
 5. Press **Enter**
 
 If everything went well, you will see hash value as output on your screen.
+
 # Congratulations! 🎉
 
 Congratulations @{{ user.username }}, you did it!  You wrote a workflow that sends a code through a CI/CD pipeline and leaves you will a fully tested, fully deployable artifact.
@@ -477,3 +499,4 @@ To find projects to contribute to through trending topics and curated collection
 ### Keep learning
 
 [What will you learn next]({{ host }}/courses)?
+

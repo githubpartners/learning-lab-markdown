@@ -51,6 +51,7 @@ Whether you choose your own topic or one of ours, you'll stick with the same one
 
 <hr>
 <h3 align="center">I'll respond below when I detect a comment in this pull request.</h3>
+
 Great! When you commented, you triggered something called a webhook that I heard, and now I'm here! You may be wondering if I checked to see if  what you wrote was a _real_ topic. We'll talk about that kind of logic later - both how to use it, and when to use it. (Spoiler - for this step, I didn't check! I am pretty smart, but not smart enough to tell if you typed a good idea or not.)
 
 ### Breaking goals into smaller steps
@@ -104,6 +105,7 @@ In the file in this pull request, write the steps as observable behaviors. It's 
 <hr>
 <h3 align="center">I'll respond in this pull request when I detect a commit on this branch.</h3>
 
+
 Nice work. As a robot, some things are really hard for me to check. This is one of them!
 
 If you'd like to get some feedback on your steps before continuing with the course, reach out in the [GitHub Community]({{ communityBoard }}). Once you're ready, merge this pull request to move on to the next step.
@@ -120,7 +122,9 @@ Next, we'll merge this pull request. You can go ahead and take your time breakin
 <hr>
 <h3 align="center">I'll respond below when this pull request is merged.</h3>
 
+
 Nice job merging! You can find your next steps in [your next pull request]({{ repoUrl }}/pull/2).
+
 # Choosing a Template
 
 One of the things that makes Learning Lab special is the ability to learn a skill _in context_. As you think about what you want to teach, it's critical to think about the context that you want to teach your topic in. 
@@ -158,6 +162,7 @@ Select a template repository - or use ours - based on the points listed above.
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 Uh oh! I see that this branch now has a merge conflict. A **Merge conflict** occurs when changes are made to the same part of the same file on two different branches. You usually find out about conflicts in a pull request. 
 
 If you've solved merge conflicts before, you know what to do: go ahead and resolve it now.
@@ -176,7 +181,9 @@ If this is your first merge conflict, that's OK too. Here are instructions for r
 
 6. With the merge conflict markers removed, click **Mark as resolved**.
 7. Finally, click **Commit merge**.
+
 Nice template. I'm going to merge this for you. You can find your next steps in [your next pull request]({{ repoUrl }}/pull/3).
+
 # Events
 
 Alright - you've chosen a project, and you've laid out the steps for your learners. Next, we're going to get into something new with Learning Lab: events! (You can learn more about events in [the documentation](https://lab.github.com/docs/events).)
@@ -218,6 +225,7 @@ Remember the steps you wrote earlier? Let's find the corresponding events. You'l
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 # Outline the remaining steps
 
 It is very important to choose events that correlate as directly as possible to what you're asking the learner to do. If you're not using gates* or other tests, the event _should_ be what you're asking the learner to do.
@@ -237,6 +245,7 @@ Go ahead and put in the events for the rest of the learning objectives. You can 
 
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
+
 
 # 3 phases of a step
 
@@ -333,6 +342,7 @@ If you get stuck, add the issue label "help" and I'll give you some more detail.
 <hr>
 <h3 align="center">I'll respond below after you've added the correct labels.</h3>
 
+
 Can't figure out which are the right labels? No worries! Here are the reasons and the answers:
 
 #### Example 1: Committing a header 🛑
@@ -350,6 +360,7 @@ Can't figure out which are the right labels? No worries! Here are the reasons an
 #### Example 4: Writing a function 🛑
 
 - **Why?**: The instructions for this step aren't clear enough for the learner to be successful. The balance between assuming context and over-instructing was too far into assumption. The learner could become frustrated because they are following the instructions to the best of their ability, yet the course gives them no feedback. Do not apply this label.
+
 
 # 3 Phases: Why?
 
@@ -399,9 +410,11 @@ You may notice the file name and structure. They represent the best practices we
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 I noticed that though the correct file is edited, there isn't a lot of substance. It's okay to come back and edit these responses later to make them longer or more complete. But, in the meantime, you should write enough so that you can go through the course as a learner and remember what is expected for each step.
 
 Try again - [Edit the `01_first-response.md` file with at least one sentence of instruction for yourself]({{ url }}).
+
 # Learning Lab Actions
 
 Awesome! You're probably thinking - how is Learning Lab validating that I did the thing just now!? And you have a point. With text, it's tricky - so I checked to make sure you wrote more than 5 words, but I'm not checking to see if you wrote anything that makes sense. For this type of step, it would be difficult to provide great feedback on what you wrote.
@@ -431,6 +444,7 @@ You've got the response file, and now it's time to edit the `config` file with t
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 I noticed that your commit to the `config.yml` file doesn't have what I am expecting.
 
 I'm using a `gate` and using regular expressions to check that you have something committed that looks like:
@@ -441,6 +455,7 @@ with: 01_first-response.md
 ```
 
 Try again by [committing to the `config.yml` file on this branch]({{ url }}), and make sure your changes match my example above.
+
 # Phase 2: Observation and Validation (with Gates)
 
 Phase 2 is where we watch to see if the learner did what we asked them to do. With Learning Lab, we are watching for the _event_ to be sent by GitHub and then checking to see if it was the event we were expecting.
@@ -497,6 +512,7 @@ actions:
 >     right: Add name to README
 > ```
 
+
 I noticed that your commit to the `config.yml` file doesn't have what I am expecting.
 
 I'm using a `gate` and using regular expressions to check your commit. I'm literally checking for something like:
@@ -518,6 +534,7 @@ But, each learner may have a different exact version. Yours may look like:
 ```
 
 Try again by [committing to the `config.yml` file on this branch]({{ url }}), and make sure your changes match my example above. (Make sure your indentations are correct, too!)
+
 # Phase 3: Feedback
 
 Nice, now you've got phases one and two covered. It's time for phase 3.
@@ -538,6 +555,7 @@ I just added two response files in this pull request - one for the "happy path" 
 <hr>
 <h3 align="center">I'll respond below after you comment on this pull request.</h3>
 
+
 I noticed that though the correct file is edited, there isn't a lot of substance. It's okay to come back and edit these responses later to make them longer or more complete. But, in the meantime, you should write enough so that you can go through the course as a learner and remember what is expected for each step.
 
 Try again - [Edit the `01_nice-work.md` file with at least one sentence of instruction for yourself]({{ url }}), then comment in this pull request.
@@ -545,12 +563,14 @@ Try again - [Edit the `01_nice-work.md` file with at least one sentence of instr
 <hr>
 <h3 align="center">I'll respond below after you comment on this pull request.</h3>
 
+
 I noticed that though the correct file is edited, there isn't a lot of substance. It's okay to come back and edit these responses later to make them longer or more complete. But, in the meantime, you should write enough so that you can go through the course as a learner and remember what is expected for each step.
 
 Try again - [Edit the `01_try-again.md` file with at least one sentence of instruction for yourself]({{ url }}), then comment in this pull request.
 
 <hr>
 <h3 align="center">I'll respond below after you comment on this pull request.</h3>
+
 
 # Config logic
 
@@ -581,6 +601,7 @@ _Are you noticing that we're asking a bit more of you now? Since you've already 
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 I noticed that your commit to the `config.yml` file doesn't have what I am expecting.
 
 I'm using a `gate` and using regular expressions to check that you have something committed that looks like:
@@ -591,6 +612,7 @@ with: 01_nice-work.md
 ```
 
 Try again by [committing to the `config.yml` file on this branch]({{ url }}), and make sure your changes match my example above.
+
 # Course metadata
   
 Awesome work so far! Now, you've officially got your first step written. It's a good time to try this course out. Before we do, we need to pay some attention to the metadata in the config file, so that Learning Lab knows what to do with it.
@@ -634,6 +656,7 @@ template:
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
 
+
 I noticed that your commit to the `config.yml` file doesn't have what I am expecting.
 
 I'm using a `gate` and using regular expressions to check that you have something committed that looks like:
@@ -648,6 +671,7 @@ template:
 ```
 
 Try again by [committing to the `config.yml` file on this branch]({{ url }}), and make sure your changes match my example above.
+
 # Import your course
 
 Woohoo! You could keep going - but now your course can actually be _tested_. Let's talk about that.
@@ -677,7 +701,9 @@ You can continue to [work on your course](https://lab.github.com/docs/testing#te
 <hr>
 <h3 align="center">I'll respond below when I detect a comment in this issue.</h3>
 
+
 Nice job! I'll merge this pull request for you. Your next steps can be found in [your next issue]({{ repoUrl }}/issues/4).
+
 
 # Troubleshooting: Importing a course
 
@@ -717,6 +743,7 @@ If you have events or steps listed in your `config.yml`, they need to have at le
 If you're still stuck, visit us in the [Community Forum]({{ communityBoard }}) and we'll be happy to help!
 
 
+
 # Try out your course
 
 Go ahead and take the course! You'll be able to register for the course, and take it. What do you think?
@@ -729,6 +756,7 @@ Go ahead and take the course! You'll be able to register for the course, and tak
 
 <hr>
 <h3 align="center">I'll respond below when I detect this issue is closed.</h3>
+
 # Congratulations!
 
 So, you've done it - you've started your own Learning Lab course. I will leave you here with the last set of instructions:
@@ -757,3 +785,4 @@ Once a course is published, you can continue to make updates to it by using pull
 
 This Learning Lab course has walked you through course creation from scratch - but we also have a Course Builder UI. The Course Builder will create a boilerplate repository and automatically import it for you. It also provides helpful tools to create and validate your course's yaml file.
 If you need help, reach out in the [community forum]({{ communityBoard }}), or let us know at learninglab@github.com.
+

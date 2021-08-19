@@ -56,6 +56,7 @@ I'll respond in the new pull request when I detect it has been created.
 
 If at any point you're expecting a response and don't see one, refresh the page.
 
+
 The title of this pull request isn't what I expected!
 
 To rename your pull request:
@@ -64,6 +65,7 @@ To rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 ## Templated workflow success!
 
 Great job adding the templated workflow. Adding that file to this branch is enough for GitHub Actions to begin running CI on your repository. This takes a couple of minutes, so let's take this opportunity to learn about some of the components of the workflow file you just added. We'll dive deeper into some of the key elements of this file in future steps of the course.
@@ -86,6 +88,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Try making a commit on this branch. Our workflow is triggered with a `push` event, and committing to this branch will result in a new `push`
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
 </details>
+
 ## 'on:'
 
 The `on:` field is what tells GitHub Actions when to run. In this case, we're running the workflow anytime there's a `push`.
@@ -93,6 +96,7 @@ The `on:` field is what tells GitHub Actions when to run. In this case, we're ru
 To learn more about the fields discussed here, see:
 - [Workflow syntax for GitHub Actions: `on:`](https://help.github.com/en/articles/workflow-syntax-for-github-actions#on) on GitHub Help 
 - [Events that trigger workflows](https://help.github.com/en/articles/events-that-trigger-workflows) on GitHub Help
+
 ## Jobs
 
 The `jobs:` block defines the core component of an Actions workflow. Workflows are made of jobs, and our template workflow defines a single job with the identifier `build`.
@@ -105,6 +109,7 @@ To learn more about the fields discussed here, see:
 - [Workflow syntax for GitHub Actions: `jobs.<job_id>.runs-on:`](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on) on GitHub Help 
 - [Virtual environments for GitHub Actions](https://help.github.com/en/articles/virtual-environments-for-github-actions) on GitHub Help
 - [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) on Wikipedia
+
 ## Vocabulary
 
 #### Workflows, steps, actions, and jobs
@@ -130,6 +135,7 @@ To learn more about the fields discussed here, see:
 - Source repository for the [`actions/checkout`](https://github.com/actions/checkout) action
 - Source repository for the [`actions/setup-node`](https://github.com/actions/setup-node) action
 
+
 ## 'run:'
 
 In addition to running pre-built actions, the workflow can also execute commands, just as you would if you had direct access to the virtual machine. In this portion of the template workflow, we run some common commands relevant to Node.js projects, like `npm install` to install dependencies and `npm test` to run the chosen testing framework.
@@ -143,14 +149,17 @@ To learn more about the fields discussed here, see:
 ---
 
 If you don't see an explanation of your CI logs below when the workflow has executed, refresh this page.
+
 ## What is this pull request doing? 
 
 This pull request introduces [Jest](https://jestjs.io), a popular JavaScript testing framework. We'll use it to learn how to use it for continuous integration.
 
 When the bot asks you to, merge this pull request.
+
 Great job! Go ahead and merge this pull request so your changes are automatically shared with anyone that contributes to this project.
 
 I'll respond when you merge this pull request.
+
 
 # Running - and failing - workflow
 
@@ -172,6 +181,7 @@ Not to worry, I've got you covered! Navigate to the open pull request titled [Ad
 
 1.  Navigate to the open pull request titled [Add Jest tests]({{ url }})
 2.  Merge the pull request
+
 # Waiting on tests
 
 Great! Now that the testing framework is properly configured, we should get a response from it soon. This time, you'll practice reading the logs on your own. Just like before, you can follow along as GitHub Actions runs your job by going to the [Actions tab]({{ actionsUrl }}) or by clicking on "Details" in the merge box below.
@@ -191,7 +201,9 @@ When the tests finish, you'll see a red X :x: or a green check mark :heavy_check
 3. Comment the name of the failing test here
 
 I'll respond when you enter the name of at least one failing test. You can either copy and paste that portion of the log directly, or type the name of the test as a comment.
+
 Let's go to the [next step]({{ url }}).
+
 
 That wasn't the test name I expected, but that's alright. If you typed something slightly different than what I looked for that may explain it. 
 
@@ -201,6 +213,7 @@ I expected one of the following test names:
 - Sets the current player to be whoever it is not
 
 Let's keep going anyway!
+
 # Reading failed logs
 
 One of the failing tests is: `Initializes with two players`. If you dig deeper into the logs, you may notice these results in particular:
@@ -244,6 +257,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Try making a commit on this branch. Our workflow is triggered with a `push` event, and committing to this branch will result in a new `push`
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
 </details>
+
 ## Step 5: Fix the test
 
 This line is causing the problem. Let's fix it by initializing this instance of `p2` to the proper value. 
@@ -257,15 +271,18 @@ Edit the `src/game.js` file directly, or accept the suggestion below.
 ```
 
 Once you commit the changes, the tests will run again and should pass. I'll respond when the tests pass. If the tests don't pass, I'll provide some troubleshooting information.
+
 The Actions workflow failed and I was expecting it to succeed. Let's see if we can find how to fix it.
 
 Try the following:
 {{ troubleshooting }}
 
 I'll respond when you commit and the tests run again.
+
 Great job! Go ahead and merge this pull request so your changes are automatically shared with anyone that contributes to this project.
 
 I'll respond when you merge this pull request.
+
 
 # Custom workflow
 
@@ -303,7 +320,9 @@ Can GitHub Actions support this workflow? Let's find out. We'll tackle some of t
 
 I'll respond when you open the pull request.
 
+
 Let's go to the [next step]({{ url }}).
+
 
 The title of this pull request isn't what I expected!
 
@@ -313,11 +332,13 @@ To rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 # Matrix builds
 
 Great work so far! By targeting specific versions of Node, we've configured a **build matrix** which allow us to test across multiple operating systems, platforms, and language versions. See [Configuring a matrix build](https://help.github.com/en/articles/configuring-a-workflow#configuring-a-build-matrix) in GitHub Help if you'd like to learn more.
 
 I'll respond when you commit the changes in the comment below.
+
 
 ## Step 8: Target a Windows environment
 
@@ -340,6 +361,7 @@ You can follow the suggestion, or manually make the changes in the numbered inst
 4. Commit your workflow changes to this branch.
 
 I'll respond in this pull request when you've committed.
+
 
 # New Job
 
@@ -464,6 +486,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
 </details>
 
+
 # Waiting on tests
 
 Great! We've now got two nicely separated `build` and `test` jobs. Our custom workflow now accounts for:
@@ -495,6 +518,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Try making a commit on this branch. Our workflow is triggered with a `push` event, and committing to this branch will result in a new `push`
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
 </details>
+
 # Use the upload
 
 The workflow has finished running!
@@ -535,6 +559,7 @@ _You can follow the manual steps below, or accept the suggestion in the followin
 
 I'll respond when you commit to this branch.
 
+
 You can commit this suggestion directly.
 
 ```suggestion
@@ -543,6 +568,7 @@ You can commit this suggestion directly.
           name: webpack artifacts
           path: public/
 ```
+
 
 # Use the download
 
@@ -596,11 +622,13 @@ _You can follow the manual steps below, or accept the suggestions in the followi
     
 I'll respond when you've edited your workflow file. 
 
+
 You can commit this suggestion directly.
 
 ```suggestion
     needs: build
 ```
+
 You can commit this suggestion directly.
 
 ```suggestion
@@ -610,6 +638,7 @@ You can commit this suggestion directly.
         path: public
     - name: npm install, and test
 ```
+
 
 # Merge the CI
 
@@ -634,6 +663,7 @@ In the next few steps, we'll finish supporting our team's workflow:
 - **obvious approvals** so we can merge quickly and potentially automate merges and deployments
 
 I'll respond when you merge this pull request.
+
 
 # Partial workflow
 
@@ -662,7 +692,9 @@ GitHub Actions can run multiple workflows for different event triggers. Let's cr
 
 I'll respond when you commit to this branch.
 
+
 Let's go to the [next step]({{ url }}).
+
 
 # Choose the event
 
@@ -679,6 +711,7 @@ Full details are available in [Events that trigger workflows](https://help.githu
 For a review workflow, we want to engage with human reviews, instead. For example, we'll use the [Label approved pull requests action](https://github.com/pullreminders/label-when-approved-action) so that we can easily see when we've gotten enough reviews to merge a pull request.
 
 Let's prep our review workflow by triggering it with a [`pull_request_review` event](https://help.github.com/en/articles/events-that-trigger-workflows#pull-request-review-event-pull_request_review).
+
 
 ## Step 15: Use an action to automate pull request reviews
 
@@ -699,11 +732,13 @@ on: pull_request_review
 1. Commit your changes to this branch
 
 I'll respond when you commit something to this branch.
+
 # Add a job
 
 Great work! Let's get some more practice with jobs. Apply the suggested change below or follow the instructions.
 
 In a later step, we'll use an action that adds a label to any pull requests after a preset number of approvals. These labels could be used as a visual indicator to your team that something is ready to merge, or even as a way to use other actions or tools to automatically merge pull requests when they receive the required number of approvals.
+
 
 ## Step 16: Create an approval job in your new workflow
 
@@ -720,6 +755,7 @@ In a later step, we'll use an action that adds a label to any pull requests afte
 1. Commit your changes to this branch
 
 I'll respond when you commit something to this branch.
+
 
 # Add a step
 
@@ -752,6 +788,7 @@ Let's see if you can use this action on your own.
 
 I'll respond when you push a new commit to this branch.
 
+
 ### Step 17: Hint
 
 1. Edit the [workflow file]({{ editUrl }}) on this branch.
@@ -767,6 +804,7 @@ I'll respond when you push a new commit to this branch.
             ADD_LABEL: "approved"
     ```
 1. Commit your changes to this branch. 
+
 
 # Our workflow
 
@@ -804,7 +842,9 @@ Next, add branch protections and continue with the course.
 
 I'll respond when I receive an approval from your pull request review. 
 
+
 I couldn't detect your protected branch. Please protect your master branch, and approve this pull request once again.
+
 # Congratulations!
 
 Nice work, you did it! Your workflows now contain:
@@ -820,6 +860,7 @@ Nice work, you did it! Your workflows now contain:
 
 There's so much more you can do with continuous integration, and you have a solid start. Now...[what will you learn next]({{ host }}/courses)?
 
+
 # Completed workflows
 
 Awesome work! Our workflows are now complete.
@@ -827,5 +868,7 @@ Awesome work! Our workflows are now complete.
 GitHub Actions will apply a label to this pull request because you've approved it. This may take a few moments to run, you can follow along in the Actions tab.
 
 Labeling the pull request allows us to automate the merging of pull requests. I'll act as the :robot: automation in this example and merge the pull request for you.
+
 Let's go to the [next step]({{ url }}).
+
 

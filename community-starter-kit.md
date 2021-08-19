@@ -39,6 +39,7 @@ We want to thank the maintainers of [**welcome-bot**](https://github.com/behavio
 <hr>
 <h3 align="center">Keep reading below to find your first task.</h3>
 
+
 ## Step 1: Add a Repository Description
 
 First, let's focus on helping others understand Mona's project. After all, people are most likely to contribute to projects they use, so `no users === no contributors`.
@@ -76,6 +77,7 @@ Mona is working on a first draft of the `README.md`. Can you help by adding a de
 
 > :robot: Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps.
 
+
 ## Step 2: Edit the README.md
 
 :wave: @{{ user.username }}, Mona has created a README and needs your help making it great. :sparkles:
@@ -108,11 +110,13 @@ You can follow the manual steps below, or accept the [suggested changes](https:/
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
 
+
 Write a great description here or accept this suggested change.
 
 ```suggestion
 A GitHub App built with [probot](https://github.com/probot/probot) that celebrates new user activity within your repository.
 ```
+
 Write your app's features here or accept this suggested change.
 
 ```suggestion
@@ -121,6 +125,7 @@ Welcome new users with maintainer defined comments the first time your users:
 - Open a new pull request
 - Merge their first pull request
 ```
+
 Great work setting your repository description, @{{ user.username }}! Mona has finished the first draft of the README and has opened a pull request. Head over there now to see what's next. 
 
 I'll close this issue since we don't need it anymore!
@@ -128,11 +133,13 @@ I'll close this issue since we don't need it anymore!
 <hr>
 <h3 align="center">Go to <a href="{{ store.readmePrUrl }}">the pull request</a>.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 I was looking for you to replace the description placeholder, but it looks like it's still there. Writing a great :sparkles: project description can be intimidating. What do you think of something like this?
 
 > A GitHub App built with [probot](https://github.com/probot/probot) that celebrates new user activity within your repository.
@@ -150,6 +157,7 @@ You can accept the suggested changes, or make the change manually as follows:
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 
 I was looking for you to replace the features placeholder, but it looks like it's still there. Marketing gave us a with a few bullets for the features (they are so good at this stuff). Here is what they recommended:
 
@@ -172,6 +180,7 @@ You can accept the suggested changes, or make the change manually as follows:
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
 
+
 ## Step 3: Approve and merge the pull request.
 
 This `README.md` is looking great! Let's go ahead and merge it. There's a lot more to do!
@@ -187,26 +196,31 @@ You can also approve by clicking on **Files changed**, clicking on **Review chan
 <hr>
 <h3 align="center">I'll respond when you've approved this pull request.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 The `README.md` is a great introduction, but some documentation will help users feel even more supported as they start using the app. Mona has created a draft. Can you help?
 
 <hr>
 <h3 align="center">Check out <a href="{{ store.docsPrUrl }}">the pull request</a>.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## Understanding contributors
 
 Most contributors take a gradual path to getting involved in an open source community. It usually looks something like this: 
@@ -246,16 +260,19 @@ In open source projects, templates make it easy for new contributors to create b
 <hr>
 <h3 align="center">I'll respond when I detect a new pull request titled <b>Update issue templates</b>.</h3>
 
+
 You have been a huge help to Mona in preparing the repository for new users. Next, let's shift our focus to Mona's future contributors. Mona has been busy putting some thoughts together and is ready for your eyes. :eyes:
 
 <hr>
 <h3 align="center">Check out <a href="{{ store.templatesIssueUrl }}">the next issue</a>.</h3>
+
 
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 It looks like you created a new file with a name I wasn't expecting, or in a location I wasn't expecting. In order to use templates, they must be located at `.github/ISSUE_TEMPLATE/`.
 
 I'm specifically looking for the following file: `.github/ISSUE_TEMPLATE/bug_report.md`. You can have additional templates, but I'm doing a quick check to ensure this file exists.
@@ -280,6 +297,7 @@ To ensure the issue template exists:
 <hr>
 <h3 align="center">I'll respond when I detect a new pull request titled <b>Update issue templates</b>.</h3>
 
+
 ## Step 7: Merge the issue template
 
 These issue templates are going to help users become contributors in no time! Let's go ahead and merge them in. 
@@ -291,11 +309,13 @@ These issue templates are going to help users become contributors in no time! Le
 
 <hr>
 <h3 align="center">I'll respond when you've merged this pull request.</h3>
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## Step 8: Add a CONTRIBUTING guide
 
 A contributing guide provides important information to those who are interested in helping you with your project. Without a contributing guide, they might not know what you need help with, how they can get started, or how you like to communicate.
@@ -317,21 +337,25 @@ You can follow the manual steps below, or accept the [suggested change](https://
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 Write a great description for each label here or accept this suggested change.
 
 ```suggestion
 - **help-wanted**: used when an issue or PR is up for grabs
 ```
+
 This is project is looking great @{{ user.username }}. While the issue templates are helpful, community members who want to contribute changes will need a little more support. Can you help Mona put together a CONTRIBUTING guide? Don't worry, I'll give you more information in the pull request.
 
 <hr>
 <h3 align="center">Go to the pull request <a href="{{ store.contribPrUrl }}">here</a>.</h3>
+
 
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 It looks like one or more of the labels still need a description. Can you help out with these?
 
 ### :keyboard: Activity: Updating label descriptions
@@ -345,6 +369,7 @@ Accept the suggested changes or manually edit the file as follows.
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 
 ## Step 9: Add labels
 
@@ -376,11 +401,13 @@ These initial labels are awesome, but most maintainers add (or delete) labels to
 <hr>
 <h3 align="center">I'll respond when I detect a label on this pull request.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## Step 10: Merge the CONTRIBUTING guide
 
 Nice work @{{ user.username }}! You successfully added labels to this project. Labels will help Mona and her community keep things organized and quickly identify what an issue or pull request is trying to accomplish.
@@ -398,11 +425,13 @@ You can also approve by clicking on **Files changed**, clicking on **Review chan
 <hr>
 <h3 align="center">I'll respond when you've approved this pull request.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## Step 11: Add the LICENSE
 
 Licenses are vital in open source repositories, because they set the rules for how others are allowed to use, change, and contribute to your project. In fact, if Mona doesn't add an open source license to her project, it is not technically open source -- in that case, it could be considered copyrighted work.
@@ -424,11 +453,13 @@ You can follow the manual steps below, or accept the [suggested change](https://
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 Enter your own year and name, or accept this suggestion.
 
 ```suggestion
 Copyright (c) 2020 {{ user.login }}
 ```
+
 There are just a few more things left to do. First, you need to let the world know how they can use Mona's project and second, you need to let them know the kind of behavior Mona expects.
 
 Mona has done a ton of research on licenses, let's see which one she has selected.
@@ -436,11 +467,13 @@ Mona has done a ton of research on licenses, let's see which one she has selecte
 <hr>
 <h3 align="center">Go to the pull request <a href="{{ store.licensePrUrl }}">here</a>.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 :wave: @{{ user.username }}, there are two placeholders for `[year]` and `[fullname]`. Can you please update these with the year and Mona's name? Oh, maybe you didn't know ... her full name is Monalisa Octocat.
 
 ### :keyboard: Activity: Updating placeholder text
@@ -454,6 +487,7 @@ Accept the suggested changes or manually edit the file as follows.
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 
 ## Step 12: Merge the license
 
@@ -470,11 +504,13 @@ You can also approve by clicking on **Files changed**, clicking on **Review chan
 <hr>
 <h3 align="center">I'll respond when you've approved this pull request.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 Add your own Code of Conduct, or accept the suggestion below.
 
 ```suggestion
@@ -607,16 +643,19 @@ For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 ```
+
 With your help, this is really flying! Mona has started on the Code of Conduct, she's waiting for you over there.
 
 <hr>
 <h3 align="center">Go to the pull request <a href="{{ store.cocPrUrl }}">here</a>.</h3>
+
 
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 Something is not quite right. Do you mind trying again?
 
 ### :keyboard: Activity: Add a Code of Conduct
@@ -629,6 +668,7 @@ Accept the suggested changes above or manually edit the file as follows.
 
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
 ## Step 14: Merge the Code of Conduct
 
 We're almost there @{{ user.username }}! Go ahead and merge the Code of Conduct now!
@@ -644,11 +684,13 @@ You can also approve by clicking on **Files changed**, clicking on **Review chan
 <hr>
 <h3 align="center">I'll respond when you've approved this pull request.</h3>
 
+
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## Step 15: Help users find the project
 
 GitHub uses repository topics to help people find projects that might be of interest based on their search patterns or the projects they are working on.
@@ -666,16 +708,19 @@ Mona would like to add a few topics to this repository. Can you help her out?
 
 > :robot: I'm waiting for you to close this issue
 
+
 All of the necessary files are complete! Now we just need to help Mona get eyes :eyes: on her project. I have a few ideas that might help and I've dropped them in [this issue]({{ store.visibilityIssueUrl }}).
 
 <hr>
 <h3 align="center">Go to the issue <a href="{{ store.visibilityIssueUrl }}">here</a>.</h3>
+
 
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
 ## It's a wrap!
 
 Mona's project is all ready to be published as open source, thanks to you @{{ user.username }}!
@@ -693,4 +738,5 @@ During this course you successfully:
 - Made Mona's project easy to find
 
 Want to keep learning? Feel free to [check out our other courses]({{ host }}/courses).
+
 

@@ -25,6 +25,7 @@ Now that you know the recommended version, it's time to edit the `package.json` 
 1. Fix the vulnerability by updating to the latest version of the dependency that you took note of earlier.
 1. Scroll down, and commit your change.
 
+
 ## :tada: Welcome to Securing your workflows!
 
 In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository is important for many reasons.
@@ -76,6 +77,7 @@ For a printable version of the steps in this course, check out the [Quick Refere
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
 
+
 ## Taking advantage of the `.gitignore` file for security
 
 From time to time, there are files you don't want Git to check in to GitHub. You may want to ignore files that contain sensitive credentials or information which should not be pushed to your repository. There are a few ways to tell Git which files to ignore.
@@ -105,6 +107,7 @@ For a printable version of the steps in this course, check out the [Quick Refere
 <h3 align="center">Return to this pull request for my next comment.</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
+
 
 ## Finding vulnerable dependencies
 
@@ -150,21 +153,25 @@ For a printable version of the steps in this course, check out the [Quick Refere
 <hr>
 <h3 align="center">Return to this issue for my next comment.</h3>
 
+
 Great work. Make sure to complete the first few steps in your settings. Then, you should be able to see your published [memory game on GitHub Pages]({{ pages }}).
 
 <hr>
 <h3 align="center">I've opened <a href="{{ url }}">another issue with the next steps.</a></h3>
+
 
 Nice work!
 
 <hr>
 <h3 align="center">I've opened a <a href="{{ repoUrl }}/pull/1">pull request with your next steps.</a></h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, so you can keep editing the file here. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 3: Merge this pull request
 
@@ -175,14 +182,17 @@ _Note: You might notice that this repository has a `package.json` file, but no `
 ### :keyboard: Activity: Merge
 1. Merge this pull request.
 
+
 Oh no! @{{ user.username }}, it looks like you have accidentally closed this issue. To complete this activity, please use the instructions provided to close this issue in its correct sequence of steps. I'll open it again for you.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 Nice job merging @{{ user.username }}. Go ahead and delete the branch.
 
 <hr>
 <h3 align="center">Let's learn about <code>.gitignore</code> files in the <a href="{{ repoUrl }}/pull/3">next pull request.</a></h3>
+
 
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
@@ -191,6 +201,7 @@ It looks like you've made a commit but there's still something not right about t
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
 
+
 ## Step 6: Merge this pull request
 
 This looks great @{{ user.username }}, thanks for adding a `.env` file to the `.gitignore`. Feel free to add any other file or potential sensitive data to the `.gitignore` file.
@@ -198,9 +209,11 @@ This looks great @{{ user.username }}, thanks for adding a `.env` file to the `.
 ### :keyboard: Activity: Merge
 1. Merge this pull request.
 
+
 It looks like you have accidentally closed this pull request. To complete this activity, please use the instructions provided to try again. I've reopened it so you can continue.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Nice work
 
@@ -235,8 +248,10 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 <hr>
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished.</h3>
 
+
 Congratulations, you've done it @{{ user.username }}! Go ahead and delete the branch.
 
 <hr>
 <h3 align="center">Find your final issue <a href="{{ url }}">here</a> now.</h3>
+
 

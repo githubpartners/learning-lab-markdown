@@ -34,6 +34,7 @@ InnerSource and open source are the same thing.
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 This pull request is about repository ownership and naming conventions.
 
 ### Challenge question
@@ -45,6 +46,7 @@ Does a repository exist at https://github.com/githubtraining/training-manual?
 
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
+
 ### Answer :crystal_ball:
 
 InnerSource and open source are very similar concepts, but they're not the same.
@@ -55,6 +57,7 @@ InnerSource and open source are very similar concepts, but they're not the same.
 
 <hr>
 <h3 align="center">You can find your next steps in the <a href="{{ url }}">next pull request</a>.</h3>
+
 ### Answer :crystal_ball:
 
 A repository _does_ exist at githubtraining/training-manual, but it is private.
@@ -90,6 +93,7 @@ Here are some recommendations based on some :sparkles: admirable :sparkles: use 
 <hr>
 <h3 align="center">I'll respond after you merge this pull request.</h3>
 
+
 This pull request is about making repositories discoverable.
 
 ### Challenge question
@@ -101,7 +105,9 @@ What is this repository for?
 <hr>
 <h3 align="center">I'll respond when I detect your new comment on this pull request.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 ### Answer :crystal_ball:
@@ -127,6 +133,7 @@ Discover more about how to make a repository discoverable by visiting the **File
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Let's now learn about issue and pull request templates.
 
 ### Challenge question
@@ -140,7 +147,9 @@ Here are four different ways you could submit a bug report. Which is the _right_
 
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 ### Answer :crystal_ball:
@@ -158,6 +167,7 @@ But, how could you know? With issue and pull request templates, you can take the
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 This pull request covers a few common workflows that may be used within your organization.
 
 ### Challenge question
@@ -175,7 +185,9 @@ Suppose you'd like to contribute to the repository pictured below. Which branch 
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 ### Answer :crystal_ball:
@@ -197,6 +209,7 @@ This pull request covers the basics, but here are some recommendations to help a
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 It's time to discuss project management!
 
 ### Challenge question
@@ -213,7 +226,9 @@ Here's some open issues in this company project. You're eager to help with this 
 
 <hr>
 <h3 align="center">I'll respond when you check one of the answers above.</h3>
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 ### Answer :crystal_ball:
@@ -231,6 +246,7 @@ Being explicit about your project management tool will help potential contributo
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Once you've implemented InnerSource strategies, how do you know it's working? 
 
 ### Challenge question
@@ -240,7 +256,9 @@ What might be some ways to measure the success of InnerSource strategies?
 <hr>
 <h3 align="center">I'll respond when you comment on this pull request.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 ### Answer :crystal_ball:
@@ -263,6 +281,7 @@ Here are some other ideas for measuring how well you're doing:
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 ### Almost done!
 
 It's time to publish the InnerSource toolkit you've been working on.
@@ -278,7 +297,9 @@ That's all! GitHub Pages will then deploy your site and report its status back t
 <hr>
 <h3 align="center">I'll respond when I detect that GitHub Pages has finished deploying your site.</h3>
 
+
 You can find your next steps in your [next pull request]({{ url }}).
+
 
 
 # :tada: Congratulations
@@ -298,4 +319,5 @@ You finished this course. You can see a deployed version of our work together at
 I won't track any further events in this repository.
 
 Your next steps are in the [Innersource learning path](https://lab.github.com/githubtraining/innersource:-theory-to-practice).
+
 

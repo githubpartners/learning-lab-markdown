@@ -2,7 +2,7 @@
 
 _LilyPond is an open source technology for notating music in plain text files. In this course, we'll cover the fundamentals of music notation in LilyPond._
 
-![](undefined)
+![](https://repository-images.githubusercontent.com/213956151/35cc6c80-587c-11ea-877f-49876fc4bc2b)
 
 **Tags**: none
 
@@ -67,6 +67,7 @@ This pull request introduces a file called `twinkle-twinkle.ly`. This file is th
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the proper note!
 
 I'm specifically looking for the following line:
@@ -76,6 +77,7 @@ I'm specifically looking for the following line:
 ```
 
 I'll respond when I detect a new commit on this branch.
+
 # Rhythm with LilyPond
 
 ### Our project right now
@@ -130,6 +132,7 @@ If you sing, play, or read this music as it currently is, you will notice that t
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the proper rhythm!
 
 I'm specifically looking for the following line:
@@ -140,6 +143,7 @@ I'm specifically looking for the following line:
 ```
 
 I'll respond when I detect a new commit on this branch.
+
 # Time signatures
 
 ### Our project right now
@@ -195,6 +199,7 @@ Right now, the time signature of this piece is not specified. Let's try out a ch
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the proper time signature!
 
 I'm specifically looking for the following line:
@@ -210,6 +215,7 @@ I'm specifically looking for the following line:
 Note: the ellipses (`...`) are just placeholders for areas that this section doesn't focus on. Do not copy and paste the ellipses into your code.
 
 I'll respond when I detect a new commit on this branch.
+
 # Chords with LilyPond
 
 ### Our project right now
@@ -252,6 +258,7 @@ Let's add another chord to the last note of the piece!
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the proper chord!
 
 I'm specifically looking for the following line:
@@ -261,6 +268,7 @@ I'm specifically looking for the following line:
 ```
 
 I'll respond when I detect a new commit on this branch.
+
 # Key Signatures
 
 ### Our project right now
@@ -300,6 +308,7 @@ Let's add some drama and change the key to `c minor`.
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the proper key signature!
 
 I'm specifically looking for the following line:
@@ -315,6 +324,7 @@ I'm specifically looking for the following line:
 Note: the ellipses (`...`) are just placeholders for areas that this section doesn't focus on. Do not copy and paste the ellipses into your code.
 
 I'll respond when I detect a new commit on this branch.
+
 # Accidentals
 
 ### Our project right now
@@ -351,6 +361,7 @@ Let's make the _second_ `a` in the piece a _flat_.
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the accidentals!
 
 I'm specifically looking for the following line:
@@ -360,6 +371,7 @@ I'm specifically looking for the following line:
 ```
 
 I'll respond when I detect a new commit on this branch.
+
 # Dynamics
 
 ### Our project right now
@@ -392,6 +404,7 @@ As seen on [LilyPond's documentation](http://lilypond.org/doc/v2.18/Documentatio
 
 I'll respond when I detect a new commit on this branch.
 
+
 I wasn't able to find that you added the accidentals!
 
 I'm specifically looking for the following line:
@@ -401,6 +414,7 @@ I'm specifically looking for the following line:
 ```
 
 I'll respond when I detect a new commit on this branch.
+
 # Final steps
 
 ### Our project right now
@@ -425,9 +439,11 @@ You've done it! Go ahead and please approve, then merge this pull request.
 
 I'll respond when you merge this pull request.
 
+
 # What's next?
 
 In this pull request, you'll find the start of a new song. What music will you write next?
+
 Good job, @{{ user.username }}! You're done! We opened [a pull request]({{ prLink }}) with your final _notes_.
 
 ![congratulations](https://octodex.github.com/images/welcometocat.png)
@@ -451,4 +467,5 @@ In this course, you learned how to notate music with LilyPond. You
 - For a more thorough introduction, look at the [Learning Manual](http://lilypond.org/doc/v2.18/Documentation/learning/index.html).
 - For over 2000 free scores in LilyPond format, check out [Mutopia](https://www.mutopiaproject.org/).
 - Play with LilyPad live on [LilyBin](http://lilybin.com/).
+
 

@@ -44,6 +44,7 @@ I'll respond in the new pull request when I detect it has been created.
 
 If at any point you're expecting a response and don't see one, refresh the page.
 
+
 ## Oh no...  I found an error ⚠️
 
 **Error**
@@ -58,9 +59,11 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## While we wait!
 
 Great job adding the workflow. Adding that file to this branch is enough for GitHub Actions to begin running on your repository. The time this takes will vary based on the complexity of the workflow. While this runs I'll briefly explain the components of the workflow you just added.
@@ -81,6 +84,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Try making a commit on this branch. Our workflow is triggered with a `push` event, and committing to this branch will result in a new `push`
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
   </details>
+
 
 ## Anatomy of GitHub Actions
 
@@ -110,6 +114,7 @@ When a repository is configured with a **workflow** file, like we just created, 
 3.  The runner, regardless of the hosting method, is responsible for carrying out the jobs which are defined
 4.  A job is series of steps, which can be actions or commands
 5.  When the steps complete a report is generated and can be viewed by anyone with access to the repository
+
 
 
 
@@ -175,9 +180,11 @@ Let's take a second to talk about each of the pieces that we see here:
 
 *if you don't see a response from me below this, try making a new commit to this branch.  Your workflow may have finished before I was ready to listen*
 
+
 :robot: I'm here to help you debug.
 
 {{ debug }}
+
 
 ## Our workflow has finished 🎉
 
@@ -211,6 +218,7 @@ If you said `actions/checkout@v1` you'd be correct 😄!
 
 If you want to see this for yourself head over to your [Actions tab]({{actinosUrl}}) and examine the workflow named `CI`
 
+
 ## Edit the current workflow
 
 Currently `my-workflow.yml` is not set up correctly for our use-case. It worked great for allowing us to take a high-level look at workflows, but if we want to use our custom actions there are some changes that we have to make to it.
@@ -238,9 +246,11 @@ I'll respond in this pull request once you make these changes.
 
 
 
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -253,6 +263,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 Uh oh, I'm specifically checking whether the file `{{ filename }}` ends with:
 
 ```yaml
@@ -267,6 +278,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -279,6 +291,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 ## Finishing the workflow
 
 @{{user.login}} you're doing great so far 😄!  You've had to do a lot of workflow set up so we can begin writing custom actions.  We have just one more thing to add to our `my-workflow.yml` file before we get to the action side of things.
@@ -327,6 +340,7 @@ If you'd like to see more examples of workflows and actions then check out these
 
 I'll respond when I notice you've made these changes
 
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -339,6 +353,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 ## On to your development environment
 
 @{{user.login}} our JavaScript actions are going to leverage the [GitHub ToolKit](https://github.com/actions/toolkit) for developing GitHub Actions.
@@ -405,6 +420,7 @@ Once you have the necessary tools installed locally, follow these steps to begin
 
 I will respond once you have finished.
 
+
 ## Great Job 👍
 
 Your workflow is now set up to execute two actions when any `push` event happens on this repository.
@@ -412,9 +428,11 @@ Your workflow is now set up to execute two actions when any `push` event happens
 For now, this workflow will fail.  It fails because we have not yet created the `hello-world` action, so this is expected.
 
 Head [over here]({{issueUrl}}) to get started in creating the `hello-world` action!
+
 You correctly pushed a new branch, but I was expecting that branch to be called `{{ expected }}`. Please push a new branch with the expected name.
 
 I'll respond when I detect a new push to this repository.
+
 Please ensure that on your `hello-world` branch, you've taken the following steps:
 
 ```shell
@@ -442,6 +460,7 @@ This will generate a number of files, but I'm spot checking that:
       "@actions/core": "^1.2.1"
     }
     ```
+
 ## Anatomy of an action
 
 Earlier you learned how the different pieces of the GitHub Actions feature work together. Now you will learn about the components that make up an individual action.
@@ -477,11 +496,13 @@ That step is looking for a file named `action.yml`.
 
 Because `action.yml` is non-existent in the `hello-world` directory we see this error. So let's start by talking about, and creating, the missing `action.yml` file.
 
+
 ## Great job 👍
 
 I have created a [new pull request]({{pullUrl}}) where we will continue this lesson.  Click the link to meet me over there.
 
 In the meantime I have closed this issue since we wont be needing it anymore 😄
+
 
 ## Action metadata
 
@@ -505,6 +526,7 @@ This file defines the following information about your action:
 ---
 
 📖Read more about [Action metadata](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions)
+
 
 ## Enough talk, lets do this!
 
@@ -540,10 +562,13 @@ We will start with using the parameters that are **required** and later implemen
 I'll respond here once I notice that you've pushed your changes.
 
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## Runs
 
 As you have learned `runs:` defines the command necessary to execute your action.
@@ -577,6 +602,7 @@ This execution is visible from within your workflow. To save time I have include
 Look 👀, now we have a new error! We are totally making progress here! What we can reason from this output is that our `action.yml` file was found and read. Since we defined the `main:` parameter to point to a file named `main.js` the workflow looked for that file in the root of the `hello-world` directory, but since it couldn't find it the workflow fails.
 
 Let's fix this next!
+
 
 ## Time to code 💻
 
@@ -612,10 +638,13 @@ The first iteration of our action will follow the traditional path of logging "H
 
 I'll respond here once the workflow has completed running. Remember, you need to **push** your changes to trigger it!
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## Congratulations 🎉
 
 Your very first JavaScript action has been written and executed within a workflow! You may be wondering how I know that and the truth is that GitHub Actions provide real-time logging of the events happening within the runner! Since our action prints to the console we can just expand that step in our workflow and look at the standard output that is on our screen.
@@ -623,6 +652,7 @@ Your very first JavaScript action has been written and executed within a workflo
 You can do this in your own [Actions tab]({{actionsUrl}}) or you can settle for examining the screenshot below to see our **Hello World** statement in place of where our previous errors existed.
 
 ![hello world success](https://i.imgur.com/NDQjAx6.png)
+
 
 ## Using input parameters
 
@@ -726,6 +756,7 @@ The `@actions/core` package brings a few more methods along with it to help us i
 
 📖Read more about the [input parameter](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions#inputs)
 
+
 ## Your turn!
 
 ### :keyboard: Activity: Add input parameters
@@ -826,6 +857,7 @@ If you workflow is failing, please double check your:
 Look for linter errors or any errors reported on the Actions tab. I will respond when I receive another workflow run is completed.
 </details>
 
+
 Uh oh, the workflow finished running, but I was expecting it to be successful. Instead, GitHub reports that its conclusion is: `{{ conclusion }}`.
 
 Please double check your:
@@ -834,6 +866,7 @@ Please double check your:
 - workflow file
 
 Look for linter errors or any errors reported on the Actions tab. I will respond when I receive another workflow run is completed.
+
 ## Take a 👀 at what you made!
 
 Great Job 👍 making those changes @{{user.login}}.  I will take just a moment to walk you through what happened.
@@ -856,6 +889,7 @@ Circling back to the `fist-greeting` you may have noticed that you were able to 
 
 Had you been explicit with `third-greeting` in the `my-workflow.yml` file then the `if` statement in the `main.js` file would have executed and you would have three inputs.
 
+
 ##  Time for you to explore
 
 Take a few minutes to play with the current code you have.  I don't suggest editing the `main.js` file, rather I think there is a lot to gain by changing the `my-workflow.yml` file to include or exclude certain input parameters. 
@@ -873,7 +907,9 @@ Our next lesson will show you how to add external libraries to an action as well
 ---
 
 When I notice that you have merged this branch I will open a **new issue** in your repository to continue guiding you. 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 ## Who's there?
 
 GitHub Actions... thats who!
@@ -935,11 +971,13 @@ We are also going to demonstrate having multiple files make up an action as well
 
 What are we waiting for, let's get started 😉
 
+
 ## Congrats on your first Action 🎉
 
 Congratulations {{user.login}} you have officially written your first GitHub JavaScript action!!!
 
 That's super exciting news, but this lesson has just start, so let's head over to the [new issue I've opened]({{issueUrl}}) to continue writing GitHub Actions.
+
 
 ## Breaking our workflow
 
@@ -978,6 +1016,7 @@ You will still see the workflow trying to execute with every push if you look at
 
 Like our first action, I'll respond in the new pull request when I detect it has been opened.
 
+
 ## Oh no...  I found an error ⚠️
 
 **Error**
@@ -992,9 +1031,11 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## {{user.login}} you're doing great 👍
 
 Just like the first action you wrote, you are going to need to setup a few directories and files.
@@ -1044,7 +1085,9 @@ Now that you have all the necessary tools installed locally, follow these steps 
 
 I will respond once you push a new commit to the `{{ branch }}` branch.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Please ensure that on this branch, you've taken the following steps:
 
 ```shell
@@ -1074,6 +1117,7 @@ This will generate a number of files, but I'm spot checking that:
       "request-promise": "^4.2.5"
     }
     ```
+
 ### :keyboard: Activity: Create the metadata file
 
 💡All of the following steps take place inside of the `.github/actions/joke-action` directory.
@@ -1108,10 +1152,13 @@ We will not use the `joke-output` in in this portion of the course. There will b
 
 I'll respond when you push to this branch. 
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## Files? 🤔
 
 Yes... files... plural. As you probably know, in JavaScript and other programming languages it is common to break your code into modules so that it is easier to read and maintain going forward. Since JavaScript actions are just programs written in JavaScript that run based on a specific trigger we are able to make our action code modular as well.
@@ -1274,10 +1321,13 @@ _Don't forget to call the `run()` function._
 
 I'll respond in this pull request when you have pushed to this branch.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## Using your new action
 
 At this point we can't expect much from our workflow, if you remember all of its contents are commented out. Let's go ahead and fix that now so that we can see our action fetch us a joke.
@@ -1319,10 +1369,13 @@ Let's change the tigger and add the joke action
 
 I'll respond once you commit your changes
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -1335,6 +1388,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 ## {{user.login}} get ready to laugh
 
 Great job! Everything is all set up and now we are ready to start laughing 🤣. You will find you have some joke related labels available to you in this repository. You don't have to use them, any label will trigger our workflow, but it might be easier to follow along with me if you use the labels I suggest.
@@ -1351,7 +1405,9 @@ Feel free to continue adding labels to this pull request if you want to see more
 
 When you are ready to move forward in the lesson merge this pull request into the `main` branch.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 ## Action three
 
 Two actions down, one more to go! Before we move on with building our final action let's take a second to do a quick recap since this lesson has thrown a lot of information at you.
@@ -1416,11 +1472,13 @@ We need to make some edits to the `my-workflow.yml` file to get it configured to
 
 Like our other actions, I'll respond in the new pull request when I detect it has been opened.
 
+
 ## Congrats on your second action 🎉
 
 Congratulations {{user.login}} you have officially written two GitHub JavaScript actions!!!
 
 Next, you'll write your final action of this course, so let's head over to the [new issue I've opened]({{issueUrl}}) to continue.
+
 
 ## Oh no...  I found an error ⚠️
 
@@ -1436,9 +1494,11 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -1451,6 +1511,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 Uh oh, I'm specifically looking to see whether `{{ filename }}` contains the following code:
 
 ```yaml
@@ -1463,6 +1524,7 @@ Got:
 ```yaml
 {{ got }}
 ```
+
 ## {{user.login}} it's time to get ready for the third action 🎉
 
 As with the other actions we wrote, we are going to need to setup a few directories and files.
@@ -1512,7 +1574,9 @@ Let's create our final project directory and install all the necessary dependenc
 
 I will respond once you have pushed to this branch.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Please ensure that on this branch, you've taken the following steps:
 
 ```shell
@@ -1541,6 +1605,7 @@ This will generate a number of files, but I'm spot checking that:
       "@actions/github": "^2.1.1"
     }
     ```
+
 ## Create and edit the third actions action.yml file
 
 Like our "hello world" action, this action will require at least one `input:` parameter. We need this parameter so that our JavaScript for this action has access to the `output:` from the joke action.
@@ -1606,10 +1671,13 @@ We will use the joke output, an `issue-title`, and the `repo-token` in this port
 
 I will respond when you commit to this branch.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 ## Let's write some JavaScript
 
 @{{user.login}} your **joke-action** stores a value in an `output:` parameter. We are going to use that value to create a new issue inside this repository!
@@ -1762,6 +1830,7 @@ run()
 
 _Don't forget to call the function, `run()`, on the last line so that your action executes!_
 
+
 ### :keyboard: Activity: Create the final JavaScript file
 
 I'm counting on you this time! In the previous steps I have guided you heavily on what to type along the way. This time I ask that you look back on the things you've done in this course and pull from the knowledge you already have to accomplish these tasks.
@@ -1815,10 +1884,13 @@ run();
 
 </details>
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 Uh oh, I expected a file that I didn't find. Please make sure there is a file at the path: `{{ need }}`.
 
 I'll respond when I detect a new commit on this branch.
+
 # Trigger all the things 🎉
 
 Let's trigger your new workflow! Add a label to this pull request, it can be any label you choose.
@@ -1835,7 +1907,9 @@ Try adding another label and see if you get a new joke!
 
 When you have finished experimenting, merge this pull request. I'll open a new issue containing the next steps once I detect you've closed this.
 
+
 Uh oh, I was expecting you to {{ expected }}. I will respond when you take this expected action.
+
 # Great job!
 
 You did it 🎉
@@ -1881,6 +1955,7 @@ Throughout this course I have promised to show you how to get rid of the `node_m
 
 I also want to take a few minutes to point you to the information you need to place your own custom actions on the [GitHub Marketplace](https://github.com/marketplace?type=actions) for others to use.
 
+
 ## Getting rid of node_modules
 
 We typically don't commit a `node_modules` folder in a repository. These can often grow to be huge if your project has many dependencies. Because of the way Node works this folder is a necessary evil, but there is a way to get rid of it!
@@ -1921,6 +1996,7 @@ Once you make this change you can delete the `node_modules` folder and commit th
 
 📖Further help [using ncc](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-javascript-action#commit-and-push-your-action-to-github) is in the GitHub Actions documentation.
 
+
 ## Publishing your actions
 
 Publishing your actions is a great way to help others in your team and across the GitHub community. Although actions do not need to be published to be consumed by adding them to the marketplace you make them easier to find.
@@ -1935,6 +2011,7 @@ Some notable actions you will find on the marketplace are:
 And that just scratches the surface of the 1600+ and counting actions you will find on the marketplace 😄
 
 📖Follow [this guide](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/publishing-actions-in-github-marketplace#publishing-an-action) to learn how to publish your actions to the GitHub Marketplace
+
 
 ## The End 😭
 
@@ -1952,4 +2029,6 @@ We would love to hear what you thought about this course, share your experience 
 
 To fully complete your course **close this issue**
 
+
 Great! Go to the [final issue]({{ url }}).
+

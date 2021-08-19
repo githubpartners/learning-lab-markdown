@@ -55,9 +55,11 @@ jobs:
     runs-on: ubuntu-latest
 ```
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Job conditionals
 
 GitHub Actions features powerful controls for when to execute jobs and the steps within them. One of these controls is `if`, which allows you run a job only when a specific condition is met. See [`jobs.<job_id>.if` in _Workflow syntax for GitHub Actions_](https://help.github.com/en/github/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idif) for more information.
@@ -96,9 +98,11 @@ jobs:
 
     if: contains(github.event.pull_request.labels.*.name, 'stage')
 ```
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Workflow steps
 
 So far, the workflow knows what the trigger is and what environment to run in. But, what exactly is supposed to run? The "steps" section of this workflow specifies actions and scripts to be run in the Ubuntu environment when new labels are added.
@@ -185,6 +189,7 @@ jobs:
           AWS_SECRET_KEY: {% raw %}${{ secrets.AWS_SECRET_KEY }}{% endraw %}
 ```
 
+
 # Completed Workflow
 
 Nice job, you've done it!
@@ -197,6 +202,7 @@ It won't be "working" yet, because our next step is to work on the configuration
 
 1. Merge this pull request
 2. Delete the `staging-workflow` branch
+
 # AWS Configuration - S3 Buckets
 
 GitHub Actions is cloud agnostic, so any cloud will work. We'll show how to deploy to AWS in this course.
@@ -220,7 +226,9 @@ Amazon S3 Buckets are a very flexible type of data storage -- they can be config
 5. Commit your changes.
 
 I'll respond when I detect a commit on this branch.
+
 You can find your next steps in the [next pull request]({{ url }}).
+
 # AWS Configuration files
 
 To deploy successfully to our S3 bucket on AWS, we need a few special configuration files.
@@ -247,7 +255,9 @@ I've requested your approval on this pull request. Once you approve this, I will
 
 1. Approve this pull request
 
+
 Uh oh - you reviewed this pull request, but you didn't approve it. Please approve it. 
+
 # Testing the workflow
 
 Now that the proper configuration and workflow files are present, let's test this action out!
@@ -261,7 +271,9 @@ In this pull request, there's a small change to the game. Once you add the label
 1. On the right hand side, click **Labels** or the gear next to it
 2. Select the label titled **stage**
 
+
 You can find your next steps in the [next pull request]({{ url }}).
+
 # Different triggers
 
 Deployments to production can be manual (like through a Chat Ops command), or automated (if, say, we trust our pull request review process and we've followed continuous integration practices).
@@ -292,6 +304,7 @@ on:
       - main
 ```
 
+
 The deployment may take a few moments but you've done the right thing. Once the deployment is successful, you'll see green check marks for each run, and you'll see a URL for your deployment.
 
 ![a screenshot of the Actions logs showing a completed deployment with an Output section and a staging URL](https://user-images.githubusercontent.com/16547949/68046896-6aa42a80-fcb3-11e9-9927-f493201167dc.png)
@@ -299,9 +312,11 @@ The deployment may take a few moments but you've done the right thing. Once the 
 You can wait for the deployment, or move on to the next steps in the [next pull request]({{ url }}). 
 
 If you'd like to come back and merge this once their other workflow is done, you can. :tada:
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 Great! The syntax you used tells GitHub Actions to only run that workflow when a commit is made to the main branch. 
 
 # Deploying to production
@@ -364,6 +379,7 @@ jobs:
           AWS_ACCESS_KEY: {% raw %}${{ secrets.AWS_ACCESS_KEY }}{% endraw %}
           AWS_SECRET_KEY: {% raw %}${{ secrets.AWS_SECRET_KEY }}{% endraw %}
 ```
+
 
 # Workflow steps
 
@@ -469,6 +485,7 @@ jobs:
           image-name: {{user.login}}-aws-ttt
 ```
 
+
 # Completed Workflow
 
 Nice job, you've done it!
@@ -479,6 +496,7 @@ Nice job, you've done it!
 
 1. Merge this pull request
 2. Delete the branch
+
 
 ## Nice work!
 
@@ -493,4 +511,5 @@ Now, we just have to wait for the deployment to occur, and for the package to be
 This course is now complete! I'll stop responding but the fun doesn't have to stop here. 
 
 Now...[what will you learn next]({{ host }}/courses)?
+
 

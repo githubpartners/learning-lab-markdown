@@ -131,6 +131,7 @@ Choose the drop-down below that best fits your current situation.
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 ## Step 2: Prepare the project
 
 ### Working with Binary files
@@ -163,10 +164,12 @@ Since the files to be ignored are dependent on the language you are using, the o
 
 > :robot: I'm waiting for you to close this issue before moving on.
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 
 ## Step 3: Make the move
 
@@ -283,12 +286,15 @@ GitHub Desktop doesn't allow you to add a new remote for an existing directory, 
 
 > :robot: Once you push your project to GitHub, I'll provide the next steps in your journey.
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
 
+
 I just wanted to remind you that I recommend having a `.gitignore` file in your project, if it needs one. Some projects might not need a `.gitignore` file and that is just fine :ok_hand:. If you decide later that you want to add a `.gitignore` file, use these [instructions](https://help.github.com/articles/ignoring-files/).
+
 ## Step 4: Private or Public?
 
 Right now, your repository is set to {% if private %}private{% else %}public{% endif %}.
@@ -310,12 +316,14 @@ Licenses, code of conduct, and other files are important when you create a publi
 
 :robot: I'm waiting for you to close this issue.
 
+
 Great job @{{ user.username}}! I see that content has now been added to this repository. :tada:
 
 I'm going to close this issue. Next, I'm going to open one last [issue]({{ issueURL }}) to discuss some important repository settings.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 
 # Nice Work
 
@@ -347,8 +355,10 @@ There's so much more you can do with GitHub, and you have a solid start. Now...[
 <hr>
 <h3 align="center">I won't respond to this issue, just close it when you are done!</h3>
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>!</h3>
+
 

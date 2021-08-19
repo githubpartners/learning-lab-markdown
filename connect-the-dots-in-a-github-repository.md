@@ -38,17 +38,21 @@ Below, you will see a reference to another issue. The other issue references _th
 <hr>
 <h3 align="center">I will respond with your next steps in that issue.</h3>
 
+
 # Welcome!
 
 Welcome to the course! We're going to walk through some strategies for dealing with large repositories. This is a similar issue to #1. Please close this issue.
+
 
 # Documentation structure
 
 This pull request introduces the structure for the documentation.
 
+
 # Adding new pages
 
 This pull request introduces new pages to the documentation.
+
 # Add navigation
 
 This pull request introduces navigation to the documentation.
@@ -62,19 +66,23 @@ _Note: in a step in this course, you'll be asked to perform the steps below. The
 1. Click on the project drop down, and place it into the **Done** column.
 
 I'll respond back in the original issue where you were asked to do this.
+
 # Adding Git Tips
 
 This pull request adds a page to the documentation about tips and tricks for using Git.
 
 _Note: This is the pull request that you should assign yourself to in step 5._
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
 
 
+
 _Note: the content of this comment simulates common usage of issues as a way to request features of report bugs. Scroll down to the next comment in this issue for your instructions._
 
 There's no sidebar! Is this user error or is it actually missing?
+
 # Finding relevant history
 
 When you're working in a repository, you might want to find other issues or pull requests. Maybe someone has told you about a conversation, but they didn't send you a direct link. Or, maybe you remember an issue from the past but you don't know exactly where it is.
@@ -102,12 +110,17 @@ When you want to create a crosslink, try typing the title of an issue or pull re
 
 I'll respond when you comment on this issue.
 
+
 I think this project would be better if it had a sidebar.
+
 [Your next steps can be found here]({{ repoUrl }}/issues/7).
+
 [Your next steps can be found here]({{ repoUrl }}/issues/7).
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 Great job finding the duplicate issue! Feel free to close the other issue as a duplicate of this one, but I'll leave it up to you. Let's move on to finding out if these issues ever led to a sidebar being added to our project!
@@ -139,9 +152,11 @@ A SHA is a reference to a specific object. In this case, it's a reference to a c
 6. Copy some part of the SHA (at least the first 6 characters of the 40 character hexadecimal string listed after `commit`)
 7. Comment (at least the first 6 characters of) the SHA in **this issue**
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 Thanks for finding that commit! We now know that the sidebar was indeed added, and it was done in that commit. Let's see if we can dig a little deeper to find out if any planning or conversation occurred around this change. 
@@ -189,9 +204,11 @@ One way we can do this, is by using [GitHub Projects](https://help.github.com/en
 1. When the PR is added to the project, you'll see it's _Awaiting triage_, let's triage it! Click on the project drop down, and place it into the **Done** column.
 
 I'll respond in this issue when you've added the pull request to the Done column of the v1.0.0 project.
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 Great! Now that both this issue and the associated pull request are in the same project, it will be easier to track and organize the related work. 
@@ -215,9 +232,11 @@ There's an open pull request in this repository with a failing status. Before we
 
 <hr>
 <h3 align="center">I will respond with your next steps in that pull request.</h3>
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 # Fix the build
@@ -233,9 +252,11 @@ People in the future could look for this work and find out lots of things. They 
 1. [Edit the `docs/git-tips.md` file]({{ repoUrl }}/edit/add-git-tips/docs/git-tips.md)
 2. Correct the spelling of the word `trics` on line 3 by changing it into `tricks`
 3. Commit the changes on the `add-git-tips` branch
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 ## Step 6: Merge
@@ -246,9 +267,11 @@ Great work! By correcting the spelling, your commit triggered another status. Yo
 
 1. Merge this pull request
 2. Delete the branch
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 
 
 # Congratulations!
@@ -261,4 +284,6 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 
 <hr>
 <h3 align="center">I won't respond to this issue, just close it when you are done!</h3>
+
 Great job! Find your [final issue here]({{ repoUrl }}/issues/9).
+

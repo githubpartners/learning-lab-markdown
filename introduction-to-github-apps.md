@@ -38,6 +38,7 @@ To learn more about GitHub Apps, you will install two on this repository. Make s
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 ## Triggering GitHub Apps
 
 Actions that a person or tool takes on GitHub can be used to trigger events. Creating an issue, making a commit, or leaving a comment, to name a few, are logged on GitHub. If GitHub doesn't use it, it can still be useful to other applications.
@@ -72,12 +73,15 @@ The app you've just installed is concerned with one action: changing the title o
 <hr>
 <h3 align="center">After changing the title, look for my response in this pull request</h3>
 
+
 Nice work installing the apps on your repo. Now that the apps have been installed we need to tie the actions we perform on our repository with the apps. In the next step we will begin creating a connection between our repository, the actions we perform on it, and our new apps.
 
 <hr>
 <h3 align="center">Go look for the next set of instructions in your <a href="{{ url }}">first pull request</a></h3>
 
+
 Your change doesn't look right. Make sure to add **WIP**, **do not merge**, or **work in progress** to the pull requests title.
+
 
 Nice job! Something changed on this repo when you added the "WIP" command. Let's try to get more insight into our app before we look at those changes.
 
@@ -114,6 +118,7 @@ For the next exercise, let's add our own notification service to get a better id
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 Oops! It looks like smee.io might not be installed successfully yet. Try the activity below one more time.
 
 ### :keyboard: Activity: Adding a webhook payload delivery service
@@ -130,6 +135,7 @@ Oops! It looks like smee.io might not be installed successfully yet. Try the act
 
 <hr>
 <h3 align="center">Look for my response in a comment on this pull request</h3>
+
 
 Nice work adding smee.io!
 
@@ -156,7 +162,9 @@ When you made this pull request a work in progress, I took it as a cue to add so
 <hr>
 <h3 align="center">Look for my response in a comment on this pull request</h3>
 
+
 Your change doesn't look right. Make sure to remove the words **WIP**, **do not merge**, or **work in progress** from the pull requests title.
+
 
 ## WIP below the surface
 
@@ -179,6 +187,7 @@ Can you tell which type of event was sent back to the application when you chang
 <hr>
 <h3 align="center">Look for my response in a comment on this pull request</h3>
 
+
 Close! Since we edited the pull request title, the event that triggered this was `pull_request`. Notice that there are also `issue_comment` and `status` events being sent. 
 
 In the next exercise, we'll take a look at how apps can take general event payloads and turn those into specific responses via the API.
@@ -191,6 +200,7 @@ After you removed WIP from the pull request title, the pull request was unblocke
 1. Merge this pull request, and delete your branch
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
+
 
 Perfect! As you might guess, pull_request is a broad event.
 
@@ -205,9 +215,11 @@ After you removed WIP from the pull request title, the pull request was unblocke
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 Oh no! @{{ user.username }}, it looks like you have accidentally closed this pull request. To complete this activity, please use the instructions provided to close this issue in its correct sequence of steps. I'll open it again for you.
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 7: Explore another app
 
@@ -218,6 +230,7 @@ Now that we've explored the WIP app, let's move onto what request info can do. W
 
 <hr>
 <h3 align="center">I'll respond in your new pull request</a></h3>
+
 
 ## Request Info app
 When a user opens an empty issue or pull request, the Request Info app will do exactly that -- request some more information.
@@ -243,6 +256,7 @@ Let's use your default template to learn about APIs. First, make a simple change
 <hr>
 <h3 align="center">After you update this pull request, look for my comment below</h3>
 
+
 ## Request Info app
 When a user opens an empty issue or pull request, the Request Info app will do exactly that -- request some more information.
 
@@ -267,7 +281,9 @@ Let's use your default template to learn about APIs. First, make a simple change
 <hr>
 <h3 align="center">After you update this pull request, look for my comment below</h3>
 
+
 Your change wasn't expected. Make sure you are editing the `config.yml` file in this pull request. 
+
 
 Nice job!
 
@@ -294,6 +310,7 @@ When an event is triggered, the vastly more detailed GitHub API gives the bot an
 <hr>
 <h3 align="center">After you comment, look for my response below</h3>
 
+
 Nice try! The label creation endpoint, found [here](https://developer.github.com/v3/issues/labels/#create-a-label), looks like this: `POST /repos/:owner/:repo/labels`.
 
 ## APIs and Webhooks
@@ -311,6 +328,7 @@ Now that you've made the change to your `config.yml` file, try to trigger that e
 ### :keyboard: Activity: Test out your original changes to the config.yml
 1. Go open a [blank issue]({{ repoUrl }}/issues/new) to see if the changes you made in your `config.yml` took effect!
 
+
 Great work! That's the correct API endpoint.
 
 ## APIs and Webhooks
@@ -327,6 +345,7 @@ Now that you've made the change to your `config.yml` file, try to trigger that e
 
 ### :keyboard: Activity: Test out your original changes to the config.yml
 1. Go open a [blank issue]({{ repoUrl }}/issues/new) to see if the changes you made in your `config.yml` took effect!
+
 
 ## Well done!
 
@@ -378,4 +397,5 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 
 <hr>
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished!</h3>
+
 

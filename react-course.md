@@ -54,12 +54,14 @@ Your browser should automatically open `http://localhost:3000/`, and you should 
 
 You'll see that our app can't really do anything! All we have is three buttons! We are going to add all the functionality.
 
+
 ### :keyboard: Activity: Open a Pull Request
 
 1. [Create a pull request to base `main` from `changes` branch]({{repoUrl}}/compare/main...changes)
 2. Title your pull request `Changes`
 
 I'll respond with next steps in your pull request.
+
 # Building Blocks of ~~Life~~ Apps -  Components
 
 Awesome! You successfully opened a pull request!
@@ -93,6 +95,7 @@ This line takes a component's properties to create a component named "App". In t
 
 Scroll down to add a header component.
 
+
 ## Step 2: Adding components
 
 Let's add a child component and give our app a header. At the end of the step, your app should like the following:
@@ -118,11 +121,13 @@ Let's add a child component and give our app a header. At the end of the step, y
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
 
+
 It looks like you did not correctly replace line 92 with the correct `h3` component in `src/App.jsx`.
 
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Interacting with `child` components with `props`
 
@@ -141,6 +146,7 @@ How do we pass different values to a component? We pass **properties** to the co
 ![Finished Students Page](https://user-images.githubusercontent.com/25253905/61293769-46b2ec80-a789-11e9-88b3-c660f436f5bf.png)
 
 Take a look at our final solution for our assignments and students page above. You'll see that they look similar. The lists used in the assignments and students pages use the same component, but with different values (props). Next, we'll learn to pass different values to the same components.
+
 
 ## Step 3: Import a Child Component
 
@@ -165,11 +171,13 @@ In this step, we will import the `List` component that we created for you into `
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
 
+
 It looks like you did not import the `List` component into `App`.
 
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 # Conditional Rendering
 
@@ -198,11 +206,13 @@ Now that we imported the child component, let's use it in our code. At the end o
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
 
+
 It looks like you didn't uncomment the proper line.
 
 Please try again.
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 5: Adding a `prop`
 
@@ -228,6 +238,7 @@ Let's go ahead and replace the current title with another `prop`.
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
 
+
 It looks like you did not replace the title with a prop in the correct place.
 
 Ensure that:
@@ -238,6 +249,7 @@ Ensure that:
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## State Variables
 
@@ -250,6 +262,7 @@ Static data doesn't change. Things like a title on a page or the name of a butto
 Dynamic data, on the other hand, is data that does change. In our example, we can change it by adding an item to the list. Our list of assignments would also be considered dynamic data. But,  how do we deal with dynamic data in React?
 
 Scroll below to take a look in the code!
+
 
 ## State variables
 
@@ -281,11 +294,13 @@ Let's add a way to store students as a variable.
 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
+
 It looks like you did not add a `students` state variable.
 
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ### Explaining `this.setState`
 
@@ -300,6 +315,7 @@ Take a look at the method on line 30 in `src/App.jsx`
 When this method is called, it is adding `assignmentName` to our state variable `assignments` by setting the state of `assignments` to itself with the concatenation of `assignmentName`.
 
 We are going to set some state in next steps.
+
 
 ## Step 7: Create a method
 
@@ -323,11 +339,13 @@ Now that we see how it works with assignments, let's try it with students! We wi
 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
+
 It looks like you did not create an `addStudent` function with the parameter: `studentName`.
 
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 8: Binding a method
 
@@ -348,17 +366,20 @@ Since we created a method that changes a state variable, we have to bind it to o
 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
+
 It looks like you didn't uncomment the proper line.
 
 Please try again.
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
 
+
 ## Callback Functions
 
 The last thing you need to know before you can call yourself a React Developer is callback functions.  We said that we can pass data to the child with `props`, but what about passing data from the child to the parent?
 
 With **callback functions**, we are able to do just that. We **pass a function as a prop**, and then the child component can call the function that was defined in the parent. Let's look at an example below.
+
 ### Example of passing functions as props
 
 So where exactly are those functions we created to set state getting called?
@@ -381,6 +402,7 @@ handleSubmit(event) {
 When the submit button is clicked, we call the `addFunction` with the value of our input box. For assignments, the `addFunction` references the `this.addAssignment` in `App`. So when we call `this.props.addFunction`, we are calling back to the parent component and using the parent's function.
 
 Scroll below for next steps.
+
 ## Step 9: Adding the correct props
 
 There are some issues with this code. We want to be modifying the `students` list, not the `assignments` list.
@@ -405,11 +427,13 @@ Let's change some props between lines 71 and 80 to render the correct components
 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
+
 It looks like you did not replace the props for student rendering.
 
 Try again!
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 10: Include Grades
 
@@ -431,11 +455,13 @@ Let's get our grades working! At the end of this activity, your code should now 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
 
+
 It looks like you didn't uncomment the proper line.
 
 Please try again.
 
 If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 11: Merge your pull request
 
@@ -447,6 +473,7 @@ Now that we've approved the changes, it's time to merge the pull request.
 
 <hr>
 <h3 align="center">Watch below this comment for my response.</h3>
+
 ## Congratulations!
 
 Congratulations on finishing Introduction to React. To update your local course, use `git checkout main` and `git pull`.
@@ -455,3 +482,4 @@ Although this course certainly doesn't mean you are a React expert, we hope you 
 
 - [Create your own React App](https://facebook.github.io/create-react-app/docs/getting-started)
 - [Deploying a React App to GitHub Pages](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
+

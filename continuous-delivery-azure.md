@@ -75,9 +75,11 @@ jobs:
 
 I'll respond when you push a commit on this branch.
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Job conditionals
 
 GitHub Actions features powerful controls for when to execute jobs and the steps within them. One of these controls is `if`, which allows you run a job only when a specific condition is met. See [`jobs.<job_id>.if` in _Workflow syntax for GitHub Actions_](https://help.github.com/en/github/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idif) for more information.
@@ -145,12 +147,15 @@ jobs:
 
 I'll respond when you push a commit on this branch.
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Workflow steps
 
 So far, the workflow knows what the trigger is and what environment to run in. But, what exactly is supposed to run? The "steps" section of this workflow specifies actions and scripts to be run in the Ubuntu environment when new labels are added.
@@ -308,9 +313,11 @@ jobs:
 
 I'll respond when you push a commit on this branch.
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Completed Workflow
 
 Nice job, you've done it!
@@ -327,9 +334,11 @@ It won't be "working" yet, because our next step is to work on the configuration
 ---
 
 I'll respond when you merge this pull request.
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Azure configuration
 
 GitHub Actions is cloud agnostic, so any cloud will work. We'll show how to deploy to Azure in this course.
@@ -432,17 +441,21 @@ jobs:
 
 I'll respond when I detect a commit on this branch.
 
+
 {% if url contains "pull" %}
 You can find your next steps in the [next pull request]({{ url }}).
 {% else %}
 You can find your next steps in the [next issue]({{ url }}).
 {% endif %}
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Configuring your Azure environment
 
 To deploy successfully to our Azure environment, we've created a new workflow with two jobs:
@@ -482,10 +495,13 @@ I've requested your approval on this pull request. Once you approve this, I will
 
 I'll respond when I receive an approval on this pull request.
 
+
 Uh oh - I was looking for you to review the pull request titled **Configure cloud provider**. 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Testing the workflow
 
 Now that the proper configuration and workflow files are present, let's test our actions!
@@ -502,14 +518,17 @@ In this pull request, there's a small change to the game. Once you add the label
 ---
 
 I'll respond when you apply a label to this pull request.
+
 {% if url contains "pull" %}
 You can find your next steps in the [next pull request]({{ url }}).
 {% else %}
 You can find your next steps in the [next issue]({{ url }}).
 {% endif %}
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Different triggers
 
 Deployments to production can be manual (like through a Chat Ops command), or automated (if, say, we trust our pull request review process and we've followed continuous integration practices).
@@ -570,6 +589,7 @@ env:
 
 I'll respond when you push a commit on this branch.
 
+
 The deployment may take a few moments but you've done the right thing. Once the deployment is successful, you'll see green check marks for each run, and you'll see a URL for your deployment.
 
 ![a screenshot of the Actions logs showing a completed deployment with an Output section and a staging URL](https://user-images.githubusercontent.com/16547949/75822370-dc79a700-5d6d-11ea-8840-0a792f0639a5.png)
@@ -578,9 +598,11 @@ You can wait for the deployment, or move on to the next steps in the [next pull 
 
 If you'd like to come back and merge this once the other workflow is done, just approve this pull request and merge. :tada:
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 Great! The syntax you used tells GitHub Actions to only run that workflow when a commit is made to the main branch. 
 
 # Deploying to production
@@ -685,9 +707,11 @@ jobs:
 
 I'll respond when you push a commit on this branch.
 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 # Completed Workflow
 
 Nice job, you've done it!
@@ -702,9 +726,11 @@ Nice job, you've done it!
 ---
 
 I'll respond when you merge this pull request.
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 ## Nice work!
 
 Now, we just have to wait for the deployment to occur, and for the package to be published to GitHub Packages. When it's completed, you should be able to see it in the [Packages]({{ repoUrl }}/packages) section of your repository. You can get the deployment URL in the [Actions]({{ repoUrl }}/actions) log, just like the staging URL.
@@ -722,9 +748,11 @@ Throughout the course you've spun up resources that, if left unattended, could i
 ---
 
 I'll respond when you apply a label to this pull request. 
+
 It looks like you took an action I didn't expect. 
 
 I expected you to {{ expected }}. Please try that to continue!
+
 Now that you've applied the proper label, let's wait for the GitHub Actions workflow to complete. When it's finished, you can confirm that your environment has been destroyed by visiting your app's URL, or by logging into the Azure portal to see it is not running.
 
 This course is now complete! I'll stop responding but the fun doesn't have to stop here. 
@@ -732,4 +760,5 @@ This course is now complete! I'll stop responding but the fun doesn't have to st
 ![celebrate](https://octodex.github.com/images/jetpacktocat.png)
 
 Now...[what will you learn next]({{ host }}/courses)?
+
 

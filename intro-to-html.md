@@ -39,6 +39,7 @@ It isn't enough to simply create a webpage on GitHub. You must deploy your webpa
 <hr>
 <h3 align="center">I'll respond in this issue after GitHub Pages has finished deploying your site.</h3>
 
+
 ## Step 2: Open a pull request
 
 GitHub Pages is now serving your web page at: {{ pagesUrl }}
@@ -56,6 +57,7 @@ To help you get started, I have already created an `index.html` file for you on 
 
 <hr>
 <h3 align="center">I'll respond in your new pull request.</h3>
+
 
 ## Step 3: Add HTML document structure
 
@@ -104,6 +106,7 @@ Apply this suggested change, or follow the instructions below if you'd like to t
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 Uh oh, I didn't detect `<html>` and `<body>` tags. Here are some troubleshooting steps:
 
 1. Check your spelling. We're checking specifically for the tags: `<html>`, `<body>`, `</body>`, and `</html>`.
@@ -124,6 +127,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 ## Step 4: Add a page title
 
 Your web page is beginning to take shape! HTML and body tags are important, but their effect isn't too visible. Next, we'll make a visible change, by giving your page a title. Your page's title will show up on the title bar in your web browser, or as the title of any tabs you've got open. The title is used in all sorts of other places!
@@ -180,6 +184,7 @@ Apply this suggested change, or follow the instructions below if you'd like to t
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 I didn't detect opening and closing `head` and `title` tags. Here are some troubleshooting steps:
 
 1. Check your spelling. We're checking specifically for the tags: `<head>`, `<title>`, `</title>`, and `</head>`.
@@ -202,6 +207,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 ## Step 5: Merge your first pull request
 
 :tada: Everything's going so well @{{ user.username }}! Now that you've got all the bits for a proper HTML page, let's merge it in and see how the browser interprets it.
@@ -214,6 +220,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when you've merged this pull request.</h3>
+
 
 ## Step 6: Add a header
 
@@ -240,10 +247,12 @@ Headers create prominent text in the body of your web page. Headers come in diff
 <hr>
 <h3 align="center">Look for my next response in your pull request</h3>
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>.</h3>
+
 
 I didn't detect an `<h1>` tag. Here are some troubleshooting steps:
 
@@ -269,6 +278,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when you open a pull request.</h3>
+
 ## Step 7: Add an image
 
 Fantastico! Headers will help you highlight segments of your web page. 
@@ -300,6 +310,7 @@ Follow the instructions below to add an image.  You can use your GitHub avatar i
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
 
+
 I didn't find the image! Here are some troubleshooting steps:
 
 1. Check your spelling. We're checking specifically for the image, `<img>`, tag with a source attribute: `<img src="`{{ user.avatarUrl }}`">`
@@ -319,6 +330,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 ## Step 8: Merge your second pull request
 
 :bowtie: What a spiffy photo, @{{ user.username }}!
@@ -333,6 +345,7 @@ You can now merge in your pull request. Don't forget to delete your branch!
 
 <hr>
 <h3 align="center">I'll respond when you've merged this pull request.</h3>
+
 
 ## Step 9: Create a list
 
@@ -390,32 +403,12 @@ For the next exercise, you are going to create a list of your favorite websites.
 <hr>
 <h3 align="center">Look for my response in your new pull request</h3>
 
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>.</h3>
 
-Uh oh, I didn't detect a list! Here are some troubleshooting steps:
-
-1. Check your spelling. We're checking specifically for the tags: `<ul>` or `<ol>`, `<li>`, and `</ul>` or `</ol>`.
-2. Check the order of your tags. The opening `<ul>` or `<ol>` tag should appear first, followed `<li>` and `</li>` tags, and then `</ul>` or `</ol>`.
-3. Ensure you modified the `index.html` file, and not some other file. 
-
-Let's try again!
-
-### :keyboard: Create a list of your favorite sites
-
-1. Edit the `index.html` file in your main branch by [using this direct link](https://github.com/{{ user.username }}/{{ repo }}/edit/main/index.html) or going to the **Code** tab, clicking on the `index.html` file, clicking the pencil :pencil: to edit the HTML.
-1. Inside the body tag, create a list, either ordered or unordered, of your favorite sites on the interwebs.
-1. In the _Commit changes_ section, enter a commit message that describes what you've done.
-1. Ensure you've selected _Create a new branch for this commit and start a pull request_.
-1. Give your branch a descriptive name, like `add-links-and-lists`.
-1. Click on **Commit changes**.
-1. Give your pull request a title, and a comment.
-1. Click on **Create pull request.**
-
-<hr>
-<h3 align="center">I'll respond in your new pull request.</h3>
 
 Uh oh, I didn't detect a list! Here are some troubleshooting steps:
 
@@ -438,6 +431,30 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond in your new pull request.</h3>
+
+
+Uh oh, I didn't detect a list! Here are some troubleshooting steps:
+
+1. Check your spelling. We're checking specifically for the tags: `<ul>` or `<ol>`, `<li>`, and `</ul>` or `</ol>`.
+2. Check the order of your tags. The opening `<ul>` or `<ol>` tag should appear first, followed `<li>` and `</li>` tags, and then `</ul>` or `</ol>`.
+3. Ensure you modified the `index.html` file, and not some other file. 
+
+Let's try again!
+
+### :keyboard: Create a list of your favorite sites
+
+1. Edit the `index.html` file in your main branch by [using this direct link](https://github.com/{{ user.username }}/{{ repo }}/edit/main/index.html) or going to the **Code** tab, clicking on the `index.html` file, clicking the pencil :pencil: to edit the HTML.
+1. Inside the body tag, create a list, either ordered or unordered, of your favorite sites on the interwebs.
+1. In the _Commit changes_ section, enter a commit message that describes what you've done.
+1. Ensure you've selected _Create a new branch for this commit and start a pull request_.
+1. Give your branch a descriptive name, like `add-links-and-lists`.
+1. Click on **Commit changes**.
+1. Give your pull request a title, and a comment.
+1. Click on **Create pull request.**
+
+<hr>
+<h3 align="center">I'll respond in your new pull request.</h3>
+
 
 ## Step 10: Add links to your list
 
@@ -490,6 +507,7 @@ Apply this suggested change, or follow the instructions below if you'd like to t
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
 
+
 Uh oh, I didn't find any links! Here are some troubleshooting steps:
 
 1. Check your spelling. We're checking specifically for the tags: `<a href="SOME-SITE>` and `</a>`.
@@ -510,6 +528,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond in your new pull request.</h3>
+
 ## Step 11: Merge your third pull request
 
 Those links are looking great, @{{ user.username }}.
@@ -524,6 +543,7 @@ Go ahead and merge this pull request. Don't forget to delete your branch!
 
 <hr>
 <h3 align="center">I'll respond when you've merged this pull request.</h3>
+
 
 ## Step 12: Make it beautiful
 
@@ -555,10 +575,12 @@ As an example, your `index.html` file might look like this:
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 Great! I've opened a [new issue]({{ issueURL }}) for you.
 
 <hr>
 <h3 align="center">Go to the next issue <a href="{{ issueURL }}">here</a>.</h3>
+
 
 Uh oh, I didn't find the <link> tag inside the <head>! Here are some troubleshooting steps:
 
@@ -577,6 +599,7 @@ Let's try again!
 
 <hr>
 <h3 align="center">I'll respond when I detect you've committed in this pull request.</h3>
+
 ## Step 13: Merge your final pull request
 
 Your styles look great, @{{ user.username }}.
@@ -590,6 +613,7 @@ Go ahead and merge this pull request so we can all see the final result. Don't f
 
 <hr>
 <h3 align="center">I'll respond when you've merged this pull request.</h3>
+
 
 ### Show the world your finished page
 
@@ -612,4 +636,5 @@ If you'd like, you can make your fancy new page the default start page for your 
 - [Safari](https://support.apple.com/guide/safari/set-your-homepage-ibrw1020/mac)
 - [Firefox](https://support.mozilla.org/en-US/kb/how-to-set-the-home-page)
 - [Microsoft Edge](https://support.microsoft.com/en-us/help/4027577/windows-change-your-home-page)
+
 

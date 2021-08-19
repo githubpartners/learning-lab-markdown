@@ -21,6 +21,7 @@ As we begin our journey into preparing for open source, let's start with a few s
 1. Take each of the assessments.
 1. Jot down your level within each dimension.
 
+
 # Establish program goals
 
 After completing the self assessment, the next step is to establish a clear set of goals for your open source program.  Use the following matrix to guide the discussion:
@@ -58,7 +59,9 @@ The goals you set here are preliminary, you'll have an opportunity to formalize 
 <hr>
 <h3 align="center">I'll respond when you comment on this issue.</h3>
 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 2: Update the README for your open source kit
 
 This pull request adds a file called `README.md` to this open source kit. This repository is where people will come for help and information when they want to open source projects within your organization. The information in the `README.md` should help give those people what they're looking for.
@@ -82,11 +85,15 @@ It's a good idea to include links to other documents that you've created (or wil
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 3: Add a `CONTRIBUTING.md` to your organization's open source repository
 
 This pull request introduces a `CONTRIBUTING.md` template file.
@@ -112,15 +119,21 @@ If you're looking for inspiration, here are some great examples of `CONTRIBUTING
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
 
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 Great! Let's go to the [next step]({{ url }}).
+
 Thanks for opening this PR! I wasn't expecting this PR, instead I was expecting a pull request titled: {{ expected }}.
 
 Please review the last set of instructions and try opening a new pull request.
+
 ## Step 5: Add communication guidelines to your organization's open source repository
 
 This pull request introduces a file for you to outline and define the communication guidelines. This goes beyond the normal `code-of-conduct` and `CONTRIBUTING.md`.
@@ -139,13 +152,17 @@ There are a lot of nuanced behaviors that go into managing open source software.
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Your code of conduct looks fantastic! Feel free to merge it if you like.
 
 When you're ready to move on, go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 6: Add checklist to ISSUE_TEMPLATE
 
 **tl;dr** When an individual or team is contemplating releasing a project as open source, there will be a number of steps for them to complete. The first step will be to open an issue in this repository. In this pull request, we will create an ISSUE_TEMPLATE which will contain the tracking checklist for releasing a project as open source and some key questions for them to consider.
@@ -176,11 +193,15 @@ This checklist will be a work in progress as you complete the other steps in thi
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 7: Maintainer's guide
 
 This pull request adds a `maintainer_guide.md` to guide maintainers of open source projects. This could be included in a public-facing way, but may be best kept privately in this repository.
@@ -193,11 +214,15 @@ Use this document to formalize expectations for maintainers and help everyone le
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 8: Add information about your organization's license recommendations
 
 Licensing can be one of the most challenging aspects of open source for enterprises. Successful open source organizations have policies that clarify their position on licenses for projects they are consuming, contributing to, and maintaining.
@@ -231,11 +256,15 @@ We have created a template license policy for you in this pull request.  Work wi
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 9: Issue template for using open source
 
 This pull request adds an issue template that can be customized for use when team members wish to begin using a new open source project in their work. Not all organizations will want to track these requests and may choose instead to convert this to a self serve checklist.
@@ -248,11 +277,15 @@ This pull request adds an issue template that can be customized for use when tea
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 ## Step 10: Help others create great `README`s
 
 This pull request adds a template README file that serves as a starting point for team members who are open sourcing their projects. Creating a template is a great way to add some subtle branding elements!
@@ -265,11 +298,15 @@ This pull request adds a template README file that serves as a starting point fo
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>
+
 Great! Let's go to the [next pull request]({{ url }}).
+
 It looks like you closed this pull request without merging, but I wasn't expecting that! Even if you want to edit the contents later, let's merge the pull request for now so we can continue with the course.
 
 Reopen the pull request and merge it. I'll respond then. 
+
 You took an action I didn't expect. I was looking for you to {{ expected }}.
+
 # :tada: Congratulations
 
 You finished this course! Now, you have an open source tool-kit with the documentation you need to start helping others with open source within your organization. 
@@ -286,4 +323,6 @@ You finished this course! Now, you have an open source tool-kit with the documen
 
 I won't track any further events in this repository.
 
+
 Great! Let's go to the [final issue]({{ url }}).
+

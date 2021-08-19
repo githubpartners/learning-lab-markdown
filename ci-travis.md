@@ -50,6 +50,7 @@ Ready to see how CI can fit into your workflow? Let's install Travis CI, and sta
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 Nice work getting this pull request opened!
 
 This pull request adds a `.travis.yml` configuration file. This file is necessary to return a successful build. This configuration file is where we define how we want to build and test the code.
@@ -80,6 +81,7 @@ To get the CI build to succeed, replace the placeholder text and commit the chan
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 Nice work getting your CI build to succeed! :tada:
 
 Notice that your pull request shows all checks have passed with 2 successful checks.
@@ -103,7 +105,9 @@ Now that our CI build is succeeding, merge this pull request so the `.travis.yml
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 In this pull request, I've added some tests to help ensure the project builds. This is just one example of how you can customize specific validations that will be ran when your CI starts a build. I need you to add a script to build our project in the `.travis.yml` file.
+
 ## Step 4: Add validation
 
 Build your site.
@@ -123,6 +127,7 @@ Build your site.
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 The `.travis.yml` file treats configuration and build environments as code. Version control is an important part of secure collaboration for code. Configuration as code adds the benefits of Git version control for test and build environments.
 
 Now that your CI build is succeeding, let's add some validations to your project.
@@ -131,6 +136,7 @@ Now that your CI build is succeeding, let's add some validations to your project
 <h3 align="center">I've opened a <a href="{{ url }}">new pull request</a> for your next steps.</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
+
 
 Now that you've added some validation tests to your CI build, it's time to turn on some branch protections. Protected branches ensure that collaborators cannot make irrevocable changes to specific branches. This also allows you to enable CI required status checks to pass before merging.
 
@@ -158,6 +164,7 @@ I've changed the protections for the `main` branch throughout the course so far 
 
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
+
 
 Awesome, nice work getting those branch protections in place :tada:
 
@@ -192,6 +199,7 @@ Let's find the broken syntax and fix the build!
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 Nice job finding and fixing that Liquid syntax!
 
 It might take a moment, but notice as your build is complete that all checks have passed.
@@ -206,6 +214,7 @@ Now that your pull request has a successful build, let's merge it!
 
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
+
 
 With the addition of links to our code base, we should add a unit test as one of our Travis CI jobs that run whenever it builds. Let's add a test using HTMLProofer to test for any broken links, images, or HTML.
 
@@ -225,8 +234,10 @@ Let's make sure all links are valid by adding a link checker unit test, and pack
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 <hr>
 <h3 align="center">Navigate to your <a href="{{ url }}">new pull request</a> for next steps.</h3>
+
 
 Nice work! We've added a unit test to check for broken links. When a broken link was committed to our pull request, the test caught it and let us know the build had failed.
 
@@ -253,6 +264,7 @@ External link https://help.github.com/setupgit failed: 404 No error
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 Nice work!
 
 It might take a moment, but once both the **build** and **testlinks** tests are passing, it's time to merge this pull request.
@@ -266,6 +278,7 @@ It might take a moment, but once both the **build** and **testlinks** tests are 
 
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
+
 
 Our workflow is looking pretty good! We have now set up some automated tests for any new changes. We can go one step further and add continuous deployment to our workflow.
 
@@ -291,8 +304,10 @@ Whenever there is a new commit on `main`, GitHub pages will deploy.
 <hr>
 <h3 align="center">I'll respond below for your next steps.</h3>
 
+
 <hr>
 <h3 align="center">I created a <a href="{{ url }}">new issue</a>, look for my next response there.</h3>
+
 
 Nice job enabling GitHub pages and setting up your continuous deployment.
 
@@ -300,6 +315,7 @@ You can see your deployment published here: https://{{ user.username }}.github.i
 
 <hr>
 <h3 align="center">I'll respond in <a href="{{ url }}">your next issue</a>.</h3>
+
 
 ## Nice work
 
@@ -323,4 +339,5 @@ Before we finish, let's review everything you completed in this course repositor
 
 ## What's next?
 There's so much more you can do with continuous integration, and you have a solid start. Now...[what will you learn next]({{ host }}/courses)?
+
 

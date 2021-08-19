@@ -34,6 +34,7 @@ If you get stuck during this course and need some help, the best place to ask fo
 
 Hope this is exciting! Please close this issue now, then wait for the next set of instructions to appear in a comment below.
 
+
 ## Step 2: Setup your environment
 
 We will use the CodeQL extension for Visual Studio Code. You will take advantage of IDE features like auto-complete, contextual help and jump-to-definition.
@@ -41,6 +42,7 @@ We will use the CodeQL extension for Visual Studio Code. You will take advantage
 Don't worry, you'll do this setup only once, and you'll be able to use it for future CodeQL development.
 
 Follow the instructions below. 
+
 
 
 ### :keyboard: Activity: Set up
@@ -54,7 +56,9 @@ Follow the instructions below.
 
 When you're done setting up, please close this issue, then wait for the next set of instructions to appear in a comment below.
 
+
 Let's [continue to the next step]({{next_issue}}).
+
 
 ## Step 3: Your first query
 
@@ -84,6 +88,7 @@ Now it's time to submit your query. You will have 2 choices to do that, and we'l
 
 Read carefully: you will need to follow the same steps to submit your answers to later steps. You can always come back to this issue later to check the submission instructions.
 
+
 ### Submission: Commit your query via a Pull Request
 
 The first method to submit your query is via a Pull Request. Using a Pull request has several advantages:
@@ -111,6 +116,7 @@ To submit this query via Pull Request, you can follow the following workflow:
 5. If the status is green, merge your PR and follow these instructions.
 
 
+
 ### Submission: Commit your query directly to main
 
 This method is simpler. You won't have to juggle between branches, rebase onto main, or create Pull Requests. However, merging directly to main is not a good practice when you are contributing to a shared code base, so if you choose this method, please don't take this bad habit home with you!
@@ -130,11 +136,14 @@ To submit this query via a direct commit to main, you can follow this workflow:
 
     To track the execution of the query checker, you can follow along in the [Actions panel]({{repoUrl}}/actions) if you like.
 
+
 Let's [continue to the next step]({{next_issue}}).
+
 
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 4: Anatomy of a query
 
@@ -178,6 +187,7 @@ Now look at the expression `f.getName()` in the `where` section. Here we call th
 
 So far your query finds all functions with the name `strlen`. It does this by asserting that the result of `f.getName()` is equal to the string `"strlen"`.
 
+
 ### :keyboard: Activity: Find all functions named `memcpy`
 
 1. Edit the file `4_memcpy_definitions.ql`
@@ -185,15 +195,18 @@ So far your query finds all functions with the name `strlen`. It does this by as
 1. Run your query on the U-Boot codebase to verify the results.
 1. Submit your solution as explained previously.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 5: Using different classes and their predicates
 
@@ -204,6 +217,7 @@ In the `from` section of the query, you declare some variables, and state the  t
 In the previous query you were querying for values in the class `Function` to find functions in the source code. We have to query a different type to find macros in the source code instead. Can you guess its name?
 
 *NOTE: These Network ordering conversion utilities can be macros or functions depending on the platform. In this course, we are looking at a Linux database, where they are macros.*
+
 
 
 ### :keyboard: Activity: Find all `ntoh*` macros
@@ -219,21 +233,25 @@ In the previous query you were querying for values in the class `Function` to fi
     - Use a [_set literal expression_](https://help.semmle.com/QL/ql-handbook/expressions.html#set-literal-expressions) to equate `<your_variable_name>` to a list of choices `<your_variable_name> in ["bar", "baz", "quux"]`
 1. Once you're happy with the results, submit your solution.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 6: Relating two variables
 
 In step 4, you wrote a query that finds the **definitions** of functions named `memcpy` in the codebase. Now, we want to find all the **calls** to `memcpy` in the codebase.
 
 One way to do this is to declare two variables: one to represent functions, and one to represent function calls. Then you will have to create a relationship between these variables in the `where` section, so that they are restricted to only functions that are named `memcpy`, and calls to exactly those functions.
+
 
 ### :keyboard: Activity: Find all the calls to `memcpy`
 
@@ -275,15 +293,18 @@ where c1.getClass2().getProp() = "something"
 select c1
 ```
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 7: Relating two variables, continued
 
@@ -292,6 +313,7 @@ In step 5, you wrote a query that finds the **definitions** of macros named  `nt
 This will be similar to what you did in step 6, where you created variables for functions and function calls, and restricted them to look for a particular function and its calls.
 
 **Note**: A macro invocation is a place in the source code that calls a particular macro. This is comparable to how a function call is a place in the source code that calls a particular function.
+
 
 ### :keyboard: Activity: Find all the invocations of `ntoh*` macros
 
@@ -303,21 +325,25 @@ This query will look like the previous one, but with macros instead of functions
 1. Combine this with your logic from step 5 to make sure the target is one of the `ntoh*` macros.
 1. As in the previous step, you can make your query more compact by omitting superfluous variable declarations.
 1. Once you're happy with the results, submit your solution.
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 8: Changing the selected output
 
 In the previous step, you found invocations of the macros we are interested in. Modify your query to find the top-level **expressions** these macro invocations expand to.
 
 **Note**: An expression is a source code element that can have a value at runtime. Invoking a macro can bring various source code elements into scope, including expressions.
+
 
 ### :keyboard: Activity: Find the expressions that correspond to macro invocations
 
@@ -328,15 +354,18 @@ As before, if you don't know how a piece of source code is represented in the li
 3. Once you're happy with the results, submit your solution.
 
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 9: Write your own class
 
@@ -347,6 +376,7 @@ We'd like to find the same results as in the previous step, i.e. the top level e
 We will define a **class** to describe exactly this set of expressions, and use it in the last step of this course.
 
 The `Expr` class is the set of _all_ expressions, and we are interested in a more specific set of expressions, so the class we write will be a **subclass** of `Expr`.
+
 ### The `exists` quantifier
 
 So far, we have declared variables in the `from` section of a query clause. Sometimes we need temporary variables in other parts of the query, and don't want to expose them in the query clause. The `exists` keyword helps us do this. It is a **quantifier**: it introduces temporary variables and checks if they satisfy a particular condition.
@@ -362,6 +392,7 @@ select t
 ```
 
 This query selects all persons with a hair color that is a `string`. So we'll get all persons that are not bald, since we are able to find a `c` that defines their hair color. We don't really need `c` in the query except to know that it exists.
+
 
 ### :keyboard: Activity: Write your own `NetworkByteSwap` class
 
@@ -391,15 +422,18 @@ This query selects all persons with a hair color that is a `string`. So we'll ge
    - How is the macro invocation related to the expression? Use the same logic from the `select` section of your query in step 8. You can refer to the macro invocation using the name of the variable you created, and you can refer to the expression using the `this` variable.
 1. Once you're happy with the results, submit your solution.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
+
 
 ## Step 10: Data flow and taint tracking analysis
 
@@ -419,6 +453,7 @@ To make our triaging job easier, we will have CodeQL do this analysis for us.
 You will now write a query to track the flow of tainted data from network-controlled integers to the `memcpy` length argument. As a result you will find 9 real vulnerabilities!
 
 To achieve this, we’ll use the CodeQL [taint tracking](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-cpp/) library. This library allows you to describe **sources** and **sinks**, and its predicate `hasFlowPath` holds true when tainted data from a given source flows to a sink.
+
 
 ### :keyboard: Activity: Write a taint tracking query
 
@@ -466,15 +501,19 @@ where cfg.hasFlowPath(source, sink)
 select sink, source, sink, "Network byte swap flows to memcpy"
 ```
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 If you created a pull request, merge it.
 
 Let's [continue to the next step]({{next_issue}}).
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Please take a look at the [comment]({{commentUrl}}) and try again.
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (`main` or the PR branch).
 
+
 Congratulations, you have finished the course! You can merge your last outstanding Pull Request if you have one. Don't hesitate to give us feedback; find us at <https://securitylab.github.com/get-involved>. And recommend this course to your friends if it was useful!
+
 

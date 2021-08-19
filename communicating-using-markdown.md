@@ -26,6 +26,7 @@ For more information, see “[Writing on GitHub](https://help.github.com/categor
 
 Let's get started!
 
+
 ## Step 1: Create a Task List
 
 A task list creates checkboxes for people with access <sup>[:book:](https://help.github.com/articles/github-glossary/#collaborator)</sup>in a repository to check off. They're very useful for tracking issues and pull requests.
@@ -71,6 +72,7 @@ For a printable version of the steps in this course, check out the [Quick Refere
 
 > _If you perform an expected action and don't see a response from me after a few seconds, refresh the page for your next steps._
 
+
 I didn't see a task list in that comment. Remember, a task list starts with the syntax `- [ ] ` and then the task list item. The formatting is specific! Try again with a new comment. You can copy this one if you would like to see how they look:
 
 ```
@@ -83,6 +85,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 
 <hr>
 <h3 align="center">Watch below your comment for my response</h3>
+
 
 {{ user.username }}, it looks like your task list has too many spaces between the `[ ]` square brackets.
 
@@ -99,6 +102,7 @@ Add a comment to this issue. Use Markdown to create a task list of todo items. H
 - [ ] Outline my portfolio
 - [ ] Introduce myself to the world
 ```
+
 
 ## Step 2: Turn on GitHub Pages
 
@@ -121,6 +125,7 @@ Now let's turn our focus to the content of your portfolio. Because this portfoli
 
 <hr>
 <h3 align="center">Return to this issue for next steps.</h3>
+
 
 ## Step 3: Add headers
 
@@ -188,6 +193,7 @@ The toolbar isn't available everywhere. When you edit a file, you must type the 
 <hr>
 <h3 align="center">Watch below for my response.</h3>
 
+
 Take a look at your published site here: {{ url }}
 
 As we add content throughout the course, this site will update.
@@ -196,6 +202,7 @@ I've closed this issue and opened a pull request for you to work on headers in y
 
 <hr>
 <h3 align="center">Go to <a href="{{ prUrl }}">the pull request</a> now!</h3>
+
 
 You've made a change to this file, but I don't see a header yet. Add another commit with a header. You can continue to make commits on a branch even after you open a pull request.
 
@@ -242,6 +249,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 ## Step 4: Merge your headers
 
 I see you've added at least one header, @{{ user.username }}. You can continue working if you'd like, otherwise let's merge <sup>[:book:](https://help.github.com/articles/github-glossary/#merge)</sup> this pull request and move on with the course.
@@ -271,6 +279,7 @@ I see you've added at least one header, @{{ user.username }}. You can continue w
 
 <hr>
 <h3 align="center">Watch below for my response!</h3>
+
 
 ## Step 5: Add an image
 
@@ -315,6 +324,7 @@ Let's add an image. Don't forget to include descriptive text in the square brack
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 Nice headers, @{{ user.username }}! You can see your work here: {{ url }}
 
 ### :keyboard: Activity: Delete your branch
@@ -323,6 +333,7 @@ Nice headers, @{{ user.username }}! You can see your work here: {{ url }}
 
 <hr>
 <h3 align="center">Go to <a href="{{ prUrl }}">the next pull request</a> now!</h3>
+
 
 Something doesn't look quite right with this image. Make sure:
 
@@ -363,6 +374,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 
 <hr>
 <h3 align="center">Watch below for my response!</h3>
+
 
 ## Step 6: Add a profile link
 
@@ -407,6 +419,7 @@ You might link to a [website](https://github.com/), a [repository](https://githu
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 Something doesn't look quite right with this link. Make sure:
 
 - The placeholder text is deleted
@@ -450,6 +463,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 ## Step 7: Merge your image and link
 
 This looks great, @{{ user.username }}! You've created a link to show off your portfolio, and now you can share it with the world.
@@ -479,6 +493,7 @@ This looks great, @{{ user.username }}! You've created a link to show off your p
 
 <hr>
 <h3 align="center">Watch below for my response!</h3>
+
 
 ## Step 8: Add a list
 
@@ -592,6 +607,7 @@ Help people get to know you by adding a list containing a few of your favorite t
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 Good job with images and links! See your work here: {{ url }}
 
 ### :keyboard: Activity: Delete the branch
@@ -600,6 +616,7 @@ Good job with images and links! See your work here: {{ url }}
 
 <hr>
 <h3 align="center">Go to <a href="{{ prUrl }}">the next activity</a> now!</h3>
+
 
 Uh oh, we're not finding a list.
 
@@ -642,6 +659,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 
 <hr>
 <h3 align="center">Watch below for my response!</h3>
+
 
 ## Step 9: Use emphasis
 
@@ -692,6 +710,7 @@ _You **can** combine them_
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 :thinking: I don't see any text with emphasis yet. To complete this exercise, you need to add some emphasized text to the `_includes/05-emphasis.md` file, in the form of a *bold* or _italicized_ words.
 
 ### :keyboard: Activity: Add emphasis
@@ -732,6 +751,7 @@ If you would like assistance troubleshooting, create a post on the [GitHub Commu
 <hr>
 <h3 align="center">Watch below for my response!</h3>
 
+
 ## Step 10: Merge lists and emphasis
 
 Nice list, @{{ user.username }}! You can merge this pull request when you're ready.
@@ -761,6 +781,7 @@ Nice list, @{{ user.username }}! You can merge this pull request when you're rea
 
 <hr>
 <h3 align="center">Watch below for my response!</h3>
+
 
 ## Nice work
 
@@ -975,6 +996,7 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 <hr>
 <h3 align="center">I won't respond to this issue, just close it when you are done!</h3>
 
+
 Nicely done, @{{ user.username }}. See your work here: {{ url }}
 
 I gave your portfolio a makeover by adding a Jekyll theme. To select another theme, see “[Adding a Jekyll theme to your GitHub Pages site with the Jekyll Theme Chooser](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site-with-the-jekyll-theme-chooser/) in the *GitHub Help*.
@@ -985,4 +1007,5 @@ I gave your portfolio a makeover by adding a Jekyll theme. To select another the
 
 <hr>
 <h3 align="center"><a href="{{ issueUrl }}">Go to the last step.</a></h3>
+
 

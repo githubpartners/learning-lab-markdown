@@ -31,7 +31,7 @@ jq -c '.[]' ./script/courses.json | while read i; do
   (git clone --depth 1 "https://${PREFIX}@github.com/${OWNER}/${TEMPLATE}.git" ./courses/${REPO}/${TEMPLATE} && echo -e "Cloned ${OWNER}/${TEMPLATE}") &
 
   # Course images
-  gh api graphql -F owner='githubtraining' -F name=${REPO} -F query='query ($owner: String!, $name: String!) {
+  gh api graphql -F owner=${OWNER} -F name=${REPO} -F query='query ($owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
       openGraphImageUrl
       usesCustomOpenGraphImage

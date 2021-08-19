@@ -25,6 +25,7 @@ Now that you know the recommended version, it's time to edit the `package.json` 
 1. Fix the vulnerability by updating to the latest version of the dependency that you took note of earlier, version `2.6.9` of `debug`.
 1. Scroll down, and commit your change.
 
+
 ## :tada: Welcome to security strategy essentials!
 
 In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository is important for many reasons, including:
@@ -77,6 +78,7 @@ This project is centered around a memory game that will be deployed with GitHub 
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
 
+
 ## Finding vulnerable dependencies
 
 Security vulnerabilities can cause a range of problems for your project or the people who use it.  A vulnerability could affect the confidentiality, integrity, or availability of a project.  Sometimes vulnerabilities aren't in the code you write, but in the code your project depends on. Staying up-to-date with the most recent versions is the best line of defense, but has the potential to cause integration issues, so GitHub alerts you of the safest next-version of a dependency.
@@ -125,21 +127,25 @@ Use Dependabot alerts to identify a vulnerable NPM dependency.
 <hr>
 <h3 align="center">Return to this issue for my next comment.</h3>
 
+
 Great work. Make sure to complete the first few steps in your settings. Then, you should be able to see your published [memory game on GitHub Pages]({{ pagesUrl }}).
 
 <hr>
 <h3 align="center">I've opened <a href="{{ url }}">another issue with the next steps.</a></h3>
+
 
 Nice work!
 
 <hr>
 <h3 align="center">I've opened a <a href="{{ repoUrl }}/pull/1">pull request with your next steps.</a></h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If this is a pull request, so you can keep editing the file here. Keep trying, you'll get there!
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Step 3: Merge this pull request
 
@@ -150,9 +156,11 @@ _Note: You might notice that this repository has a `package.json` file, but no `
 ### :keyboard: Activity: Merge
 1. Merge this pull request.
 
+
 Oh no! @{{ user.username }}, it looks like you have accidentally closed this issue. To complete this activity, please use the instructions provided to close this issue in its correct sequence of steps. I'll open it again for you.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Automated dependency updates with Dependabot
 
@@ -187,10 +195,12 @@ If you navigate to your [closed pull requests]({{ repoUrl }}/pulls?q=is%3Apr+is%
 <hr>
 <h3 align="center">I'll respond below when you close the issue.</h3>
 
+
 Nice job merging @{{ user.username }}. Go ahead and delete the branch.
 
 <hr>
 <h3 align="center">Let's see how we can automate this process. Navigate to <a href="{{ url }}">your next issue.</a></h3>
+
 
 ## Adding a security policy
 
@@ -221,11 +231,13 @@ Alternatively, you could also create a new file in the root directory called `SE
 <hr>
 <h3 align="center">I'll respond in your pull request with next steps.</h3>
 
+
 Nice job getting to know Dependabot.
 
 
 <hr>
 <h3 align="center">Let's learn about adding a <code>SECURITY.md</code> policy to your repository. Navigate to your <a href="{{ url }}">next issue.</a></h3>
+
 
 Nice work opening this pull request. I went ahead and approved it, go ahead and merge when ready.
 
@@ -235,15 +247,18 @@ Nice work opening this pull request. I went ahead and approved it, go ahead and 
 <hr>
 <h3 align="center">I'll respond below when merge your pull request.</h3>
 
+
 Oh no! @{{ user.username }}, it looks like you have accidentally closed this pull request. To complete this activity, please use the instructions provided to close this issue in its correct sequence of steps. I'll open it again for you.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ### Game update
 
 By popular demand, this pull request adds the wolverine image to the game:
 
 ![xtocat](https://octodex.github.com/images/xtocat.jpg)
+
 
 ## Removing sensitive information
 
@@ -264,6 +279,7 @@ We can do this by cloning this repository to our computer, and then running a fe
 <hr>
 <h3 align="center">I'll respond below when you push up a fix to remove the `.env` file.</h3>
 
+
 Nice, @{{ user.username }}! Go ahead and delete the branch.
 
 You can view your newly published [security policy]({{ repoUrl }}/security/policy) in the Security tab.
@@ -271,9 +287,11 @@ You can view your newly published [security policy]({{ repoUrl }}/security/polic
 <hr>
 <h3 align="center">Find your <a href="{{ url }}">next pull request here.</a></h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 Nice job removing that `.env` file!
 
@@ -294,12 +312,14 @@ Now that the sensitive information has been removed, let's now approve this cont
 <hr>
 <h3 align="center">I'll respond below when I see your approval.</h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 ### Hint:
 Make sure you approve this pull request.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 Removing the previous `.env` file from the branch is great, but it's reactive. We need to ensure future contributions don't include sensitive files by mistake. We can do this by adding a `.gitignore` file to our repository.
 
@@ -332,12 +352,14 @@ In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` c
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
 
+
 Nice job removing that `.env` file and approving the game update from a contributor!
 
 With your approval, I merged in the pull request!
 
 <hr>
 <h3 align="center">Let's now learn about adding a <code>.gitignore</code> file in your <a href="{{ url }}">next pull request.</a></h3>
+
 
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
@@ -346,6 +368,7 @@ It looks like you've made a commit but there's still something not right about t
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
 
+
 This looks great @{{ user.username }}, thanks for adding a `.env` file to the `.gitignore`. Feel free to add any other file or potential sensitive data to the `.gitignore` file.
 
 ### :keyboard: Activity: Merge
@@ -353,9 +376,11 @@ This looks great @{{ user.username }}, thanks for adding a `.env` file to the `.
 
 > _Sometimes I respond too fast for the page to update! You may need to refresh the page before you can merge._
 
+
 It looks like you have accidentally closed this pull request. To complete this activity, please use the instructions provided to try again. I've reopened it so you can continue.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Sensitive data elsewhere in the repository contents
 
@@ -374,10 +399,12 @@ There are a few things we need to think about and take into consideration before
 <hr>
 <h3 align="center">I'll respond below when you add your comment to this issue.</h3>
 
+
 Nice work, @{{ user.username }}! Go ahead and delete the branch.
 
 <hr>
 <h3 align="center">We have one more thing to take care of. Let's go to your <a href="{{ url }}">next issue here.</a></h3>
+
 
 Good guess, but the commit SHA ID that added the `.env` file is 848cd8c2043f6161a4f0043bffee212777281494
 
@@ -385,6 +412,7 @@ Try typing that commit id in a comment to move on.
 
 <hr>
 <h3 align="center">I'll respond below when I see your comment</h3>
+
 
 Nice, that's the commit that added the `.env` file. We'll need to remove the contents of this commit, as well as the commit that removed it from the history.
 
@@ -428,12 +456,14 @@ e6e2377 Update README.md and Octocat game
 <hr>
 <h3 align="center">I'll respond below when I see your comment</h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 ### Hint:
 Make sure you use one of the below commands to remove reference to these commits.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Nice work
 
@@ -466,6 +496,7 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 <hr>
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished.</h3>
 
+
 Nice, your log output is no longer showing reference to those previous commits. So, what exactly just happened?
 
 ### Our commit history has been modified
@@ -493,4 +524,5 @@ For our situation, we can skip contacting GitHub Support for this example! :smil
 
 <hr>
 <h3 align="center">Find your final issue <a href="{{ url }}">here</a> now.</h3>
+
 

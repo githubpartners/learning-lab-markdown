@@ -33,6 +33,7 @@ To learn even more, check out the [GitHub Actions feature page](https://github.c
 
 In this course you will work with issues and pull requests, as well as edit files. If these things are not familiar to you, we recommend you take the [Introduction to GitHub]({{ host }}/githubtraining/introduction-to-github) course, first!
 
+
 ### Actions and Workflows
 
 There are two components to using GitHub Actions that we'll cover:
@@ -83,6 +84,7 @@ Our action will use a Docker container so it will require a `Dockerfile`. Let's 
 <hr>
 <h3 align="center">I'll respond in your new pull request with next steps.</h3>
 
+
 The Dockerfile isn't where I expected. Here are some troubleshooting steps that might help.
 
 | Problem                                              | Solution                                                                                                                                                                                           |
@@ -93,6 +95,7 @@ The Dockerfile isn't where I expected. Here are some troubleshooting steps that 
 
 <hr>
 <h3 align="center">When I detect your new commit, I'll respond in this pull request.</h3>
+
 
 Nice work, you committed a `Dockerfile`. You'll notice at the end of the Dockerfile, we refer to an entrypoint script.
 
@@ -123,6 +126,7 @@ An entrypoint script must exist in our repository so that Docker has something t
 <hr>
 <h3 align="center">I'll respond when I detect a new commit on this branch.</h3>
 
+
 The `entrypoint.sh` script isn't where I expected. Here are some troubleshooting steps that might help.
 
 | Problem                                                      | Solution                                                                                                                                                                                          |
@@ -133,6 +137,7 @@ The `entrypoint.sh` script isn't where I expected. Here are some troubleshooting
 
 <hr>
 <h3 align="center">When I detect your new commit, I'll respond in this pull request.</h3>
+
 
 Nice work adding the `entrypoint.sh` script.
 
@@ -179,6 +184,7 @@ We will use an `input` parameter to read in the value of `MY_NAME`.
 <hr>
 <h3 align="center">I'll respond when I detect a new commit on this branch.</h3>
 
+
 The `action.yml` script isn't where I expected. Here are some troubleshooting steps that might help.
 
 | Problem                                                   | Solution                                                                                                                                                                                       |
@@ -189,6 +195,7 @@ The `action.yml` script isn't where I expected. Here are some troubleshooting st
 
 <hr>
 <h3 align="center">When I detect your new commit, I'll respond in this pull request.</h3>
+
 
 Next, we'll define a **workflow** that uses the GitHub Action.
 
@@ -235,6 +242,7 @@ error: failed to push some refs to 'https://github.com/your-username/your-repo.g
 <hr>
 <h3 align="center">I'll respond when I detect a new commit on this branch.</h3>
 
+
 The file `main.yml` isn't where I expected. Here are some troubleshooting steps that might help.
 
 | Problem                                                     | Solution                                                                                                                                                                                        |
@@ -245,6 +253,7 @@ The file `main.yml` isn't where I expected. Here are some troubleshooting steps 
 
 <hr>
 <h3 align="center">When I detect your new commit, I'll respond in this pull request.</h3>
+
 
 Nice work! :tada: You added a workflow!
 
@@ -300,6 +309,7 @@ error: failed to push some refs to 'https://github.com/your-username/your-repo.g
 <hr>
 <h3 align="center">I'll respond when I detect a new commit on this branch.</h3>
 
+
 The file `main.yml` isn't where I expected. Here are some troubleshooting steps that might help.
 
 | Problem                                                     | Solution                                                                                                                                                                                        |
@@ -310,6 +320,7 @@ The file `main.yml` isn't where I expected. Here are some troubleshooting steps 
 
 <hr>
 <h3 align="center">When I detect your new commit, I'll respond in this pull request.</h3>
+
 
 Nice, you just added an action block to your workflow file! Here are some important details about _why_ each part of the block exists and _what_ each part does.
 
@@ -344,6 +355,7 @@ You've done the work, now sit back and see your action trigger the workflow!
 <h3 align="center">I will respond when I detect your action has run and reported a status.</h3>
 
 > _Actions can take a minute or two to run. Sometimes, I also respond too fast for the page to update! If you don't see a response from your action, wait a few seconds and refresh the page._
+
 
 Almost there, but the workflow didn't run.
 
@@ -388,6 +400,7 @@ You can also use the following to help you troubleshoot:
 <hr>
 <h3 align="center">Next time you commit, your action will try to run. I'll respond when that occurs.</h3>
 
+
 Success! :tada: Your workflow ran! [You can see the output here]({{ repo }}/actions).
 
 You should see the string "Hello world, I'm Mona!" printed at the bottom to `stdout`.
@@ -407,6 +420,7 @@ Anyone that uses this repository, and any future code can benefit from this work
 
 <hr>
 <h3 align="center">I'll respond when I detect this branch has been merged.</h3>
+
 
 ## Nice work!
 
@@ -434,6 +448,8 @@ Outside of this repository:
 
 Now...[what will you learn next]({{ host }}/courses)?
 
+
 <hr>
 <h3 align="center">Great work merging your pull request! I created a <a href="{{ url }}">new issue</a>, look for my final response there.</h3>
+
 

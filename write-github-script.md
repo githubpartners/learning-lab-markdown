@@ -26,6 +26,7 @@ This allows you to use the workflow context to script any API usage that is avai
 
 Let's take a closer look at how this action compares to Octokit.
 
+
 ## Create an issue comment
 
 If we take a look at the [Octokit documentation](https://octokit.github.io/rest.js/v17#issues-create-comment) on how to create issue comments we are greeted with the following method:
@@ -91,6 +92,7 @@ Again, that's not too hard at all. Now let's do the same thing, only using the G
     })
 ```
 
+
 ## That's not much different, so why might I want to use GitHub Script?
 
 With GitHub Script you don't have to worry about
@@ -110,6 +112,7 @@ Anything you can do with Octokit can be accomplished with GitHub Script 🎉!
 _You may have noticed that when using GitHub Script the method call starts with `github` and not `octokit`. This is because GitHub Script provides you with a pre-authenticated octokit/rest.js client stored in a variable named `github`._
 
 _`context` is a reference to an object containing the [context of the current workflow run](https://github.com/actions/toolkit/blob/main/packages/github/src/context.ts)_
+
 
 ## Using GitHub Script in a workflow
 
@@ -181,6 +184,7 @@ You can fill the body of this pull request with the following recommended conten
 
 I am waiting for you to create a new pull request before moving on.
 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -194,9 +198,11 @@ and it should be located here:
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
 
+
 ## A new pull request
 
 I have created a [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 ## You have added a workflow!
 
@@ -218,9 +224,11 @@ Once you have merged this pull request I will open a new issue so we can see thi
 
 <details><summary>Trouble merging?</summary>Try refreshing the page!</details>
 
+
 Oops! I was expecting you to take **{{ expected }}**.
 
 I'll respond when you take the expected action.
+
 ## Look 👀 at you!
 
 Super awesome job so far!
@@ -252,11 +260,14 @@ If you need to make changes to your code, remove the [main branch protection]({{
 
 I'll respond in this issue after your workflow runs!
 
+
 ## A new issue has been opened
 
 I have created a [new issue]({{issueUrl}}) where we will continue this lesson. Click the link to meet me over there.
 
+
 {{debug}}
+
 
 # Success 🎉!!!
 
@@ -269,6 +280,7 @@ Using GitHub Actions can really help automate the events that take place in your
 ## What about us?
 
 For the rest of the course we are going to design a workflow that helps us move issues into a GitHub Project board when they are created. This will give us increased visibility on the work that needs triage!
+
 
 # Let's add a card to a project board
 
@@ -326,6 +338,7 @@ I am waiting for you to create a new pull request before moving on.
 
 I'll respond in the new pull request when I detect it has been created.
 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -339,9 +352,11 @@ and it should be located here:
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
 
+
 ## A new pull request
 
 I have created a [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 ## You have added a workflow!
 
@@ -365,9 +380,11 @@ Once you have merged this pull request I will open a new issue so we can see thi
 
 <details><summary>Trouble merging?</summary>Try refreshing the page!</details>
 
+
 Oops! I was expecting you to take **{{ expected }}**.
 
 I'll respond when you take the expected action.
+
 ## Great job @{{user.login}}
 
 Now that your updates have been merged and we've triggered the workflow we should see our workflow begin helping us automate the triage of new issues.
@@ -387,11 +404,14 @@ If you need to make changes to your code, remove the [main branch protection]({{
 
 I'll respond once your workflow has completed!
 
+
 ## A new issue has been opened
 
 I have created a [new issue]({{issueUrl}}) where we will continue this lesson. Click the link to meet me over there.
 
+
 {{debug}}
+
 
 ## Let's improve the workflow
 
@@ -408,6 +428,7 @@ One benefit of using actions is the ability to separate `jobs` into smaller unit
 As an added advantage, once we break the current workflow into multiple steps we can apply logic through expressions to them. This will let us create rules around when steps are allowed to run. Ultimately this allows us to optimize our workflow run!
 
 Since GitHub Script is simply an action, breaking each unique task into a new step works just fine! We will do this in our next activity!
+
 
 # Add steps for each action
 
@@ -467,9 +488,11 @@ I am waiting for you to create a new pull request before moving on.
 
 I'll respond in the pull request you create
 
+
 ## A new pull request
 
 I have created a [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 # Improving the issue comment
 
@@ -482,6 +505,7 @@ One such use case is our issue comment. Right now it is pretty hard coded the wa
 Instead of writing the guide directly into our workflow, we can use the Node.js File System module to read a file and use it as the body of our issue comment.
 
 If we want access to the files within our repository, we need to make sure we include the `actions/checkout` action in our workflow as the first step.
+
 
 ## Use a comment template from the repository
 
@@ -544,9 +568,11 @@ I am waiting for you to commit the desired changes to this branch before moving 
 
 I'll respond once you've committed the changes to this branch
 
+
 Oops! I was expecting you to take **{{ expected }}**.
 
 I'll respond when you take the expected action.
+
 ## Time to see the magic in action!
 
 @{{user.login}}, All of the necessary changes have been made, and our workflow now contains enough information to be quite awesome!
@@ -563,16 +589,20 @@ Once you have merged this pull request I will open a new issue so we can see thi
 
 <details><summary>Trouble merging?</summary>Try refreshing the page!</details>
 
+
 Oops! I was expecting you to take **{{ expected }}**.
 
 I'll respond when you take the expected action.
+
 ## A new issue has been opened
 
 I have created a [new issue]({{issueUrl}}) where we will continue this lesson. Click the link to meet me over there.
 
+
 # Oops!
 
 It seems like there is an issue with your workflow run. You'll need to head to the actions tab to troubleshoot your workflow
+
 
 ## Another workflow success
 
@@ -583,6 +613,7 @@ As you can see, there is now a more comprehensive response to a new issue being 
 **What about all the extra logic?**
 
 You're right! We added some expression logic to the workflow that will only add an issue to the project board, if it contains the `bug` label at the time of creation. Let's see if our logic works as intended!
+
 
 ### :keyboard: Activity: Create a new issue in this repository
 
@@ -598,15 +629,18 @@ I am waiting for you to open a new issue before moving on.
 
 I'll respond in your new issue once you've opened it
 
+
 # Oops!
 
 It seems like there is an issue with your workflow run. You'll need to head to the actions tab to troubleshoot your workflow
+
 
 ## Whoo hoo 🎉
 
 Super awesome job @{{user.login}}! As you can see, your workflow still commented on this issue, but it did not add it to the project board!
 
 Don't hesitate to experiment with changes to the current workflow to see if what kind of logic you can implement to change the response to an issue based on the conditions that surround your own software development lifecycle!
+
 
 ## What you learned
 
@@ -627,4 +661,5 @@ That should give you quite the start with incorporating the GitHub Script action
 ---
 
 Congratulations on finishing this course. You will receive no further responses from me, however further action taken in this repo could trigger workflow runs, because of this we recommend commenting out the workflow file if you plan to keep this repository for notes!
+
 

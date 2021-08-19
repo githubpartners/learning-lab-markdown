@@ -129,6 +129,7 @@ You'll see a short description that explains your current notification status.
 <hr>
 <h3 align="center">Keep reading below to find your first task</h3>
 
+
 ## Step 1: Assign yourself
 
 Unassigned issues don't have owners to look after them. When you’re assigned to an issue or pull request, it tells repository visitors and contributors that you'll be facilitating the conversation or task :muscle:.
@@ -143,6 +144,7 @@ For a printable version of the steps in this course, check out the [Quick Refere
 <h3 align="center">I'll respond when I detect you've assigned yourself to this issue.</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
+
 
 ## Step 2: Turn on GitHub Pages
 
@@ -165,6 +167,7 @@ Now, on to business! GitHub Pages allow you to serve a static site from a reposi
 
 > Turning on GitHub Pages creates a deployment of your repository. I may take up to a minute to respond as I await the deployment.
 
+
 ## Step 3: Close an issue
 
 You turned on GitHub Pages!
@@ -180,6 +183,7 @@ Now that you’ve completed the tasks in this issue, it's time to close it! Clos
 <hr>
 <h3 align="center">I'll respond when you've closed this issue.</h3>
 
+
 ### Introduction to GitHub flow
 
 Now that you're familiar with issues, let's use this issue to track your path to your first contribution.
@@ -190,6 +194,7 @@ People use different workflows to contribute to software projects, but the simpl
 
 <hr>
 <h3 align="center">Read below for next steps</h3>
+
 
 ## Step 4: Create a branch
 
@@ -263,10 +268,12 @@ The best way to keep branches organized with a team is to keep them concise and 
 <hr>
 <h3 align="center">I'll respond when I detect a new branch has been created in this repository.</h3>
 
+
 ## Consider this issue finished! :white_check_mark:
 
 <hr>
 <h3 align="center">Head over to <a href="{{ issueURL }}">the next issue</a> now!</h3>
+
 
 ## Step 5: Commit a file
 
@@ -362,6 +369,7 @@ The following steps will guide you through the process of committing a change on
 <hr>
 <h3 align="center">I'll respond when I detect a new commit on this branch.</h3>
 
+
 ## Step 6: Open a pull request
 
 Nice work making that commit :sparkles:
@@ -393,6 +401,7 @@ This pull request is going to keep the changes you just made on your branch and 
 <hr>
 <h3 align="center">I'll respond in your new pull request.</h3>
 
+
 Good pull requests have a body description that tells other contributors about the change you're suggesting, so they understand the context.
 
 Let's edit this pull request to add a body description.
@@ -408,6 +417,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 <hr>
 <h3 align="center">I'll respond when I detect this pull request's body has been edited.</h3>
 
+
 Your base branch should be named `main`. Let's open a new pull request to fix this.
 
 ### :keyboard: Activity: Adjust PR direction
@@ -420,6 +430,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">I'll respond when I detect this pull request's base has been edited.</h3>
+
 
 I was expecting your file to be named **{{ expected }}**. 
 
@@ -464,6 +475,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">I'll respond below when I detect a commit on this branch.</h3>
+
 
 ## Step 7: Respond to a review
 
@@ -512,6 +524,7 @@ Let’s add some content to your file. Replace line 5 of your file with a quotat
 <hr>
 <h3 align="center">I'll respond when I detect a commit on this branch.</h3>
 
+
 ## Step 8: Merge your pull request
 
 Nicely done @{{ user.username }}! :sparkles:
@@ -546,6 +559,7 @@ You successfully created a pull request, and it has passed all of the tests. You
 <hr>
 <h3 align="center">I'll respond when this pull request is merged.</h3>
 
+
 ### :keyboard: Activity: Reopen pull request
 
 Oooops! It looks like you might have accidentally closed your pull request.
@@ -555,6 +569,7 @@ Oooops! It looks like you might have accidentally closed your pull request.
 
 <hr>
 <h3 align="center">I'll respond when this pull request is merged.</h3>
+
 
 ## Nice work
 
@@ -595,4 +610,5 @@ Here are some suggestions for future courses you can take:
 - [Communicating using Markdown]({{ host }}/{{ course.Owner.login }}/communicating-using-markdown): We used a little Markdown in this course, but if you want to learn all about this :sparkles: syntax, take the course!
 
 [What will you learn next]({{ host }}/courses)?
+
 

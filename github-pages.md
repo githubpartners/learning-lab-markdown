@@ -40,6 +40,7 @@ After GitHub Pages is enabled and the site is started, we'll be ready to create 
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 It looks like your pull request description is empty, @{{ user.username }}. 
 
 **Did you know?** By adding keywords to your pull request, you can automatically close issues.
@@ -51,6 +52,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">Check below for next steps.</h3>
+
 
 ## Step 3: Merge your pull request
 
@@ -64,6 +66,7 @@ You can merge<sup>[:book:](https://help.github.com/articles/github-glossary/#mer
 
 <hr>
 <h3 align="center">Watch below for my response.</h3>
+
 
 ## Step 4: Customize Site Details
 
@@ -92,9 +95,11 @@ Let's change the `_config.yml` so it's a perfect fit for your new blog. First, w
 <hr>
 <h3 align="center">Look for my next response in your pull request.</h3>
 
+
 Good work @{{ user.username }}! This pull request is all finished up. Find your next task [here]({{ url }}).
 
 I'm going to go ahead and close our first issue <sup>[:book:](https://help.github.com/articles/github-glossary/#issue)</sup> now that you have updated your `index.md` file.
+
 
 It looks like your pull request description is empty, @{{ user.username }}. 
 
@@ -107,6 +112,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">Check below for next steps.</h3>
+
 
 It looks like you changed your theme, but for this activity we want to use `minima`.
 
@@ -125,6 +131,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">Watch below for my next comment.</h3>
+
 
 ## Step 5: Create a blog post
 
@@ -149,6 +156,7 @@ This pull request looks great so far. :sparkles: You've just edited the `_config
 <hr>
 <h3 align="center">Watch below for my response.</h3>
 
+
 ## Checking your post
 
 @{{ user.username }} I see you created a file, but there are a few things we need to address!
@@ -172,6 +180,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 
 <hr>
 <h3 align="center">Watch below for my response.</h3>
+
 ## Step 6: Add blog post metadata
 
 Now that you've created your Jekyll blog post file, we can add syntax to it. The syntax Jekyll files use is called YAML front matter. It goes at the top of your file and looks something like this:
@@ -204,6 +213,7 @@ This example adds a title and date to your blog post. There are other useful thi
 <hr>
 <h3 align="center">Watch below for my response.</h3>
 
+
 ## Checking your front matter
 
 It looks like there may be some errors in your front matter. Take a look at your front matter and make sure the following is true:
@@ -234,6 +244,7 @@ If you would like assistance troubleshooting the issue you are encountering, cre
 <hr>
 <h3 align="center">Watch below for my response.</h3>
 
+
 ## Step 7: Merge your first post
 
 Nice work @{{ user.username }} :tada:! Users will be reading your blog in no time!
@@ -246,6 +257,7 @@ Nice work @{{ user.username }} :tada:! Users will be reading your blog in no tim
 
 <hr>
 <h3 align="center">Watch below for my response.</h3>
+
 
 ## Nice work
 
@@ -266,4 +278,5 @@ Before we finish, let's recap everything you completed in this repository
 
 ## What's next?
 There's so much more you can do with GitHub Pages, and you have a solid start. Now...[what will you learn next]({{ host }}/courses)?
+
 

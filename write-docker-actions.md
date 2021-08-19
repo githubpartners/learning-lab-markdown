@@ -28,6 +28,7 @@ _In our case, we will use this one **workflow** file for many things, which lead
 
 📖 Read more about [workflows](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#choosing-the-type-of-actions-for-your-workflow)
 
+
 ## Oh no...  I found an error ⚠️
 
 **Error**
@@ -42,15 +43,18 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 ## A new pull request
 
 Now, let's move to the [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 ## You have triggered a workflow!
 
 Great job adding the workflow. Adding that file to this branch is enough for GitHub Actions to begin running on your repository. The time this takes will vary based on the complexity of the workflow. At this point we can ignore the workflow because it doesn't do anything yet, but while this runs I'll briefly explain the components of the workflow you just added.
 
 If you want to inspect your running workflow you can do so by heading over to the [Actions tab]({{actionsUrl}}) of this repository.
+
 
 ## Anatomy of GitHub Actions
 
@@ -80,6 +84,7 @@ When a repository is configured with a **workflow** file, like we just created, 
 3.  The runner, regardless of the hosting method, is responsible for carrying out the jobs which are defined
 4.  A job is series of steps, which can be actions or commands
 5.  When the steps complete a report is generated and can be viewed by anyone with access to the repository
+
 
 
 
@@ -143,6 +148,7 @@ Let's take a second to talk about each of the pieces that we see here:
 📖Take a deeper dive into [workflow components](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-workflows)
 📖Read more about [configuring workflows](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-workflows)
 
+
 ## Digging into a step
 
 As I mentioned earlier, a step is a task that is either an action or a command. This can be slightly confusing, so I want to take a little time to ensure I explain it to you before moving on.
@@ -190,6 +196,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 - Edit the workflow file on GitHub and ensure there are no red lines indicating a syntax problem
   </details>
 
+
 ## Edit the current workflow
 
 Currently `my-workflow.yml` is not set up correctly for our use-case. It worked great for allowing us to take a high-level look at workflows, but if we want to use our custom actions there are some changes that we have to make to it.
@@ -217,9 +224,11 @@ Currently `my-workflow.yml` is not set up correctly for our use-case. It worked 
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Finishing the workflow
 
 @{{user.login}} you're doing great so far 😄! You've had to do a lot of workflow set up so we can begin writing custom actions. We have just one more thing to add to our `my-workflow.yml` file before we get to the action side of things.
@@ -271,9 +280,11 @@ If you'd like to see more examples of workflows and actions then check out these
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Hello world with Docker 🐳
 
 @{{user.login}} we are going to start with the typical "Hello World" example and build something more complex after, but first let's decide if a Docker based action is the right action for us!
@@ -292,6 +303,7 @@ That's a super great question to ask. Before we talk about the components that m
 #### Got it, what now?
 
 Let's begin by exploring the components of a Docker based action and discuss how they fit together!
+
 
 ## Anatomy of an action
 
@@ -324,6 +336,7 @@ _Although the **workflow** file is used to allow us to set the `inputs` and `out
 
 You may be following along on the [Actions tab]({{actionsUrl}}) of this repository. If you are, you'll notice that the workflow we set up previously is failing. That is the currently expected behavior: we referenced an action in the `hello-world` directory, which doesn't yet exist. We will be fixing that as we move forward with the lesson.
 
+
 ## Action metadata
 
 Since every GitHub Action that we write needs to be accompanied by a metadata file this is the file we will create first.
@@ -348,6 +361,7 @@ This file defines the following information about your action:
 ---
 
 📖Read more about [Action metadata](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions)
+
 
 ## Create the action metadata
 
@@ -379,6 +393,7 @@ We will start with using the parameters that are **required** and later implemen
 ---
 
 I'll respond when you create a new pull request.
+
 ## Great Job 👍
 
 Your workflow is now set up to execute two actions when any `push` event happens on this repository.
@@ -386,6 +401,7 @@ Your workflow is now set up to execute two actions when any `push` event happens
 For now, this workflow will fail.  It fails because we have not yet created the `hello-world` action, so this is expected.
 
 Head [over here]({{issueUrl}}) to get started in creating the `hello-world` action!
+
 ## Oh no...  I found an error ⚠️
 
 **Error**
@@ -400,6 +416,7 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 ## Write the Hello World source code
 
 Great job @{{user.login}}, you now have action metadata for your first action. The next piece we will add will be the logic of our action. In this case, our logic will be written in Go.
@@ -432,15 +449,18 @@ The first iteration of our action will follow the traditional path of logging "H
 
 I'll respond when you push changes to this pull request.
 
+
 ## Great job 👍
 
 I have created a [new pull request]({{pullUrl}}) where we will continue this lesson.  Click the link to meet me over there.
 
 In the meantime I have closed this issue since we wont be needing it anymore 😄
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -453,6 +473,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 
 Awesome 🎉
@@ -489,9 +510,11 @@ Lastly we will create the `Dockerfile`. Like with Go programming, it is perfectl
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -504,6 +527,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Congratulations 🎉
 
@@ -518,6 +542,7 @@ You can do this in your own [Actions tab]({{actionsUrl}}) or you can settle for 
 Whoa, that's a lot of output for a simple hello world! Don't let this alarm you, the output you see is from the `Docker build` operation that packages up your files into a Docker image.
 
 📖 Learn about [Docker build](https://docs.docker.com/engine/reference/commandline/build/)
+
 
 ## Using input parameters
 
@@ -644,6 +669,7 @@ _How you access environment variables will vary by language_
 
 📖Read more about the [input parameter](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions#inputs)
 
+
 ## Add input parameters to Hello World's metadata
 
 Now that we know what input parameters are, let's edit the metadata for our **hello-world** action.
@@ -686,9 +712,11 @@ Now that we know what input parameters are, let's edit the metadata for our **he
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Use input parameters in the source code
 
 Great job 👍 next let's update our source code to consume the inputs that are now defined.
@@ -733,9 +761,11 @@ Great job 👍 next let's update our source code to consume the inputs that are 
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Use input parameters in the workflow
 
 The last piece to this actions puzzle is to edit the workflow file so that we can set custom values for these inputs.
@@ -770,9 +800,11 @@ The last piece to this actions puzzle is to edit the workflow file so that we ca
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Take a 👀 at what you made!
 
 Great Job 👍 making those changes @{{user.login}}. I will take just a moment to walk you through what happened.
@@ -793,6 +825,7 @@ Circling back to the `fistGreeting` you may have noticed that you were able to o
 
 Had you been explicit with `thirdGreeting` in the `my-workflow.yml` file then the `if` statement in the `main.go` file would have executed and you would have three inputs.
 
+
 ## Explore your input parameters
 
 Take a few minutes to play with the current code you have. I don't suggest editing the `main.go`, `Dockerfile`, or `action.yml` files, rather I think there is a lot to gain by changing the `my-workflow.yml` file to include or exclude certain input parameters.
@@ -811,9 +844,11 @@ Our next lesson will show you how to add external libraries to an action as well
 
 When I notice that you have **merged this branch** I will open a new issue in your repository to continue guiding you.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Cat Facts anyone?
 
 ![Kittens everywhere meme](https://user-images.githubusercontent.com/38021615/74055102-361bcb00-4994-11ea-9525-3aef295f0373.png)
@@ -877,6 +912,7 @@ For our purposes the API we use will not require authentication, however that is
 
 What are we waiting for, let's get started 😉
 
+
 ## Setting up the next action
 
 Before we continue we are going to need to do a few things. First and foremost our workflow is currently setup to run each time there is a `push` event to this repository. As you can imagine, this generates a lot of noise when learning.
@@ -918,11 +954,13 @@ You will still see the workflow trying to execute with every push if you look at
 ---
 
 I'll respond when you create a new pull request.
+
 ## Congrats on your first Action 🎉
 
 Congratulations {{user.login}} you have officially written your first GitHub Docker action!!!
 
 That's super exciting news, but this lesson has just started, so let's head over to the [new issue I've opened]({{issueUrl}}) to continue writing GitHub Actions.
+
 
 ## Oh no...  I found an error ⚠️
 
@@ -938,9 +976,11 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 ## A new pull request
 
 Now, let's move to the [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 ## Add metadata to the cat-fats action
 
@@ -974,9 +1014,11 @@ We will not use the `fact` in in this portion of the course. There will be a lat
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -989,6 +1031,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Fetch a cat fact
 
@@ -1068,9 +1111,11 @@ If Python is a new programming language to you, like always don't worry. You are
 
 I'll respond when you push changes to this pull request.
 
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1083,6 +1128,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Add Python dependencies
 
@@ -1106,9 +1152,11 @@ A `requirements.txt` file is required so that the Python package manger, PIP, kn
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1121,6 +1169,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Add the cat-fact `Dockerfile`
 
@@ -1159,9 +1208,11 @@ Lastly we will create the `Dockerfile`, just like we did with our first action.
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1174,6 +1225,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Use the cat-fat action
 
@@ -1215,9 +1267,11 @@ Let's change the tigger and add the cat fact action
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## {{user.login}} get ready to purr
 
 Great job! Everything is all set up and now we are ready to start learning about cats 🐈. You will find you have some cat fact related labels available to you in this repository. You don't have to use them, any label will trigger our workflow, but it might be easier to follow along with me if you use the labels I suggest.
@@ -1233,9 +1287,11 @@ Feel free to continue adding labels to this pull request if you want to see more
 ---
 
 When you are ready to move forward in the lesson merge this pull request into the `main` branch. I will respond when you've merged this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Action three
 
 Two actions down, one more to go! Before we move on with building our final action let's take a second to do a quick recap since this lesson has thrown a lot of information at you.
@@ -1308,11 +1364,13 @@ We need to make some edits to the `my-workflow.yml` file to get it configured to
 
 I'll respond when you create a new pull request.
 
+
 ## Congrats on your second action 🎉
 
 Congratulations {{user.login}} you have officially written two GitHub Docker based actions!!!
 
 Next, you'll write your final action of this course, so let's head over to the [new issue I've opened]({{issueUrl}}) to continue.
+
 
 ## Oh no...  I found an error ⚠️
 
@@ -1328,9 +1386,11 @@ Follow these steps to rename your pull request:
 1. Click **Save**.
 
 I'll respond when I detect this pull request has been renamed.
+
 ## A new pull request
 
 Now, let's move to the [new pull request]({{pullUrl}}) where we will continue this lesson. Click the link to meet me over there.
+
 
 ## {{user.login}} it's time to get ready for the third action: issue-maker 🎉
 
@@ -1370,9 +1430,11 @@ This time we will start with the dependencies for our action. JavaScript project
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1385,6 +1447,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Create the issue-maker's action metadata
 
@@ -1451,9 +1514,11 @@ Our action will also need to accept an input so that we can let the user specify
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1466,6 +1531,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Add the issue-maker action's source code
 
@@ -1508,9 +1574,11 @@ Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper dire
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1523,6 +1591,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 ## Add the issue-maker action's `Dockerfile`
 
@@ -1553,9 +1622,11 @@ One more piece to add and that is this actions `Dockerfile`. Once you complete t
 ---
 
 I'll respond when you push changes to this pull request.
+
 Uh oh, I was expecting {{ expected }}
 
 I'll respond when I detect the expected action. 
+
 ## Oops....
 
 It seems as though your file is located here:
@@ -1568,6 +1639,7 @@ and it should be located here:
 
 **Solution**
 Click [here]({{editLink}}) to edit `{{fileName}}` and move it to the proper directory
+
 
 # Great job!
 
@@ -1610,6 +1682,7 @@ You used multiple languages to write your action source code.
 
 I also want to take a few minutes to point you to the information you need to place your own custom actions on the [GitHub Marketplace](https://github.com/marketplace?type=actions) for others to use.
 
+
 # Trigger all the things 🎉
 
 Let's trigger your new workflow!
@@ -1625,6 +1698,7 @@ Try adding another label and see if you get a new fact!
 ---
 
 When you have finished experimenting, merge this pull request and meet me [in this issue]({{issueUrl}}) to finish wrapping things up.
+
 ## Publishing your actions
 
 Publishing your actions is a great way to help others in your team and across the GitHub community. Although actions do not need to be published to be consumed by adding them to the marketplace you make them easier to find.
@@ -1639,6 +1713,7 @@ Some notable actions you will find on the marketplace are:
 And that just scratches the surface of the 2000+ and counting actions you will find on the marketplace 😄
 
 📖Follow [this guide](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/publishing-actions-in-github-marketplace#publishing-an-action) to learn how to publish your actions to the GitHub Marketplace
+
 
 ## The End 😭
 
@@ -1655,4 +1730,5 @@ We would love to hear what you thought about this course, share your experience 
 ---
 
 To fully complete your course **close this issue**
+
 

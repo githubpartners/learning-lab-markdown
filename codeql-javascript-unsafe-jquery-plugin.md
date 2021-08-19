@@ -46,6 +46,7 @@ There are also sample solutions in [the course repository]({{repoUrl}}/tree/main
 
 Hope this is exciting! Please close this issue now, and [continue to the next step]({{repoUrl}}/issues/2).
 
+
 ## Step 2: Setup your environment
 
 We will use the CodeQL extension for Visual Studio Code. You will take advantage of IDE features like auto-complete, contextual help and jump-to-definition.
@@ -53,6 +54,7 @@ We will use the CodeQL extension for Visual Studio Code. You will take advantage
 Don't worry, you'll do this setup only once, and you'll be able to use it for future CodeQL development.
 
 Follow the instructions below. 
+
 
 
 ### :keyboard: Activity: Set up
@@ -70,6 +72,7 @@ Follow the instructions below.
 3. Add the course repository to your Visual Studio Code starter workspace, by navigating to File > Add Folder to Workspace... If you open this folder you should see several files in there, including `qlpack.yml` and `README.md`.
 
 Please close this issue now, and [continue to the next step]({{repoUrl}}/issues/3).
+
 
 ## Step 3: Finding calls to the jQuery `$` function
 
@@ -101,6 +104,7 @@ Now it's time to submit your query. You will have 2 choices to do that, and we'l
 
 Read carefully: you will need to follow the same steps to submit your answers to later steps. You can always come back to this issue later to check the submission instructions.
 
+
 ### Submission: Commit your query via a Pull Request
 
 The first method to submit your query is via a Pull Request. Using a Pull request has several advantages:
@@ -128,6 +132,7 @@ To submit this query via Pull Request, you can follow the following workflow:
 5. If the status is green, merge your PR and follow these instructions.
 
 
+
 ### Submission: Commit your query directly to the default branch
 
 This method is simpler. You won't have to juggle between branches, rebase onto the default branch, or create Pull Requests. However, merging directly to the default branch is not a good practice when you are contributing to a shared code base, so if you choose this method, please don't take this bad habit home with you!
@@ -147,11 +152,14 @@ To submit this query via a direct commit to the default branch, you can follow t
 
     To track the execution of the query checker, you can follow along in the [Actions panel]({{repoUrl}}/actions) if you like.
 
+
 Ok, you're done with the setup, moving on!
+
 
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 ## Step 4: Anatomy of a query
 
@@ -193,6 +201,7 @@ So far your query finds all functions with the name `$`. It does this by asserti
 
 One way to do this is to declare two variables: one to represent function calls, and one to represent call arguments. Then you will have to create a relationship between these variables in the `where` section, so that they are restricted to the first arguments of calls to functions named `$`.
 
+
 ### :keyboard: Activity: Find the 1st argument to all calls to `$`
 
 We want to identify the expression that is used as the first argument for each call, such as in `$(<first-argument>)`.
@@ -205,13 +214,16 @@ We want to identify the expression that is used as the first argument for each c
 
  
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 ## Step 5: Using the jQuery library
 
@@ -219,6 +231,7 @@ So far we have looked for the function name `$`. Are there other ways of calling
 
 The CodeQL standard library for JavaScript has a built-in predicate `jquery()` to describe references to `$`. 
 Calling the predicate `jquery()` returns all values that refer to the `$` function, and chaining this call with `getACall()`, will give you all calls to this function.
+
 
 ### :keyboard: Rewrite your query
 
@@ -231,13 +244,16 @@ Notice that when you call `jquery()`, `getACall()`, and `getArgument()` in succe
 These **data flow nodes** describe a part of the source program that may have a value, and let us do more complex reasoning about this value. We'll learn more about these in the next section.
 
 You new query should give you the same results as the previous one. Submit your solution in the new file `dollar-arg-node.ql` when you're happy with it.
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 ## Step 6: Finding jQuery plugin options
 
@@ -253,12 +269,14 @@ In the following steps, we'll find such plugins, and their options. We'll find
 - the option parameters of these functions
 
 
+
 ### :book: Learn about data flow nodes
 
 Take a few minutes to read about the data flow nodes for JavaScript and TypeScript.
 - The [data flow nodes](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html#data-flow-nodes)
 - The [source nodes](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html#source-nodes) are places in the program that **introduce a new value**, from which the flow of data may be tracked. They are the source of this new value, either because they create a new object, such as object literals or functions, or because they represent a point where data enters the local data flow graph, such as parameters or property reads.
 - The `DataFlow::FunctionNode` is a data flow node that corresponds to a function (expression or declaration)
+
 
 
 ### :keyboard: Finding jQuery property reads
@@ -269,13 +287,16 @@ Notice that `jquery()` returns a value of type `DataFlow::SourceNode`, from whic
 
 Write your query in the file `property-read.ql` and submit it.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 ## Step 7: Finding the jQuery plugins
 
@@ -295,6 +316,7 @@ fn.copyText = f
 The use of intermediate variables and nested expressions are typical source code examples that require use of **local data flow analysis** to detect our pattern.
 
 
+
 ### :book: Local data flow analysis
 
 Data flow analysis helps us answer questions like: does this expression ever hold a value that originates from a particular other place in the program?
@@ -310,6 +332,7 @@ The CodeQL JavaScript data flow library is very expressive. It has several class
 When we are looking for the flow of information to or from these nodes within a single function or scope, this is called **local data flow analysis**. The CodeQL library has several predicates available on different types of data flow node that reason about local data flow, such as `getAPropertyRead()` that we used in the previous step.
 
 
+
 ### :keyboard: Find the plugin
 
 Code your query in the file `jquery-plugins.ql`: 
@@ -317,18 +340,22 @@ Your query must find a function assigned to `$.fn.<some-property>`. To do so, yo
 
 Submit your query.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
+
 
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
 
+
 ## Step 8: Finding the jQuery plugin options
 
 Now we want to finally find the jQuery plugin options. 
 These are the last parameter of the functions that we found in the previous step.
+
 
 
 ### :keyboard: Write your query
@@ -342,17 +369,21 @@ Edit the file `plugin-options.ql` and copy there your previous query.
 Submit your query.
 
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
+
 
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
 
+
 ## Step 9: Detecting the sources 
 
 We have now identified places in the program which receive jQuery plugin options, and which may be considered as **sources** of untrusted data. In this step we'll create a predicate that will hold true if a `DataFlow::Node` is such a source. This predicate will be helpful for our last query.
+
 
 ### :book: The `exists` quantifier
 
@@ -389,6 +420,7 @@ select dollarCallWithArgument
 ```
 
 
+
 ### :keyboard: Identify sources
 
 You will transform the previous query you wrote to identify the places in the program which receive jQuery plugin options, into a predicate called `isSource`, by using the `exists` quantifier. 
@@ -418,13 +450,16 @@ select node
 ```
 
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 ## Step 10: Putting it all together
 
@@ -467,6 +502,7 @@ select sink, source, sink, "Potential XSS vulnerability in plugin."
 ```
 In this template, we just have to define what are the **sources** and the **sinks** that we want to consider, and the CodeQL global data flow library will give us all the paths where data can flow from these sources to these sinks, using the predicate `hasFlowPath` that holds true when tainted data from a given source flows to a sink.
 
+
 ### :keyboard: Finish line! The final taint tracking query
 
 Edit the file `final.ql` and paste the below template:
@@ -504,13 +540,16 @@ This final query should find 5 results in the unpatched Bootstrap codebase. You 
 
 Submit your query when you're happy with the results.
 
+
 Congratulations, looks like the query you introduced in {{commit}} finds the correct results!
 
 Take a look at the [instructions for the next step]({{next_issue}}) to continue.
 
+
 Ooops! The query you submitted in {{commit}} didn't find the right results. Have a look at the [comment]({{commentUrl}}). 
 
 To submit a new iteration of your query, you just have to push a new commit to the same branch (the default branch or the PR branch).
+
 
 Congratulations, you have finished the course!
 
@@ -522,5 +561,6 @@ Congratulations, you have finished the course!
   - Try out the CodeQL [Capture-the-Flag challenges](https://securitylab.github.com/ctf).
   - Read about more vulnerabilities found using CodeQL on the GitHub Security Lab [research blog](https://securitylab.github.com/research).
   - Get [bounty rewards](https://securitylab.github.com/bounties) for contributing to securing open source by writing CodeQL queries.
+
 
 

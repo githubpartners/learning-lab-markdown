@@ -35,6 +35,7 @@ Assignees on issues and pull requests let other team members know who is respons
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 # Commenting on Pull Requests
 
 As a collaborator on a repository, you will get and give pull request reviews before merging code. This is important! It ensures quality code and maintains momentum of changes to your project.
@@ -74,14 +75,17 @@ When an approval or request for changes is not yet needed, consider using **comm
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 Nice work, @{{ user.username }}! Assigning yourself to an issue is a great way to let people know what you are working on. Once you begin working, it's important to get feedback on your work through reviews.
 
 <hr>
 <h3 align="center">Learn more in the <a href="{{ url }}">next pull request</a> </h3>
 
+
 Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Reviewing Pull Requests
 
@@ -120,6 +124,7 @@ I've made some changes to this branch and would love :heart: it if you could `ap
 <h3 align="center">Return to this pull request for my next comment</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
+
 
 # Using `request changes` on a pull request
 
@@ -172,6 +177,7 @@ If you could check out this code for me and tell me what is wrong, that would be
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 ## Great work!
 
 Thanks for approving my pull request. Now, I can merge it into our project.
@@ -181,17 +187,20 @@ Thanks for approving my pull request. Now, I can merge it into our project.
 <h3 align="center">Let's continue working in <a href="{{ url }}">the next pull request</a>
 </h3>
 
+
 It looks like you've given me an approval, but the code isn't ready yet.
 
 Luckily, you can change your mind about reviews. Go ahead and leave a review again, but make sure to select "request changes" this time.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
 
+
 It looks like you've commented, but the code isn't ready yet.
 
 Luckily, you can change your mind about reviews. Go ahead and leave a review again, but make sure to select "request changes" this time.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 ## Requesting changes
 
@@ -218,6 +227,7 @@ While you were reading this, I made your suggested changes. If you could approve
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 ## Step 8: Don't just review, suggest!
 
 Now that you have explored the different ways you can review a pull request it is time to learn how to use the _suggest changes_ functionality. This feature, enables you to recommend a change to a pull request that the author can commit with the push of a button!
@@ -228,6 +238,7 @@ Now that you have explored the different ways you can review a pull request it i
 
 <hr>
 <h3 align="center">Click here to start the <a href="{{ url }}">pull request</a></h3>
+
 
 Good pull requests help contributors understand the context. They have a body description detailing the suggested change.
 
@@ -248,6 +259,7 @@ If you would like help troubleshooting, create a post on the [GitHub Community](
 <h3 align="center">Watch below for my response</h3>
 
 [octicon-kebab-horizontal]: https://unpkg.com/octicons/build/svg/kebab-horizontal.svg
+
 
 Thanks for opening this pull request, @{{ user.username}}. 
 
@@ -271,6 +283,7 @@ It looks like this:
 
 For more information about suggested changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
 
+
 ## Step 7: Merge this pull request
 
 Thanks for accepting my suggested change. Now that the pull request is finished, you should merge the change in and start playing your game!
@@ -281,15 +294,18 @@ Thanks for accepting my suggested change. Now that the pull request is finished,
 1. Click **Confirm merge**
 1. Delete the branch
 
+
 Oh no! @{{ user.username }}, it looks like you have accidentally closed this pull request. To complete this activity, please reopen and use the instructions provided to close this pull request in its correct sequence of steps.
 
 If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+
 
 # Congratulations! :tada:
 
 ![hulatocat](https://octodex.github.com/images/hula_loop_octodex03.gif)
 
 Nice work helping me with all these pull requests! As you continue working on GitHub, remember that high quality reviews improve your projects. If you are new to a repository, inquire about what review practices they have so you can hit the ground running.
+
 
 
 

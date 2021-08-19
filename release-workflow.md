@@ -53,6 +53,7 @@ Before using a release based workflow for a larger release, let's create a tag a
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response, wait a few seconds and refresh the page for your next steps._
 
+
 ## Organizing Releases
 
 Creating a release package on GitHub might be easy, but it's only a piece of the puzzle. Releases often involve prioritized bug fixes, feature releases, and assorted tasks. How do you make sure you're keeping track? What happens if you want to save the most exciting features for a larger update?
@@ -74,12 +75,14 @@ On GitHub, let's keep track of several related issues with a GitHub project boar
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 Great work! Notice that your release URL is ready for sharing or testing as both a zip or tar.gz file. If you selected "Pre-release", your co-contributors will know that this release isn't stable.
 
 ![image](https://user-images.githubusercontent.com/13326548/47883578-bdba7780-ddea-11e8-84b8-563e12f02ca6.png)
 
 <hr>
 <h3 align="center">Your next steps can be found in <a href="{{ url }}">your next issue</a>.</h3>
+
 
 ## Adding to the project
 
@@ -99,6 +102,7 @@ Add this issue to your new project board.
 
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
+
 
 ## Release management
 
@@ -139,11 +143,13 @@ Using the GitHub flow, make your update, and open a pull request with `release-v
 <hr>
 <h3 align="center">I'll respond in your pull request with the next step.</h3>
 
+
 Great work! After you added the **Organizing a release** issue card to the project board, I closed this issue. With project board automation, the card you added to the "In progress" column is now in the "Done" column. 
 
 To check to see if your card moved, check out your [project]({{ repoUrl }}/projects/1).
 
 Your next steps can be found in [your next issue]({{ url }}).
+
 
 Uh oh, the base of this pull request isn't quite right.
 
@@ -156,6 +162,7 @@ See [Changing the base branch of a pull request](https://help.github.com/article
 
 <hr>
 <h3 align="center">I'll respond in this pull request when you've changed the base.</h3>
+
 
 ## Merge
 
@@ -174,7 +181,9 @@ Merge this pull request so that you can open the release pull request as early a
 <hr>
 <h3 align="center">I'll respond below for your next step.</h3>
 
+
 Uh oh, you closed instead of merging! I'll reopen, and you can go ahead and merge the pull request now.
+
 
 ## Release branches and `main`
 
@@ -200,7 +209,9 @@ Let's make a new pull request comparing the `release` branch to the `main` branc
 <hr>
 <h3 align="center">I'll respond in your new pull request with next steps.</h3>
 
+
 Thank you for merging. Your next steps are found in the [next issue]({{ url }}). 
+
 
 Uh oh, the branches in this pull request aren't quite right.
 
@@ -214,6 +225,7 @@ I was expecting `base:` set to `main`, and `compare:` set to `release-v1.0`.
 <hr>
 <h3 align="center">I'll respond in this pull request when you've changed the base, or in your new pull request if you close this one out.</h3>
 
+
 Uh oh, the title of your pull request isn't right.
 
 ### :keyboard: Activity: Fix the title
@@ -224,6 +236,7 @@ I was expecting a title of: `Release v1.0`
 
 <hr>
 <h3 align="center">I'll respond in this pull request when you've changed the title.</h3>
+
 
 ## Adding green text
 
@@ -251,12 +264,14 @@ To approve a pull request, perform the following:
 
 ![approve pull request gif](https://user-images.githubusercontent.com/16547949/49187146-8f21b500-f334-11e8-843c-90f20e27a2dd.gif)
 </details>
+
 Release branches are long lived, and we opened a pull request for another feature change. This will give our release a more detailed history. We changed the default text to green instead of white.
 
 Several changes might be included in release branches. This is a common practice, and allows you to continue to ship code quickly without blockers.
 
 <hr>
 <h3 align="center">Head over to the <a href="{{ url }}">next pull request</a> for your next steps.</h3>
+
 
 ## Automating releases
 
@@ -282,7 +297,9 @@ Note: For privacy reasons, we can't see what other apps have access to this repo
 
 > _Sometimes I respond too fast for the page to update! If you don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
+
 Nice work. Your next steps are back in the [release's pull request]({{ url }}). 
+
 
 Uh oh, the branches in this pull request aren't quite right.
 
@@ -295,6 +312,7 @@ I was expecting `base:` set to `release-v1.0`, and `compare:` set to `config-rel
 
 <hr>
 <h3 align="center">I'll respond in this pull request when you've changed the base, or in your new pull request if you close this one out.</h3>
+
 
 Oops, it looks like something about your release-drafter.yml file is off. 
 
@@ -317,6 +335,7 @@ template: |
 
   $CHANGES
 ```
+
 ## Step 9: Merge the config for Release Drafter
 
 Great! It looks like you've configured Release Drafter by adding a `.github/release-drafter.yml` file. Let's make sure it makes it into our upcoming release. 
@@ -325,7 +344,9 @@ Great! It looks like you've configured Release Drafter by adding a `.github/rele
 
 1. Click **Merge pull request**, and delete your branch.
 
+
 Nice work. Your next steps are back in the [release's pull request]({{ url }}). 
+
 ## Step 10: Merge the release branch
 
 Because the main branch is protected, this pull request couldn't be merged until it received an approval. I've gone ahead and approved this one for you. It looks great!
@@ -341,7 +362,9 @@ It's generally a good idea to make sure that branches, especially long-lived one
 <hr>
 <h3 align="center">Merge, then look for my response below.</h3>
 
+
 Uh oh, you closed instead of merging this pull request! I'll reopen it, so you can merge.
+
 
 ## Finalizing releases
 
@@ -378,11 +401,13 @@ Let's now change our recently automated release from _draft_ to _latest release_
 <hr>
 <h3 align="center">I'll respond below with your next step.</h3>
 
+
 Thanks for the merge. Notice that I didn't delete the branch? That's intentional.
 
 Sometimes mistakes can happen with releases, and we'll want to be able to correct them on the same branch. Before we worry about any of that, let's finalize our first release!
 
 Look for instructions in [this issue]({{ url }}).
+
 
 Now that your release is finalized, we have a confession to make... somewhere in our recent update, I made a mistake and introduced a bug. Instead of changing the text colors to green, we changed the whole background.
 
@@ -410,13 +435,16 @@ Submit a hotfix by applying the suggested change and approving this PR.
 <hr>
 <h3 align="center">I'll respond below with your next steps</h3>
 
+
 How's this change? 
 
 ```suggestion
     starCtx.fillStyle = "#000";
 ```
 For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
+
 Congratulations on creating Release v1.0.0! Navigate to [the next pull request]({{ url }}) for your next steps.
+
 
 ## Step 13: Approve the backport pull request
 
@@ -430,12 +458,14 @@ In our case, no new changes have been merged into main since we shipped our hotf
 
 <hr>
 <h3 align="center">I'll respond below after you approve</h3>
+
 Your fix is now on `main`! This ensures that any new code isn't based on our bug.
 
 Let's backport those changes to the branch with release v1.0.
 
 <hr>
 <h3 align="center">Go to <a href="{{ url }}">the next pull request</a>.</h3>
+
 
 ## A final release
 
@@ -456,12 +486,14 @@ With automation, you don't have to spend a lot of time working on your release d
 <hr>
 <h3 align="center">I'll respond below with your next steps.</h3>
 
+
 Congratulations! Your hotfix is now:
 - on the `main` branch (for any new code)
 - on the `release` branch (so we can cut release v1.0.1)
 
 <hr>
 <h3 align="center">Go to the <a href="{{ url }}">next issue</a> to continue.</h3>
+
 
 ## Well done!
 
@@ -487,4 +519,6 @@ Want to keep learning? Feel free to [check out our other courses]({{ host }}/cou
 <hr>
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished!</h3>
 
+
 Great work! Your next steps can be found in [your next issue]({{ url }}).
+
