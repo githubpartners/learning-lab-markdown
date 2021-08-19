@@ -41,6 +41,30 @@ After GitHub Pages is enabled and the site is started, we'll be ready to create 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
 
 
+## Step 2: Customize your homepage
+
+Great job! Now that GitHub Pages is enabled, you can view your website here: {{ deploymentUrl }}
+
+You can customize your homepage by adding content to either an `index` file or the `README.md` file. GitHub Pages first looks for an `index` file. If an `index` file is found, GitHub Pages uses the content in the file to create the homepage. If an `index` file isn’t found, it uses the `README.md` to create the homepage.
+
+Your repository has an `index.md` file so we can update it to include your personalized content.
+
+### :keyboard: Activity: Create your homepage
+
+1. Navigate to the **Code** tab of this repository, and browse to the `index.md` file, or click this link [here]({{ repoUrl }}/blob/main/index.md)
+2. In the upper right corner, click the ![octicon-pencil] icon to edit the `index.md` file
+3. Type the content you want on your homepage. You can also modify `title:` or just ignore it for now. We'll discuss it later in this course.
+4. Scroll to the bottom, type a commit message, and click **Create a new branch for this commit and start a pull request**
+5. Open a pull request
+
+> Once you have created your pull request, I will move over there to discuss next steps.
+
+<hr>
+<h3 align="center">Look for my next response in your pull request.</h3>
+
+[octicon-pencil]: https://unpkg.com/octicons/build/svg/pencil.svg
+
+
 It looks like your pull request description is empty, @{{ user.username }}. 
 
 **Did you know?** By adding keywords to your pull request, you can automatically close issues.

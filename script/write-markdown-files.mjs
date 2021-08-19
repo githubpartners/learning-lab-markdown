@@ -45,8 +45,12 @@ _${config.description.trim()}_
     const actions = listMdValuesRecursive(config.before)
     if (actions) {
       for (const response of actions) {
-        file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
-        file += '\n\n'
+        try {
+          file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
+          file += '\n\n'
+        } catch (e) {
+          console.error(`No file named ${repoDir}/responses/${response}`)
+        }
       }
     }
   }
@@ -55,8 +59,12 @@ _${config.description.trim()}_
     const actions = listMdValuesRecursive(step.actions)
     if (actions) {
       for (const response of actions) {
-        file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
-        file += '\n\n'
+        try {
+          file += await fs.readFile(`${repoDir}/responses/${response}`, 'utf8')
+          file += '\n\n'
+        } catch (e) {
+          console.error(`No file named ${repoDir}/responses/${response}`)
+        }
       }
     } else {
       file += `## (${stepIndex + 1}) ${step.title || step.course}
@@ -83,20 +91,7 @@ async function getCourseImage(courseDirName) {
 
 function listMdValuesRecursive(xvalue) {
   if (typeof xvalue === 'string') {
-    if (
-      xvalue.endsWith('.md') &&
-      !xvalue.includes('docs') &&
-      !xvalue.includes('index') &&
-      !xvalue.includes('_includes') &&
-      !xvalue.includes('{{') &&
-      !xvalue.includes('README') &&
-      !xvalue.includes('CONTRIBUTING') &&
-      !xvalue.includes('LICENSE') &&
-      !xvalue.includes('code-of-conduct') &&
-      !xvalue.includes('%') &&
-      !xvalue.includes('CODE_OF_CONDUCT') &&
-      !xvalue.includes('responses')
-    ) {
+    if (xvalue.endsWith('.md')) {
       return xvalue
     }
   } else if (Array.isArray(xvalue)) {

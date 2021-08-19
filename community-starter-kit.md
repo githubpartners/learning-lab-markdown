@@ -203,6 +203,53 @@ I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
 
+## Step 4: Create user documentation
+
+Well written user documentation is the key to a great user experience. Experts say, "if a user can't figure out how to use your project in less than an hour, they will move on." It pays to attract a few technical writers to your project. :wink:
+
+<details>
+<summary>Where to create your documentation</summary>
+<hr>
+
+ ### Where to create documentation
+
+ Your user documentation should be easy for your users to find. Some prefer to keep it on an externally facing website while others will use a docs folder in their project or the repository wiki.
+
+ #### Getting organized
+
+ As an open source project becomes more popular and more sophisticated, some maintainers find it is easier to move their open source project into an a GitHub organization. This allows you to create separate repositories for your project's promotional website, documentation, source code, etc.
+
+ <hr>
+ </details>
+
+### What to include
+
+Documentation needs for open source projects will vary, but at a minimum you should include:
+
+- [ ] Installation instructions
+- [ ] Completing essential tasks
+- [ ] Customizing and configuring
+
+Will you help Mona ensure the documentation covers these minimum topics?
+
+### :keyboard: Activity: Creating user documentation
+
+You can follow the manual steps below, or accept the [suggested change](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request) in the following comment.
+
+1. Edit [`docs/getting-started.md`]({{ docsFileUrl }}) on this branch, or manually edit it in the **Files Changed** tab.
+1. Find the placeholder text marked **CONFIGS PLACEHOLDER**.
+1. Replace the placeholder with some example welcome messages that may be helpful to new users.
+4. After editing the `docs/getting-started.md` file, scroll down and click the **Commit changes** button.
+
+<hr>
+<h3 align="center">I'll respond when I detect a commit on this branch.</h3>
+
+Write some example messages for your app here or accept this suggested change.
+
+```suggestion
+Welcome to our repository! Thanks for adding an issue, if you are reporting a bug or a feature request, please make sure to assign a label to this issue.
+```
+
 The `README.md` is a great introduction, but some documentation will help users feel even more supported as they start using the app. Mona has created a draft. Can you help?
 
 <hr>
@@ -214,6 +261,43 @@ Uh oh, you took an action I wasn't expecting. Not to worry!
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
+:wave: @{{ user.username }}, the `getting-started.md` file is almost ready to be used, Mona just needs some example welcome messages added. Some example welcome messages you could add are:
+
+#### Example 1
+Welcome to our repository! Thanks for adding an issue, if you are reporting a bug or a feature request, please make sure to assign a label to this issue.
+
+#### Example 2
+Thank you for submitting a pull request to our repository. If this change is based on an existing issue, please reference that issue in the pull request comment using `Closes #x` where X is the issue number.
+
+### :keyboard: Activity: Updating configuration instructions
+
+Accept the suggested changes or manually edit the file as follows.
+
+1. Access the **Files changed** tab in this pull request.
+1. Click the icon to the right of the file to edit the `getting-started.md` document.
+1. Find the text marked **CONFIGS PLACEHOLDER** and add some bullets that may be helpful to new users.
+1. After editing the `getting-started.md` file, scroll down and click the **Commit changes** button.
+
+<hr>
+<h3 align="center">I'll respond when you commit to this branch.</h3>
+
+
+## Step 5: Merge the user documentation
+
+This Getting Started guide is going to be a great resource for new users. Let's go ahead and merge it - we can always iterate.
+
+### :keyboard: Activity: Approve the pull request
+
+1. Clicking on [this quicklink]({{ approveLink }})
+1. Select **Approve**
+1. Click **Submit review**.
+
+You can also approve by clicking on **Files changed**, clicking on **Review changes**, selecting **Approve** and then **Submit review**.
+
+<hr>
+<h3 align="center">I'll respond when you've approved this pull request.</h3>
+
 
 Uh oh, you took an action I wasn't expecting. Not to worry!
 
@@ -510,6 +594,23 @@ Uh oh, you took an action I wasn't expecting. Not to worry!
 I was expecting you to **{{ expected }}**.
 
 I will respond when you take the expected action.
+
+## Step 13: Add the Code of Conduct
+
+Having a Code of Conduct is really important. Instead of re-writing the wheel, Mona wants to adopt the **Contributor Covenant Code of Conduct**.
+
+Can you help her grab the markdown version from [the contributor covenant website](https://www.contributor-covenant.org/) and paste it in to the empty file in this pull request?
+
+### :keyboard: Activity: Add a Code of Conduct
+
+You can follow the manual steps below, or accept the [suggested change](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request) in the following comment.
+
+1. Edit [`code-of-conduct.md`]({{ cocFileUrl }}) on this branch, or manually edit it in the **Files Changed** tab.
+1. Replace the file's contents with the markdown text from the latest version on [the contributor covenant website](https://www.contributor-covenant.org/). Feel free to also replace the placeholder `[INSERT CONTACT METHOD]` with a contact method of your choosing.
+4. Scroll down and click the **Commit changes** button.
+
+<hr>
+<h3 align="center">I'll respond when I detect a commit on this branch.</h3>
 
 Add your own Code of Conduct, or accept the suggestion below.
 
