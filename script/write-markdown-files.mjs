@@ -3,7 +3,7 @@
 import fs from 'fs/promises'
 import yaml from 'js-yaml'
 
-async function main () {
+async function main() {
   const courseDirs = await fs.readdir('courses')
 
   for (const courseDirName of courseDirs) {
@@ -13,13 +13,11 @@ async function main () {
   await writeIndexFile(courseDirs)
 }
 
-async function writeCourseMarkdown (courseDirName) {
+async function writeCourseMarkdown(courseDirName) {
   console.log(`### Writing markdown file for ${courseDirName}`)
 
   const repoDir = `./courses/${courseDirName}/${courseDirName}`
-
   const config = await yaml.load(await fs.readFile(`${repoDir}/config.yml`, 'utf8'))
-
   const courseImagePath = await getCourseImage(courseDirName)
 
   let file = `# ${config.title}
@@ -68,13 +66,27 @@ _${step.description}_
   console.log('')
 }
 
-async function getCourseImage (courseDirName) {
-  return JSON.parse(await fs.readFile(`./courses/${courseDirName}/image.json`, 'utf8'))?.data?.repository?.openGraphImageUrl
+async function getCourseImage(courseDirName) {
+  return JSON.parse(await fs.readFile(`./courses/${courseDirName}/image.json`, 'utf8'))?.data
+    ?.repository?.openGraphImageUrl
 }
 
-function listMdValuesRecursive (xvalue) {
+function listMdValuesRecursive(xvalue) {
   if (typeof xvalue === 'string') {
-    if (xvalue.endsWith('.md') && !xvalue.includes('docs') && !xvalue.includes('index') && !xvalue.includes('_includes') && !xvalue.includes('{{') && !xvalue.includes('README') && !xvalue.includes('CONTRIBUTING') && !xvalue.includes('LICENSE') && !xvalue.includes('code-of-conduct') && !xvalue.includes('%') && !xvalue.includes('CODE_OF_CONDUCT') && !xvalue.includes('responses')) {
+    if (
+      xvalue.endsWith('.md') &&
+      !xvalue.includes('docs') &&
+      !xvalue.includes('index') &&
+      !xvalue.includes('_includes') &&
+      !xvalue.includes('{{') &&
+      !xvalue.includes('README') &&
+      !xvalue.includes('CONTRIBUTING') &&
+      !xvalue.includes('LICENSE') &&
+      !xvalue.includes('code-of-conduct') &&
+      !xvalue.includes('%') &&
+      !xvalue.includes('CODE_OF_CONDUCT') &&
+      !xvalue.includes('responses')
+    ) {
       return xvalue
     }
   } else if (Array.isArray(xvalue)) {
@@ -99,7 +111,9 @@ async function writeIndexFile(courseDirs) {
     }
 
     const courseImagePath = await getCourseImage(courseDirName)
-    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName.split('-').join(' ')}](/${courseDirName}.md) |`
+    indexFile += `[<img src="${courseImagePath}" width="200">](/${courseDirName}.md) <br> [${courseDirName
+      .split('-')
+      .join(' ')}](/${courseDirName}.md) |`
 
     if (courseIndex % 4 === 3) {
       indexFile += '\n| '
