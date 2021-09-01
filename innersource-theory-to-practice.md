@@ -8,6 +8,10 @@ _Learn about the concept of InnerSource and put it to use in this carefully craf
 
 ---
 
+Learn about the concept of InnerSource and put it to use in this carefully crafted learning path.
+
+---
+
 ## (1) An introduction to InnerSource
 
 _A GitHub whitepaper that defines InnerSource, deep dives into the theory, and provides sensible steps to get started._

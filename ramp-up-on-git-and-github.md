@@ -8,6 +8,10 @@ _A set of resources leveraged by Microsoft employees to ramp up on Git and GitHu
 
 ---
 
+A set of resources leveraged by Microsoft employees to ramp up on Git and GitHub. Progress of this path is intended to take about 4 weeks, including 1 week of prerequisites.
+
+---
+
 ## (1) Git Handbook
 
 _Week 0 (Prepreqs): This doc on GitHub Guides provides a top-view of Git and useful commands._

@@ -8,6 +8,10 @@ _Welcome to GitHub! We're so glad you're here. We know it can look overwhelming 
 
 ---
 
+Welcome to GitHub! We're so glad you're here. We know it can look overwhelming at first, so we've put together a few of our favorite courses for people logging in for the first time.
+
+---
+
 ## (1) What is GitHub?
 
 _Hey, it's your first time here, so let's not take any chances. Check out this short video to understand why people use GitHub._

@@ -8,6 +8,10 @@ _Learn how to do DevOps on GitHub with the power of GitHub Actions! This path wi
 
 ---
 
+Learn how to do DevOps on GitHub with the power of GitHub Actions! This path will guide you through leveraging GitHub Actions to go from code to cloud.
+
+---
+
 ## (1) github-actions:-hello-world
 
 _Automation is key for streamlining your work processes, and GitHub Actions are the best way to supercharge your workflow. This quick introduction will teach you  how to create a Docker-based action and write a workflow to use the action._

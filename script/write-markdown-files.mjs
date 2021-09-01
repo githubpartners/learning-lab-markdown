@@ -41,6 +41,13 @@ _${config.description.trim()}_
 
 `
 
+  try {
+    file += await fs.readFile(`${repoDir}/course-details.md`, 'utf8')
+    file += '\n\n---\n\n'
+  } catch (e) {
+    console.error(`No file named ${repoDir}/course-details.md`)
+  }
+
   if (config.before) {
     const actions = listMdValuesRecursive(config.before)
     if (actions) {

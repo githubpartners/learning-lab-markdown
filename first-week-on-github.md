@@ -8,6 +8,10 @@ _After you've mastered the basics, learn some of the fun things you can do on Gi
 
 ---
 
+After you've mastered the basics, learn some of the fun things you can do on GitHub. From GitHub Pages to building projects with your friends, this path will give you plenty of new ideas.
+
+---
+
 ## (1) Discover GitHub Pages
 
 _Launching a personal website has never been easier with GitHub Pages. Watch this fun video to learn how you can create and host beautiful, free web pages on GitHub._

@@ -8,6 +8,12 @@ _Prepare to use GitHub with this learning path._
 
 ---
 
+Prepare to use GitHub with this learning path.
+
+This path has been curated by the GitHub team. 
+
+---
+
 ## (1) Video: What is GitHub?
 
 _Ever wondered how GitHub works? Let's see how Eddie and his team use GitHub._

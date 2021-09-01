@@ -8,6 +8,34 @@ _In this course, we will use CodeQL to analyze the source code of Bootstrap,  an
 
 ---
 
+Quickly learn [CodeQL](https://codeql.com),
+an expressive language for code analysis, which helps you explore source code to find bugs and vulnerabilities. During this beginner-accessible course, you will learn to write queries in CodeQL and find critical security vulnerabilities that were identified in Bootstrap, a popular open-source project.
+
+## What you'll learn
+Upon completion of the course, you'll be able to:
+- Understand the basic syntax of CodeQL queries
+- Use the standard CodeQL libraries to write queries and explore code written in JavaScript
+- Use predicates and classes, the building blocks of CodeQL queries, to make your queries more expressive and reusable
+- Use the CodeQL data flow and taint tracking libraries to write queries that find real security vulnerabilities
+
+## What you'll build
+You will walk in the steps of our security researchers, and create:
+- Several CodeQL queries that look for interesting patterns in JavaScript code.
+- A CodeQL security query that finds 5 critical security vulnerabilities in the Bootstrap codebase (before it was patched!) and can be reused to audit other open-source projects of your choice.
+
+
+## Pre-requisites
+- Some knowledge of the JavaScript language and the JQuery library.
+- A basic knowledge of secure coding practices is useful to understand the context of this course, and all the consequences of the bugs we'll find, but is not mandatory to learn CodeQL.
+- **This is a beginner-accessible course. No prior knowledge of CodeQL is required.**
+
+## Audiences
+- Security researchers
+- Developers
+
+
+---
+
 # Welcome to the CodeQL Unsafe JQuery course!
 We created this course to help you quickly learn CodeQL, our query language and engine for code analysis. The goal is to find several cross-site scripting (XSS) vulnerabilities in the open-source software known as Bootstrap, using CodeQL and its libraries for analyzing JavaScript code. To find the real vulnerabilities, you'll need to write a sequence of queries, making them more precise at each step of the course.
 
