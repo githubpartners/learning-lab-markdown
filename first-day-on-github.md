@@ -26,13 +26,13 @@ _That video is pretty cool, right? If you want to learn how to use the workflow 
 
 ## (3) Git Handbook
 
-_By now you are probably wondering what a Git is and why it is important in writing code. We have you covered with this short article on version control with Git._
+_By now you are probably wondering what Git is and why it is important in writing code. We have you covered with this short article on version control with Git._
 
 [Link](https://guides.github.com/introduction/git-handbook/)
 
 ## (4) communicating-using-markdown
 
-_GitHub is all about collaboration and we collaborate in issues in pull requests. Learn how to get your point across with the worlds easiest text formatting syntax._
+_GitHub is all about collaboration and we collaborate in issues and pull requests. Learn how to get your point across with the world's easiest text formatting syntax._
 
 [Link](communicating-using-markdown)
 

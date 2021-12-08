@@ -64,9 +64,10 @@ In this course, we will use CodeQL to analyze the source code of Bootstrap, take
 ## Step 1: Know where to get help!
 
 Bookmark these useful documentation links:
-- [Writing a basic JavaScript Code QL query](https://lgtm.com/help/lgtm/console/ql-javascript-basic-example)
-- [Introduction to CodeQL](https://help.semmle.com/QL/learn-ql/introduction-to-ql.html)
-- [Learning CodeQL](https://help.semmle.com/QL/learn-ql/) 
+- [CodeQL Documentation Site](https://codeql.github.com/docs/)
+- [Introduction to CodeQL](https://codeql.github.com/docs/writing-codeql-queries/introduction-to-ql/)
+- [Writing a basic JavaScript Code QL query](https://codeql.github.com/docs/codeql-language-guides/basic-query-for-javascript-code/)
+
 
 If you get stuck during this course and need some help, the best place to ask for help is on the GitHub Security Lab Slack. Request an invitation from the [Security Lab Get Involved page](https://securitylab.github.com/get-involved) and ask in the channel `#codeql-writing`. You can also visit our [forum](https://github.com/github/securitylab/discussions) to search for possible answers.
 
@@ -87,8 +88,8 @@ Follow the instructions below.
 
 ### :keyboard: Activity: Set up
 1. Install the [Visual Studio Code IDE](https://code.visualstudio.com/).
-1. Download and install the [CodeQL extension for Visual Studio Code](https://help.semmle.com/codeql/codeql-for-vscode.html). Full setup instructions are [here](https://help.semmle.com/codeql/codeql-for-vscode/procedures/setting-up.html).
-1. [Set up the starter workspace](https://help.semmle.com/codeql/codeql-for-vscode/procedures/setting-up.html#using-the-starter-workspace).
+1. Download and install the [CodeQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql). Full setup instructions are [here](https://codeql.github.com/docs/codeql-for-visual-studio-code/setting-up-codeql-in-visual-studio-code/).
+1. [Set up the starter workspace](https://codeql.github.com/docs/codeql-for-visual-studio-code/setting-up-codeql-in-visual-studio-code/#using-the-starter-workspace).
     - **Important**: Don't forget to `git clone --recursive` or `git submodule update --init --remote`, so that you obtain the standard query libraries.
 1. Open the starter workspace: File > Open Workspace > Browse to `vscode-codeql-starter/vscode-codeql-starter.code-workspace`.
 1. Download the [esbena_bootstrap-pre-27047_javascript CodeQL database](https://github.com/githubsatelliteworkshops/codeql/releases/download/v1.0/esbena_bootstrap-pre-27047_javascript.zip).
@@ -301,8 +302,8 @@ In the following steps, we'll find such plugins, and their options. We'll find
 ### :book: Learn about data flow nodes
 
 Take a few minutes to read about the data flow nodes for JavaScript and TypeScript.
-- The [data flow nodes](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html#data-flow-nodes)
-- The [source nodes](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html#source-nodes) are places in the program that **introduce a new value**, from which the flow of data may be tracked. They are the source of this new value, either because they create a new object, such as object literals or functions, or because they represent a point where data enters the local data flow graph, such as parameters or property reads.
+- The [data flow nodes](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-javascript-and-typescript/#data-flow-nodes)
+- The [source nodes](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-javascript-and-typescript/#source-nodes) are places in the program that **introduce a new value**, from which the flow of data may be tracked. They are the source of this new value, either because they create a new object, such as object literals or functions, or because they represent a point where data enters the local data flow graph, such as parameters or property reads.
 - The `DataFlow::FunctionNode` is a data flow node that corresponds to a function (expression or declaration)
 
 
@@ -355,7 +356,7 @@ These nodes are separate and distinct from the AST (Abstract Syntax Tree, which 
 
 We can visualize the data flow analysis problem as one of finding paths through a directed graph, where the nodes of the graph are data flow nodes, and the edges represent the flow of data between those elements. If a path exists, then the data flows between those two nodes.
 
-The CodeQL JavaScript data flow library is very expressive. It has several classes that describe different places in the program that can have a value. We have seen `SourceNodes`; there are many other forms such as `ValueNodes`, `FunctionNodes`, `ParameterNodes`, and `CallNodes`. You can find out more in the [documentation](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html).
+The CodeQL JavaScript data flow library is very expressive. It has several classes that describe different places in the program that can have a value. We have seen `SourceNodes`; there are many other forms such as `ValueNodes`, `FunctionNodes`, `ParameterNodes`, and `CallNodes`. You can find out more in the [documentation](https://codeql.github.com/codeql-standard-libraries/javascript/semmle/javascript/dataflow/DataFlow.qll/module.DataFlow$DataFlow.html).
 
 When we are looking for the flow of information to or from these nodes within a single function or scope, this is called **local data flow analysis**. The CodeQL library has several predicates available on different types of data flow node that reason about local data flow, such as `getAPropertyRead()` that we used in the previous step.
 
@@ -417,7 +418,7 @@ We have now identified places in the program which receive jQuery plugin options
 
 So far, we have declared variables in the `from` section of a query clause. Sometimes we need temporary variables in other parts of the query, and don't want to expose them in the query clause. The `exists` keyword helps us do this. It is a **quantifier**: it introduces temporary variables and checks if they satisfy a particular condition.
 
-To understand how `exists` works, [visit the documentation](https://help.semmle.com/QL/ql-handbook/formulas.html#explicit-quantifiers).
+To understand how `exists` works, [visit the documentation](https://codeql.github.com/docs/ql-language-reference/formulas/#explicit-quantifiers).
 
 Then let's take an example. In a previous step you created a query to get calls to `$`:
 ```ql
@@ -501,7 +502,7 @@ We now want to tie these two together to ask: does the untrusted data from a jQu
 
 This is also a data flow problem. However, it is larger in scope that the problems we have tackled so far, because the plugin options and the `$` call may be in different functions. We call this a **global data flow** problem.
 
-:book: You can learn more about data flow analysis in JavaScript by reading the [documentation](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html) and this [cheat sheet](https://help.semmle.com/QL/learn-ql/javascript/dataflow-cheat-sheet.html).
+:book: You can learn more about data flow analysis in JavaScript by reading the [documentation](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-javascript-and-typescript/#analyzing-data-flow-in-javascript-and-typescript) and this [cheat sheet](https://codeql.github.com/docs/codeql-language-guides/data-flow-cheat-sheet-for-javascript/).
 
 
 In this section we will create a **path problem** query capable of looking for global data flow, by populating this template:
@@ -583,7 +584,7 @@ Congratulations, you have finished the course!
 
 ### What's next?
 
-- Read the [tutorial on analyzing data flow in JavaScript and TypeScript](https://help.semmle.com/QL/learn-ql/javascript/dataflow.html).
+- Read the [tutorial on analyzing data flow in JavaScript and TypeScript](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-javascript-and-typescript/).
 - Explore the [open-source CodeQL queries and libraries](https://github.com/github/codeql), and [learn how to contribute a new query](https://github.com/github/codeql/blob/master/CONTRIBUTING.md).
 - Visit the [GitHub Security Lab website](https://securitylab.github.com)
   - Try out the CodeQL [Capture-the-Flag challenges](https://securitylab.github.com/ctf).

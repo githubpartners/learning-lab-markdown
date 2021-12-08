@@ -83,7 +83,7 @@ Follow the instructions below.
 1. Install the [Visual Studio Code IDE](https://code.visualstudio.com/).
 1. Go to the [CodeQL starter workspace repository](https://github.com/github/vscode-codeql-starter/), and follow the instructions in that repository's README. When you are done, you should have the CodeQL extension installed and the `vscode-codeql-starter` workspace open in Visual Studio Code.
 1. Download and unzip [this U-Boot CodeQL database](https://downloads.lgtm.com/snapshots/cpp/uboot/u-boot_u-boot_cpp-srcVersion_d0d07ba86afc8074d79e436b1ba4478fa0f0c1b5-dist_odasa-2019-07-25-linux64.zip), which corresponds to revision [`d0d07ba`](https://github.com/u-boot/u-boot/tree/d0d07ba86afc8074d79e436b1ba4478fa0f0c1b5).
-1. Import the database into Visual Studio Code ([see documentation](https://help.semmle.com/codeql/codeql-for-vscode/procedures/using-extension.html#choosing-a-database)). This is the database that we'll be running queries on for the duration of this course.
+1. Import the database into Visual Studio Code ([see documentation](https://codeql.github.com/docs/codeql-for-visual-studio-code/analyzing-your-projects/#choosing-a-database)). This is the database that we'll be running queries on for the duration of this course.
 1. Clone [this course repository]({{repoUrl}}) on your local machine.
 1. Add the course repository to your Visual Studio Code starter workspace, by navigating to `File -> Add Folder to Workspace...`. If you open this folder you should see several files in there, including `qlpack.yml` and `README.md`.
 
@@ -262,8 +262,8 @@ In the previous query you were querying for values in the class `Function` to fi
     - Which predicate will give us the name of a macro?
     - Use the `or` keyword to combine multiple conditions where you want at least one condition to be met. Here we are interested in three possible macro names.
 1. To write a more compact query that searches for all three macros at once, instead of using three cases combined by `or` you have 2 choices:
-    - Use a regular expression. Check out the predicate `string::regexpMatch` in the [built-in predicates for string](https://help.semmle.com/QL/ql-spec/language.html#built-ins-for-string). CodeQL uses the [`java.util.Pattern` regexp conventions](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
-    - Use a [_set literal expression_](https://help.semmle.com/QL/ql-handbook/expressions.html#set-literal-expressions) to equate `<your_variable_name>` to a list of choices `<your_variable_name> in ["bar", "baz", "quux"]`
+    - Use a regular expression. Check out the predicate `string::regexpMatch` in the [built-in predicates for string](https://codeql.github.com/docs/ql-language-reference/ql-language-specification/#built-ins-for-string). CodeQL uses the [`java.util.Pattern` regexp conventions](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
+    - Use a [_set literal expression_](https://codeql.github.com/docs/ql-language-reference/expressions/#set-literal-expressions) to equate `<your_variable_name>` to a list of choices `<your_variable_name> in ["bar", "baz", "quux"]`
 1. Once you're happy with the results, submit your solution.
 
 
