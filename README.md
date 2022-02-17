@@ -17,8 +17,8 @@ Note the renames on `X-` and `Z-` files.
 Start with these:
 
 - [Checklist](https://github.com/githublearn/.github/blob/main/.github/ISSUE_TEMPLATE/new-course.md)
-- [Quickstart guide](https://github.com/githublearn/quickstart-guide)
-- [Course template](https://github.com/githublearn/template-template)
+- [Quickstart guide](https://github.com/githubpartners/quickstart-guide)
+- [Course template](https://github.com/githubpartners/template-template)
 
 Learning Lab courses have varying degrees of content depth, relevance, and up-to-date-ness. We don't want these courses to have a high maintenance requirements, and we know learners don't like long courses.
 
